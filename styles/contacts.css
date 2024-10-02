@@ -1,0 +1,175 @@
+@import url(./main.css);
+
+body {
+  background: #fafafc;
+}
+
+.contacts_container {
+  width: 100%;
+  max-width: 912px;
+  margin: 0 auto;
+  padding-top: 88px;
+}
+
+.contacts_form {
+  width: 100%;
+  margin-bottom: 92px;
+  padding: 28px 42px 42px;
+  border-radius: 15px;
+
+  background: rgb(255, 255, 255);
+}
+
+.contacts_form h3 {
+  margin-bottom: 56px;
+}
+.contacts_form_input p {
+  margin-bottom: 8px;
+  color: rgb(36, 36, 36);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.contacts_form_input input {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(228, 226, 225);
+  border-radius: 9px;
+  height: 46px;
+  text-indent: 16px;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  color: #000;
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.contacts_form_input input::placeholder,
+.contacts_form_input textarea::placeholder {
+  color: rgb(181, 181, 181);
+}
+
+.contacts_form_inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 27px;
+}
+.contacts_form_inputs .contacts_form_input {
+  width: 50%;
+}
+
+.contacts_form_input textarea {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(228, 226, 225);
+  border-radius: 9px;
+  height: 147px;
+  width: 100%;
+  padding: 11px 16px;
+  background: rgb(255, 255, 255);
+  color: #000;
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.contacts_form_actions {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.contacts_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.contacts_card {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(228, 226, 225);
+  border-radius: 15px;
+  height: 236px;
+  padding: 24px 32px 36px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts_card_top p {
+  margin-top: 8px;
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.contacts_card_bottom {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.contacts_card_tg {
+  background: url(../assets/images/tg-bg.svg);
+  background-size: cover;
+  background-position: center;
+
+  background-size: cover;
+}
+
+.contacts_card_tg h3 {
+  color: rgb(255, 255, 255);
+}
+.contacts_card_tg p {
+  color: #fff;
+}
+.contacts_card_tg .btn_grey {
+  box-sizing: border-box;
+  border: 1px solid rgba(234, 234, 234, 0.2);
+  border-radius: 9px;
+  box-shadow: none;
+  color: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.have_questions_block {
+  margin-top: 74px;
+  margin-bottom: 113px;
+  border-radius: 15px;
+  padding: 24px 54px 32px 32px;
+  background: rgb(36, 36, 36);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.have_questions_block h4 {
+  color: #fff;
+  margin-bottom: 8px;
+}
+.have_questions_block p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.have_questions_block .btn_grey {
+    padding: 0 46px;
+}

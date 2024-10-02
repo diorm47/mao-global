@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Cygre";
+  src: url("../assets/fonts/Cygre-Regular-400.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cygre Medium";
+  src: url("../assets/fonts/Cygre-Medium-500.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Cygre SemiBold";
+  src: url("../assets/fonts/Cygre-SemiBold-600.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Cygre 700";
+  src: url("../assets/fonts/Cygre-Bold.ttf") format("truetype");
+  font-weight: 700;
+}

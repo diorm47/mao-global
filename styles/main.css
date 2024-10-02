@@ -1,0 +1,434 @@
+@import url(./fonts.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1392px;
+  margin: 0 auto;
+}
+
+/* nav */
+nav {
+  border-radius: 15px;
+  padding: 20px;
+  background: rgb(255, 255, 255);
+}
+
+.top_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_line {
+  width: 1px;
+  height: 40px;
+  background: rgb(228, 226, 225);
+  margin: 0 10px;
+}
+.top_nav_left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.phone_num {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone_num p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.contactUs_btn {
+  width: 128px;
+  height: 44px;
+  box-sizing: border-box;
+  border: 0.5px solid rgb(228, 226, 225);
+  border-radius: 22px;
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang_toggler {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+}
+.lang_toggler p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.top_nav_right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav_log_dash {
+  border-radius: 9px;
+  height: 44px;
+  background: rgb(250, 250, 252);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.nav_log_dash a {
+  color: rgb(133, 133, 133);
+  font-family: "Cygre 700";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.nav_log_dash_active {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav_log_dash_active {
+  color: rgb(36, 36, 36) !important;
+}
+.top_nav {
+  margin-bottom: 24px;
+}
+
+.nav_bottom_left_links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav_bottom_left_links a {
+  color: rgb(36, 36, 36);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.nav_bottom_left_links a:hover {
+  text-decoration: underline;
+}
+
+.active_nav_item {
+  text-decoration: underline;
+}
+.nav_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_bottom_socials a {
+  width: 44px;
+  height: 44px;
+  background: rgb(250, 250, 252);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.nav_bottom_socials {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav_secondary {
+  background: transparent;
+  padding: 0;
+  padding-top: 25px;
+  margin-bottom: 68px;
+}
+.nav_secondary .top_nav {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(228, 226, 225);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 3.7px 0px rgba(238, 238, 238, 0.25);
+  background: rgb(255, 255, 255);
+  margin-bottom: 28px;
+}
+.nav_secondary .nav_bottom {
+  padding: 0 20px;
+}
+.nav_secondary .nav_bottom_socials a {
+  background: #fff;
+}
+/* footer */
+
+footer {
+  background: rgb(255, 255, 255);
+  padding-top: 132px;
+  padding-bottom: 40px;
+}
+.footer_logo {
+  width: 147.51px;
+  margin-bottom: 35px;
+}
+.footer_desc p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 50px;
+  max-width: 360px;
+}
+
+.footer_wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.footer_menu h3 {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 31px;
+}
+.footer_menu p {
+  margin-bottom: 12px;
+  color: rgb(133, 133, 133);
+  font-family: Cygre;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer_menu p:hover {
+  text-decoration: underline;
+}
+
+.footer_right {
+  display: flex;
+  align-items: start;
+  gap: 100px;
+}
+.nav_bottom_socials p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer_socials_list .nav_bottom_socials a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+  padding: 0 13px;
+}
+
+.footer_socials_list .nav_bottom_socials a:nth-child(4),
+.footer_socials_list .nav_bottom_socials a:nth-child(5) {
+  border-radius: 22px;
+}
+
+.footer_socials_list .readmore_btn {
+  width: 194px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding-left: 14px;
+}
+.footer_socials_list {
+  display: flex;
+  align-items: center;
+  gap: 30%;
+  margin-bottom: 132px;
+  margin-top: 40px;
+}
+
+.footer_bottom {
+  border-top: 0.5px solid rgb(228, 226, 225);
+  padding-top: 35px;
+}
+
+.footer_bottom_list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.footer_bottom_list a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.footer_bottom_wrapper p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer_bottom_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*  */
+
+.block_title h2 {
+  font-family: Cygre SemiBold;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 63px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(36, 36, 36);
+}
+
+.block_title h2 span {
+  color: rgb(181, 181, 181);
+}
+
+.center h2 {
+  text-align: center;
+}
+.block_title p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre SemiBold;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+.center p {
+  text-align: center;
+  margin-top: 29px;
+}
+
+.bold {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.readmore_btn {
+  margin-top: 100px;
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 9px;
+  width: 120px;
+  height: 44px;
+  box-shadow: 0px 4px 3.7px 0px rgba(238, 238, 238, 0.25);
+  background: rgb(255, 255, 255);
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.btn_send {
+  padding: 0 19px;
+  height: 44px;
+  border-radius: 9px;
+  color: rgb(255, 255, 255);
+  font-family: Cygre SemiBold;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+  background: rgb(222, 36, 8);
+}
+
+.btn_grey {
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 9px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 15px;
+  box-shadow: 0px 4px 3.7px 0px rgba(238, 238, 238, 0.25);
+  background: rgb(255, 255, 255);
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0%;
+}
+
+.social_icon_btn {
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 9px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 3.7px 0px rgba(238, 238, 238, 0.25);
+  background: rgb(255, 255, 255);
+}

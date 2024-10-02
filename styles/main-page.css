@@ -1,0 +1,639 @@
+@import url(./main.css);
+
+header {
+  background: url(../assets/images/header-bg.png);
+  background-size: cover;
+  padding: 25px 0 125px;
+}
+
+.header_content {
+  padding-top: 96px;
+}
+.header_content h1 {
+  color: rgb(255, 255, 255);
+  font-family: Cygre SemiBold;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 63px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.header_content p {
+  margin: 21px 0 25px;
+  color: rgb(255, 255, 255);
+  font-family: Cygre;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.red_btn {
+  width: 228px;
+  height: 68px;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  font-family: Cygre;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0%;
+  text-align: center;
+  background: rgb(223, 54, 30);
+}
+
+.parners_list {
+  padding: 65px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about_section_left_text p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.about_section_left {
+  width: 42%;
+}
+.about_section_right {
+  width: 48%;
+}
+.about_section_left_list_item {
+  margin-bottom: 28px;
+  padding-bottom: 29px;
+  border-bottom: 0.5px solid rgb(228, 226, 225);
+}
+.about_section_left_list_item_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  width: 44px;
+  height: 44px;
+  background: rgb(250, 250, 252);
+  border-radius: 50%;
+}
+
+.about_section_left_list_item_title {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.about_section_left_list_item_title h4 {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.about_section_left_list_item_content p {
+  padding-top: 13px;
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.about_section_left_list_item_sec .about_section_left_list_item_title h4 {
+  color: rgb(144, 144, 144);
+}
+
+
+
+.about_section {
+  padding-bottom: 120px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.about_section_right {
+  border-radius: 15px;
+  padding: 25px 60px 0 37px;
+  background: rgb(250, 250, 252);
+}
+.about_section_right_title h3 {
+  font-family: Cygre SemiBold;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(181, 181, 181);
+  max-width: 415px;
+  margin-bottom: 15px;
+}
+
+.about_section_right_title h3 span {
+  color: rgb(36, 36, 36);
+}
+
+.about_section_right_content {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.about_section_right_stats {
+  max-width: 247px;
+  width: 100%;
+}
+.about_section_right_stats h5 {
+  color: rgb(133, 133, 133);
+  font-family: "Cygre";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.about_section_right_line {
+  width: 100%;
+  height: 1px;
+  background: rgb(228, 226, 225);
+  margin: 32px 0 20px;
+}
+.about_section_right_status_top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.about_section_right_status_top h3 {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.about_section_right_status p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre Medium;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 7px;
+}
+
+.about_section_right_stats {
+  padding-bottom: 35px;
+}
+.about_section_right_status_top h3 span {
+  font-size: 32px;
+}
+.about_section_right_stat .about_section_right_status {
+  margin-bottom: 23px;
+}
+
+.about_section_right_stat {
+  display: flex;
+  flex-direction: column;
+}
+.promo_video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  gap: 10px;
+  position: relative;
+}
+.promo_video_img {
+  width: 50%;
+}
+.promo_video_content {
+  border-radius: 15px;
+  position: absolute;
+  backdrop-filter: blur(11.7px);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  width: 229px;
+  height: 516px;
+  top: -52px;
+}
+
+.promo_video_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 52px;
+}
+.promo_video_content .readmore_btn {
+  margin-top: 43px;
+}
+.promo_video_content_text h2 {
+  color: rgb(255, 255, 255);
+  font-family: Cygre SemiBold;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 63px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.promo_video_content_text p {
+  color: rgb(255, 255, 255);
+  font-family: Cygre Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.promo_video_content_text {
+  position: relative;
+  width: 371px;
+}
+
+.benefits {
+  padding: 110px 0 150px;
+}
+.benefits_cards_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 55px;
+  margin-top: 76px;
+  gap: 48px;
+}
+.benefits_card {
+  width: 33%;
+}
+.benefits_card_icon {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(228, 226, 225);
+  border-radius: 9px;
+  width: 51px;
+  height: 51px;
+  box-shadow: 0px 4px 3.7px 0px rgba(238, 238, 238, 0.25);
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 21px;
+}
+
+.benefits_card h4 {
+  margin-bottom: 8px;
+  color: rgb(36, 36, 36);
+  font-family: Cygre;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.benefits_card p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.benefits_cards_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+.cre_acc {
+  width: 68%;
+  background: url(../assets/images/cre-ac.png);
+  background-size: cover;
+  padding: 25px 0 28px 38px;
+  border-radius: 15px;
+}
+.cre_acc p {
+  font-family: Cygre SemiBold;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  max-width: 330px;
+  margin-bottom: 23px;
+}
+.cre_acc p span {
+  color: rgb(223, 54, 30);
+}
+.cre_acc button {
+  width: 154px;
+  height: 44px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 23px;
+}
+.reviews {
+  padding-top: 116px;
+  position: relative;
+  background: rgb(250, 250, 252);
+}
+.reviews_top .block_title {
+  max-width: 611px;
+}
+.reviews_top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.reviews_more {
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 55px;
+  width: 196px;
+  height: 52px;
+  margin-bottom: 13px;
+  cursor: pointer;
+  padding: 5px;
+  box-shadow: 0px 4px 3.7px 0px rgba(238, 238, 238, 0.25);
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews_more_prof {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.reviews_more_prof_img {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(234, 234, 234);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  padding: 2px;
+}
+.reviews_more_prof_img img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews_more_prof_img {
+  margin-left: -15px;
+}
+.reviews_more p {
+  color: rgb(223, 54, 30);
+  font-family: Cygre SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.reviews_details_text {
+  margin-bottom: 80px;
+}
+.reviews_details_text p {
+  color: rgb(87, 86, 87);
+  font-family: "Cygre";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.reviews_details {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+
+.reviews_details_text span {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-weight: 600;
+}
+
+.reviews_details .readmore_btn {
+  margin: 0;
+  margin-bottom: 28px;
+}
+.reviews_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+.reviews_card {
+  border-radius: 15px;
+  padding: 28px 26px 38px;
+  background: rgb(255, 255, 255);
+}
+.reviews_card_text p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.reviews_card_author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews_card_author {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  cursor: pointer;
+}
+.reviews_card_author div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.reviews_card_author p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.reviews_card_author span {
+  color: rgb(181, 181, 181);
+  font-family: Cygre;
+  font-size: 16px;
+  font-weight: 400;
+
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.reviews {
+  position: relative;
+  overflow: hidden;
+}
+.reviews_gr {
+  position: absolute;
+  bottom: 0;
+}
+.discover_more {
+  position: relative;
+  padding: 100px 0 120px;
+  overflow: hidden;
+}
+
+.discover_more_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.media_list p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+.media_list {
+  position: absolute;
+  right: -60px;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.media_list_wrapper {
+  border-radius: 15px;
+  height: 104px;
+  background: rgb(250, 250, 252);
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: 777px;
+  height: 104px;
+  padding: 0 20px;
+}
+
+.discover_card {
+  width: 100%;
+  max-width: 432px;
+}
+.discover_card_img {
+  border-radius: 15px;
+  height: 240px;
+  width: 100%;
+  background: rgb(250, 250, 252);
+  margin-bottom: 28px;
+}
+
+.discover_card_desc p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.discover_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.discover_bottom .readmore_btn {
+  width: 181px;
+}
+.discover_arrows {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 13.92px;
+}
+.discover_arrow {
+  cursor: pointer;
+  position: static !important;
+  width: 17.05px !important;
+  height: 13.92px !important;
+  margin: 0 !important    ;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none !important;
+}
+
+.companies {
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.companies_text p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 55px;
+  margin-top: 35px;
+}
+
+.companies_wrapper {
+  padding: 34px 0 50px;
+  position: relative;
+}
+.companies_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.companies_list img {
+  cursor: pointer;
+}
+
+.comp_leftgr {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.comp_rightgr {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

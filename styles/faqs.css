@@ -1,0 +1,128 @@
+@import url(./main.css);
+
+body {
+  background: #fafafc;
+}
+
+.faqs_wrapper {
+  padding-top: 88px;
+  padding-bottom: 116px;
+  display: flex;
+  align-items: start;
+}
+.faqs_left p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faqs_left {
+  width: 20%;
+  border-right: 0.5px solid rgb(228, 226, 225);
+}
+
+.tabs_list
+.active_menu {
+  color: rgb(36, 36, 36) !important;
+  font-family: Cygre SemiBold !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.faq_right {
+  padding-left: 84px;
+  width: 80%;
+}
+.faq_content_title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+.faq_content_title h4 {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.faq_content {
+  width: 100%;
+}
+.faq_item {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(234, 234, 234);
+  border-radius: 15px;
+  padding: 20px 30px;
+  box-shadow: 0px 4px 3.7px 0px rgba(238, 238, 238, 0.25);
+  background: rgb(255, 255, 255);
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.faq_item_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faq_item_title p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.faq_item_content {
+  padding-top: 22px;
+  display: none;
+}
+.faq_item_content p {
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(133, 133, 133);
+  margin-bottom: 20px;
+}
+
+.faq_item_content a {
+  color: rgb(222, 36, 8);
+  text-decoration: underline;
+}
+
+.faq_item_content p:last-child {
+  margin: 0;
+}
+.faq_item_title img {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.faq_item_active .faq_item_title img {
+    transform: rotate(180deg);
+}
+.faq_item_active .faq_item_content {
+    display: block;
+}
+.menu_item_content {
+    display: none;
+}
+.faq_right .active_menu {
+  display: block;
+}
