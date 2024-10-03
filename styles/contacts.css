@@ -146,30 +146,3 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.have_questions_block {
-  margin-top: 74px;
-  margin-bottom: 113px;
-  border-radius: 15px;
-  padding: 24px 54px 32px 32px;
-  background: rgb(36, 36, 36);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.have_questions_block h4 {
-  color: #fff;
-  margin-bottom: 8px;
-}
-.have_questions_block p {
-  color: rgb(133, 133, 133);
-  font-family: Cygre Medium;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-
-.have_questions_block .btn_grey {
-    padding: 0 46px;
-}

@@ -1,0 +1,237 @@
+@import url(./main.css);
+
+body {
+  background: #fafafc;
+}
+
+.partners_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 122px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.left_sh {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.right_sh {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.partners_pr_title .t_16_g {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.partners_pr_title {
+  margin-bottom: 30px;
+}
+.partners_pr_card {
+  width: 48%;
+  height: 588px;
+  box-sizing: border-box;
+  border: 0.5px solid rgb(234, 234, 234);
+  border-radius: 15px;
+  padding: 28px 26px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.partners_pr_card_title {
+  border-radius: 11.5px;
+  height: 23px;
+  background: #f4e0df;
+  margin-bottom: 29px;
+  padding: 0 8px;
+}
+
+.partners_pr_card_title span {
+  color: rgb(222, 36, 8);
+  font-family: Cygre SemiBold;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.partners_pr_card_img {
+  width: 100%;
+  margin-bottom: 36px;
+}
+.partners_pr_card_img img {
+  width: 100%;
+}
+
+.partners_pr_card .t_26_d {
+  font-size: 24px;
+  margin-bottom: 19px;
+}
+.partners_pr_card .t_16_g {
+  font-size: 18px;
+}
+.partners_pr_cards {
+  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 39px;
+  gap: 36px;
+}
+.partners_pr {
+  padding-bottom: 72px;
+}
+
+.strateg {
+  border-radius: 21px;
+  width: 100%;
+  max-width: 1249px;
+  margin: 0 auto;
+  padding: 9px;
+  background: rgb(241, 241, 241);
+}
+
+.strateg_wrapper {
+  width: 100%;
+  padding: 47px 0 100px;
+  background: url(../assets/images/str-bg.png);
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.strateg_text {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 39px;
+}
+
+.str_line {
+  width: 100%;
+  height: 1px;
+  background: rgb(234, 234, 234);
+  margin: 60px 0 45px;
+}
+.strateg_btns {
+  border-radius: 15px;
+  padding: 6px;
+  margin: 0 auto;
+  background: rgb(250, 250, 252);
+  max-width: 650px;
+}
+.strateg_btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 63px;
+}
+.strateg_btns button {
+  color: rgb(181, 181, 181);
+  font-family: Cygre SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: center;
+  background: transparent;
+}
+
+.active_strateg_btn {
+  border-radius: 9px;
+  padding: 0 14px;
+  height: 40px;
+  color: rgb(36, 36, 36) !important;
+  background: rgb(255, 255, 255) !important;
+}
+
+.strateg_cont h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37px;
+}
+.strateg_btm p {
+  text-align: center;
+  padding: 24px 0 29px;
+}
+.advantages {
+  padding: 80px 0 132px;
+}
+.advantages_cards {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 115px;
+}
+
+.advantages_card {
+  width: 33%;
+  height: 308px;
+  padding-right: 35px;
+  border-right: 0.5px solid rgb(210, 210, 210);
+}
+.advantages_card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-left: 27px;
+}
+.advantages_card p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 6px;
+}
+.advantages_card span {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.advantages_card h3 {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 90px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: -15px;
+}
+.advantages_cards .advantages_card:last-child {
+  padding-right: 0;
+  border: none;
+}
+.advantages_cards .advantages_card:first-child {
+  padding-left: 0;
+}
+
+.have_questions_block {
+  margin: 0;
+}
+.have_questions_block .btn_grey {
+  padding: 0 22px;
+  font-size: 14px;
+  font-weight: 600;
+}

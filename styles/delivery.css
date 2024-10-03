@@ -4,16 +4,7 @@ body {
   background: #fafafc;
 }
 
-.header_text p {
-  color: rgb(133, 133, 133);
-  font-family: Cygre Medium;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 29px;
-  letter-spacing: 0%;
-  text-align: left;
-  margin: 77px 0 52px;
-}
+
 .delivery_img {
   max-width: 1920px;
   margin: 0 auto;
