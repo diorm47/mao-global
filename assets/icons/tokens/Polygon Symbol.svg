@@ -1,0 +1,18 @@
+<svg width="44.444336" height="44.444336" viewBox="0 0 44.4443 44.4443" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip6382_2783">
+			<rect id="Polygon Symbol" rx="8.934545" width="44.313530" height="44.313530" transform="translate(0.065456 0.065456)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient x1="-8.122173" y1="3.652859" x2="37.759541" y2="31.730274" id="paint_linear_6382_2783_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#A229C5"/>
+			<stop offset="1.000000" stop-color="#7B3FE4"/>
+		</linearGradient>
+	</defs>
+	<rect id="Polygon Symbol" rx="8.934545" width="44.313530" height="44.313530" transform="translate(0.065456 0.065456)" fill="url(#paint_linear_6382_2783_0)" fill-opacity="1.000000"/>
+	<g clip-path="url(#clip6382_2783)">
+		<path id="Element" d="M28.52 26.42L34.69 22.86C35.02 22.67 35.22 22.32 35.22 21.94L35.22 14.83C35.22 14.45 35.01 14.1 34.69 13.91L28.52 10.36C28.2 10.17 27.79 10.17 27.46 10.36L21.3 13.91C20.97 14.1 20.77 14.45 20.77 14.83L20.77 27.54L16.44 30.04L12.12 27.54L12.12 22.55L16.44 20.06L19.3 21.71L19.3 18.36L16.97 17.02C16.81 16.93 16.63 16.88 16.44 16.88C16.26 16.88 16.07 16.93 15.91 17.02L9.75 20.58C9.42 20.76 9.22 21.11 9.22 21.49L9.22 28.6C9.22 28.98 9.42 29.33 9.75 29.52L15.91 33.08C16.24 33.26 16.65 33.26 16.97 33.08L23.14 29.52C23.47 29.33 23.67 28.98 23.67 28.61L23.67 15.89L23.75 15.85L27.99 13.4L32.32 15.89L32.32 20.88L27.99 23.38L25.14 21.73L25.14 25.08L27.46 26.42C27.79 26.6 28.2 26.6 28.52 26.42L28.52 26.42Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

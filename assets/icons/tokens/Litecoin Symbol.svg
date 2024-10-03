@@ -1,0 +1,14 @@
+<svg width="44.444336" height="44.444336" viewBox="0 0 44.4443 44.4443" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip6382_2729">
+			<rect id="Litecoin Symbol" rx="8.934545" width="44.313530" height="44.313530" transform="translate(0.065456 0.065456)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Litecoin Symbol" rx="8.934545" width="44.313530" height="44.313530" transform="translate(0.065456 0.065456)" fill="#345D9D" fill-opacity="1.000000"/>
+	<g clip-path="url(#clip6382_2729)">
+		<path id="Litecoin" d="M20.16 29.82L22.13 23.11L25.19 22.23L25.83 20L22.81 20.93L26.01 9.91L26.01 9.74C26.01 9.67 25.99 9.6 25.96 9.53C25.93 9.47 25.89 9.41 25.84 9.36C25.79 9.31 25.73 9.28 25.67 9.25C25.6 9.23 25.53 9.21 25.46 9.22L21.4 9.22C21.24 9.21 21.09 9.26 20.97 9.35C20.84 9.44 20.75 9.58 20.71 9.73L16.92 22.78L13.9 23.71L13.22 25.84L16.23 24.91L13.54 34.22L29.62 34.22C29.77 34.22 29.92 34.18 30.05 34.08C30.17 33.99 30.26 33.86 30.3 33.71L31.22 30.51L31.22 30.34C31.22 30.27 31.2 30.2 31.17 30.13C31.14 30.07 31.1 30.01 31.05 29.96C31 29.91 30.94 29.88 30.87 29.85C30.81 29.83 30.74 29.82 30.67 29.82L20.16 29.82Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

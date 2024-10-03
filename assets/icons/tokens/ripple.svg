@@ -1,0 +1,14 @@
+<svg width="44.444336" height="44.444336" viewBox="0 0 44.4443 44.4443" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip6382_2778">
+			<rect id="XRP Symbol" rx="8.934545" width="44.313530" height="44.313530" transform="translate(0.065456 0.065456)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="XRP Symbol" rx="8.934545" width="44.313530" height="44.313530" transform="translate(0.065456 0.065456)" fill="#262C32" fill-opacity="1.000000"/>
+	<g clip-path="url(#clip6382_2778)">
+		<path id="XRP" d="M30.69 12.22L34.15 12.22L26.93 19.41C24.32 22.02 20.08 22.02 17.47 19.41L10.25 12.22L13.71 12.22L19.2 17.69C20.82 19.32 23.5 19.33 25.15 17.74C25.17 17.72 25.19 17.7 25.2 17.69L30.69 12.22ZM13.68 32.22L10.22 32.22L17.49 24.98C20.1 22.37 24.33 22.37 26.95 24.98L34.22 32.22L30.75 32.22L25.23 26.72C23.61 25.09 20.93 25.07 19.28 26.67C19.27 26.68 19.25 26.7 19.23 26.72L13.68 32.22Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

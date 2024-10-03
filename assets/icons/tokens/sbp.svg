@@ -1,0 +1,21 @@
+<svg width="44.444336" height="44.444336" viewBox="0 0 44.4443 44.4443" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip6388_473">
+			<rect id="Polygon Symbol" rx="8.934545" width="44.313530" height="44.313530" transform="translate(0.065456 0.065456)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Polygon Symbol" rx="8.934545" width="44.313530" height="44.313530" transform="translate(0.065456 0.065456)" fill="#363636" fill-opacity="1.000000"/>
+	<g clip-path="url(#clip6388_473)">
+		<path id="Vector" d="M9.8 13.89L13.53 20.52L13.53 24.57L9.8 31.19L9.8 13.89Z" fill="#5B57A2" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M24.11 18.11L27.6 15.98L34.74 15.97L24.11 22.46L24.11 18.11Z" fill="#D90751" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M24.09 13.85L24.11 22.63L20.37 20.35L20.37 7.22L24.09 13.85Z" fill="#FAB718" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M34.74 15.97L27.6 15.98L24.09 13.85L20.37 7.22L34.74 15.97Z" fill="#ED6F26" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M24.11 31.23L24.11 26.97L20.37 24.72L20.37 37.86L24.11 31.23Z" fill="#63B22F" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M27.59 29.11L13.52 20.52L9.8 13.89L34.73 29.11L27.59 29.11Z" fill="#1487C9" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M20.37 37.86L24.11 31.23L27.59 29.11L34.73 29.11L20.37 37.86Z" fill="#017F36" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M9.8 31.19L20.4 24.72L16.84 22.55L13.53 24.57L9.8 31.19Z" fill="#984995" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
