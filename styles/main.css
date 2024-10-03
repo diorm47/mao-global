@@ -26,6 +26,11 @@ button {
   max-width: 1392px;
   margin: 0 auto;
 }
+.container_s {
+  width: 100%;
+  max-width: 911px;
+  margin: 0 auto;
+}
 
 /* nav */
 nav {
