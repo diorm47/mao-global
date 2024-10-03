@@ -1,0 +1,225 @@
+@import url(./main.css);
+
+body {
+  background: #fafafc;
+}
+
+.services_header {
+  padding: 78px 0 89px;
+  display: flex;
+  align-items: end;
+  gap: 20px;
+  justify-content: space-between;
+}
+.services_header .block_title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 37px;
+  max-width: 430px;
+}
+.services_header_text p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  max-width: 800px;
+}
+.services_img img {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.services_titles {
+  border-bottom: 0.5px solid rgb(214, 214, 214);
+  padding: 24px 0;
+}
+
+.services_titles .container {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
+.services_titles p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.services_titles .container div,
+.services_card_left {
+  width: 17%;
+}
+.services_titles .container p:nth-child(2),
+.services_card_center {
+  width: 52%;
+}
+.services_titles .container p:nth-child(3),
+.services_card_right {
+  width: 31%;
+}
+
+.services_card {
+  padding-top: 20px;
+  display: flex;
+  align-items: start;
+  padding-bottom: 120px;
+}
+
+.services_card_left h4 {
+  color: rgb(36, 36, 36);
+  font-family: Cygre Medium;
+  font-size: 72px;
+  font-weight: 500;
+
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.services_card_title h3 {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 45px;
+}
+
+.services_card_right .services_card_title {
+  visibility: hidden;
+}
+.services_card_text p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 70px;
+}
+
+.user {
+  border: 0.5px solid rgb(228, 226, 225);
+  border-radius: 15px;
+  width: 312px;
+  height: 297px;
+  background: rgb(241, 241, 241);
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.user img {
+  width: 94px;
+  height: 94px;
+}
+.user p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 25px 0 7px;
+}
+
+.user span {
+  color: rgb(133, 133, 133);
+  font-family: Cygre;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.services_card_center_content {
+  max-width: 600px;
+}
+.services_card_right_item {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 16px;
+}
+.services_card_right_item p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.services_card {
+  border-top: 0.5px solid rgb(214, 214, 214);
+}
+.services_card:first-child {
+  border: none;
+}
+
+.inn_transports {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+.inn_transport_card {
+  box-sizing: border-box;
+
+  border-radius: 12px;
+  width: 136px;
+  height: 137px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  flex-direction: column;
+  border-radius: 12px;
+
+  background: rgb(241, 241, 241);
+}
+
+.inn_transport_card p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.servic_comps {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.asdf {
+  color: rgb(36, 36, 36);
+  font-family: Cygre Medium;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 30px;
+  cursor: pointer;
+}
