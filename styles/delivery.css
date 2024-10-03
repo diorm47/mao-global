@@ -1,0 +1,185 @@
+@import url(./main.css);
+
+body {
+  background: #fafafc;
+}
+
+.header_text p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 77px 0 52px;
+}
+.delivery_img {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.delivery_img img {
+  width: 100%;
+
+  margin-bottom: 83px;
+}
+.logistics_title {
+  margin-bottom: 33px;
+}
+.logistics {
+  padding-bottom: 100px;
+}
+.logistics_title h4 {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.logistics_title p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.logistics_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 21px;
+  padding: 12px;
+  gap: 10px;
+  background: rgb(245, 245, 245);
+  margin-bottom: 15px;
+}
+
+.logistics_card {
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+}
+
+.logistics_top .logistics_card {
+  width: 50%;
+  height: 237px;
+}
+
+.logistics_card p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.logistics_card span {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.logistics_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px;
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+.logistics_bottom .logistics_card {
+  width: 25%;
+  height: 349px;
+}
+.logistics_bottom .logistics_card:last-child {
+  width: 51%;
+}
+.optimization {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background: #fff;
+}
+.optimizin_cards {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(234, 234, 234);
+  border-radius: 21px;
+  padding: 26px 11px 0;
+  margin-top: 46px;
+  margin-bottom: 105px;
+}
+
+.optimizin_cards .t_14_g {
+  padding-left: 25px;
+  margin-bottom: 12px;
+}
+
+.optimizin_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 25px;
+  border-bottom: 0.5px solid rgb(234, 234, 234);
+}
+
+.optimizin_card_left div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 8px;
+}
+
+.optimizin_card_left .t_16_g {
+  width: 94%;
+}
+.optimizin_card_num {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(234, 234, 234);
+  border-radius: 22px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgb(250, 250, 252);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.optimizin_card_num p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 18px;
+  font-weight: 600;
+
+  letter-spacing: 0%;
+  text-align: center;
+}
+.optimizin_card_left {
+  width: 94%;
+}
+
+.dfaic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 38px;
+}

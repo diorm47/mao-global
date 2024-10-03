@@ -32,6 +32,29 @@ button {
   margin: 0 auto;
 }
 
+.t_14_g,
+.t_16_g {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 14px;
+  font-weight: 500;
+line-height: 140%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.t_16_g {
+  font-size: 16px;
+}
+.t_18_d {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 140%;
+
+  letter-spacing: 0%;
+  text-align: left;
+}
 /* nav */
 nav {
   border-radius: 15px;
