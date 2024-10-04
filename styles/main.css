@@ -369,6 +369,9 @@ footer {
   letter-spacing: 0%;
   text-align: left;
 }
+.footer_bottom_wrapper a p:hover {
+  text-decoration: underline;
+}
 
 .footer_bottom_wrapper {
   display: flex;
@@ -548,5 +551,49 @@ footer {
 }
 
 .have_questions_block .btn_grey {
-    padding: 0 46px;
+  padding: 0 46px;
+}
+.nav_log_dash a:hover {
+  text-decoration: underline;
+}
+.opacity,
+.phone_num,
+.contactUs_btn,
+.nav_bottom_socials a,
+.red_btn,
+.readmore_btn,
+.discover_arrow,
+.about_promo_video_play,
+.about_promo_act_btn,
+.btn_send,
+.btn_grey,
+.global_block_btns button,
+.empl_arrow {
+  transition: all 0.4s ease;
+}
+.opacity:hover,
+.phone_num:hover,
+.contactUs_btn:hover,
+.nav_bottom_socials a:hover,
+.discover_arrow:hover,
+.about_promo_video_play:hover,
+.global_block_btns button:hover,
+.empl_arrow:hover {
+  transition: all 0.4s ease;
+  opacity: 0.6;
+}
+
+.red_btn:hover,
+.btn_send:hover {
+  transition: all 0.4s ease;
+  background: rgb(171, 33, 14);
+}
+.readmore_btn:hover,
+.btn_grey:hover {
+  transition: all 0.4s ease;
+  background: #bab8b8;
+}
+.about_promo_act_btn:hover {
+  transition: all 0.4s ease;
+  background: #5d5959;
 }

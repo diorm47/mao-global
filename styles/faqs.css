@@ -19,6 +19,10 @@ body {
   letter-spacing: 0%;
   text-align: left;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+.faqs_left p:hover {
+  color: rgb(36, 36, 36) !important;
 }
 
 .faqs_left {

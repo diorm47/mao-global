@@ -523,6 +523,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.4s ease;
+}
+.career_rank_menu_item:hover p {
+  color: rgb(222, 36, 8);
+
 }
 .career_rank_menu_item img {
   display: none;
