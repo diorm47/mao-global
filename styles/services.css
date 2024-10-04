@@ -223,3 +223,51 @@ body {
   margin-top: 30px;
   cursor: pointer;
 }
+
+
+@media only screen and (max-width: 1050px) {
+  .services_header{
+    flex-direction: column;
+    align-items: start;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .services_titles {
+    display: none;
+  }
+  .services_card {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .services_card_left, .services_card_center, .services_card_right {
+    width: 100%;
+  }
+  .services_card_title h3, .services_card_text p {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .services_header {
+    padding: 30px 0 30px;
+  }
+  .services_header .block_title h2 {
+    font-size: 25px;
+    max-width: 100%;
+  }
+  .services_header_text p {
+    font-size: 16px;
+  }
+  .services_card_right {
+    padding-top: 30px;
+  }
+  .services_card_right .services_card_title {
+    display: none;
+  }
+  .user {
+    width: 100%;
+    padding: 20px;
+  }
+}

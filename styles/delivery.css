@@ -4,7 +4,6 @@ body {
   background: #fafafc;
 }
 
-
 .delivery_img {
   max-width: 1920px;
   margin: 0 auto;
@@ -173,4 +172,46 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 38px;
+}
+
+@media only screen and (max-width: 500px) {
+  .header_text p {
+    margin: 30px 0;
+    font-size: 16px;
+  }
+  .delivery_img img {
+    margin-bottom: 20px;
+  }
+  .logistics_top,
+  .logistics_bottom {
+    flex-direction: column;
+  }
+  .logistics_top .logistics_card,
+  .logistics_bottom .logistics_card,
+  .logistics_bottom .logistics_card:last-child {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+  .logistics {
+    padding-bottom: 40px;
+  }
+  .optimization {
+    padding: 30px 0 20px;
+  }
+  .optimizin_cards {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .optimizin_card {
+    padding: 15px;
+  }
+  .center p {
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .dfaic {
+    margin-top: 20px;
+  }
 }

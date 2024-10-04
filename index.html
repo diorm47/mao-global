@@ -798,6 +798,24 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
+          breakpoints: {
+            350: {
+              slidesPerView: 1, // 2 slides per view for screens 640px and larger
+             
+            },
+            640: {
+              slidesPerView: 2, // 2 slides per view for screens 640px and larger
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3, // 3 slides per view for screens 768px and larger
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3, // 4 slides per view for screens 1024px and larger
+              spaceBetween: 48,
+            },
+          },
         });
       });
     </script>

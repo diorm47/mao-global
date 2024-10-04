@@ -146,3 +146,40 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
+@media only screen and (max-width: 500px) {
+  .contacts_container {
+    padding-top: 40px;
+  }
+  .contacts_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts_form {
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .contacts_form_inputs {
+    flex-direction: column;
+  }
+  .contacts_form_inputs .contacts_form_input {
+    width: 100%;
+  }
+  .contacts_form h3 {
+    margin-bottom: 30px;
+  }
+  .contacts_card {
+    padding: 20px;
+    height: auto;
+    gap: 20px;
+  }
+  .contacts_card_tg .contacts_card_bottom {
+    flex-direction: column;
+    align-items: start;
+  }
+  .have_questions_block {
+    margin: 20px auto 30px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

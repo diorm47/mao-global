@@ -19,11 +19,13 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+  height: 100%;
 }
 
 .right_sh {
   position: absolute;
   right: 0;
+  height: 100%;
   top: 0;
 }
 
@@ -234,4 +236,66 @@ body {
   padding: 0 22px;
   font-size: 14px;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 500px) {
+  .partners_pr_card {
+    width: 100%;
+    padding: 20px;
+  }
+  .left_sh,
+  .right_sh {
+    display: none;
+  }
+  .header_text p {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+  .partners_list {
+    gap: 10px;
+    margin: 30px 0;
+  }
+  .partners_list img {
+    max-width: 80px;
+  }
+  .partners_pr_cards {
+    gap: 20px;
+  }
+  .strateg_btns {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .str_line {
+    margin: 30px 0 20px;
+  }
+  .strateg_cont h2 {
+    font-size: 24px;
+  }
+  .advantages {
+    padding: 30px 0 40px;
+  }
+  .advantages_cards {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .advantages_card {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+  }
+  .advantages_card h3 {
+    margin: 0;
+    font-size: 25px;
+    line-height: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .have_questions_block {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+  .strateg_wrapper {
+    padding: 20px 10px 40px;
+  }
 }

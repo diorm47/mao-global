@@ -12,7 +12,10 @@ body {
   border-top: 0.5px solid rgb(228, 226, 225);
   padding-top: 53px;
 }
-
+.about_wrapper {
+  width: 100%;
+  overflow: hidden;
+}
 .about_header_text p {
   color: rgb(133, 133, 133);
   font-family: Cygre Medium;
@@ -389,7 +392,8 @@ body {
   width: 100%;
   background: url(../assets/images/get-started-bg.svg);
   background-size: cover;
-  margin: 0 auto 28px;border-radius: 15px;
+  margin: 0 auto 28px;
+  border-radius: 15px;
   padding: 65px 0 61px;
   display: flex;
   align-items: center;
@@ -413,6 +417,91 @@ body {
 }
 
 .get_started_card p {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 950px) {
+  .about_header,
+  .about_innovators {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about_header {
+    margin-top: 30px;
+    padding-top: 20px;
+  }
+  .about_header_text p {
+    font-size: 16px;
+  }
+  .about_media {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about_media_title {
+    width: 100%;
+  }
+  .about_media_title p {
     text-align: center;
-    margin-bottom: 24px;
+  }
+  .about_promo_video {
+    height: 350px;
+  }
+  .a_in_vector {
+    display: none;
+  }
+  .inn_transports {
+    padding-top: 30px;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .in_leaders {
+    padding-bottom: 50px;
+  }
+  .advantage_wrapper {
+    padding-top: 30px;
+  }
+  .advantage_block_card {
+    flex-direction: column;
+    align-items: start;
+    gap: 14px;
+    padding: 15px;
+  }
+  .advantage_block_cards {
+    margin-top: 30px;
+  }
+  .advantage_block {
+    padding-bottom: 30px;
+    border-radius: 20px;
+  }
+  .who_we_title {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .weare_cards .container_s {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .weare_card {
+    width: 100%;
+  }
+  .registry_cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sertificat {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .get_started_card h3 {
+    font-size: 30px;
+    line-height: 140%;
+    margin-bottom: 16px;
+  }
+  .get_started_card {
+    padding: 30px 10px;
+  }
 }

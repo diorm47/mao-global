@@ -127,7 +127,34 @@ body {
 }
 
 .testimonials_more {
-    width: 100%;
-    max-width: 768px;
-    margin: 40px auto 120px;
+  width: 100%;
+  max-width: 768px;
+  margin: 40px auto 120px;
+}
+
+@media only screen and (max-width: 500px) {
+  .main_testimonial_card_content {
+    height: auto;
+    padding: 20px;
+  }
+  .main_testimonial_card_content p {
+    font-size: 15px;
+    line-height: 140%;
+  }
+  .testimonials_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .testimonials_cards {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .testimonials_more {
+    margin: 20px auto 30px;
+    padding-left: 10px;
+  }
+  .testimonial_card {
+    padding: 20px;
+  }
 }

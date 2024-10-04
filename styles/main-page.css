@@ -112,8 +112,6 @@ header {
   color: rgb(144, 144, 144);
 }
 
-
-
 .about_section {
   padding-bottom: 120px;
   display: flex;
@@ -458,8 +456,6 @@ header {
   margin-bottom: 50px;
 }
 
-
-
 .reviews {
   position: relative;
   overflow: hidden;
@@ -601,4 +597,172 @@ header {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+@media only screen and (max-width: 960px) {
+  .about_section {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about_section_left,
+  .about_section_right {
+    width: 100%;
+  }
+  .readmore_btn {
+    margin-top: 20px;
+  }
+  .promo_video_content {
+    height: 250px;
+    top: auto;
+  }
+  .reviews_top {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .reviews_details {
+    align-items: start;
+    gap: 20px;
+  }
+  .reviews_details_text {
+    margin: 0;
+  }
+  .reviews_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+  }
+  .discover_more_top {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+  .media_list {
+    position: static;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .media_list p br {
+    display: none;
+  }
+  .media_list_wrapper {
+    width: 100%;
+  }
+  .companies_list img {
+    transform: scale(0.6);
+  }
+
+  .companies {
+    padding-bottom: 20px;
+  }
+  .companies_list {
+    flex-wrap: wrap;
+    margin-bottom: 20px !important;
+  }
+  .parners_list {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header_content {
+    padding-top: 40px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  header {
+    padding: 20px 20px 40px;
+  }
+  .header_content h1 {
+    font-size: 30px;
+    line-height: 140%;
+  }
+  .header_content p {
+    font-size: 15px;
+    margin-top: 0;
+  }
+  .red_btn {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+  .parners_list {
+    padding: 20px 0;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .promo_video {
+    flex-direction: column;
+  } 
+  .promo_video_img  {
+    width: 100%;
+  }
+  .promo_video_content {
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .promo_video_content_text h2 {
+    font-size: 30px;
+    line-height: 100%;
+  }
+  .benefits_cards_list {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .benefits_card {
+    width: 100%;
+  }
+  .benefits {
+    padding: 40px 0;
+  }
+  .benefits_cards_bottom {
+    flex-direction: column;
+  }
+  .cre_acc {
+    width: 100%;
+    padding: 20px;
+  }
+  .reviews_container {
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+  }
+  .about_section_right {
+    padding: 20px;
+  }
+  .about_section_right_content {
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: flex-end;
+    align-items: start;
+    gap: 20px;
+  }
+  .about_section_right_stats {
+    max-width: 100%;
+  }
+  .about_section_right_title h3 {
+    font-size: 24px;
+  }
+  .promo_video_content_text p {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .media_list_wrapper {
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+  }
+  .media_list {
+    width: 100%;
+  }
+  .comp_rightgr, .comp_leftgr {
+    height: 100%;
+    z-index: 1;
+  }
+
 }
