@@ -137,6 +137,10 @@ body {
     height: auto;
     padding: 20px;
   }
+  .testimonial_author {
+    padding: 0;
+    align-items: start;
+  }
   .main_testimonial_card_content p {
     font-size: 15px;
     line-height: 140%;
