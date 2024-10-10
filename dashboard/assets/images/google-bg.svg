@@ -1,0 +1,49 @@
+<svg width="434.000000" height="79.000000" viewBox="0 0 434 79" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_6411_2090_dd" x="18.259766" y="14.259644" width="54.541260" height="54.541138" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feMorphology radius="8" in="" result="BackgroundImageFix"/>
+			<feOffset dx="0" dy="0"/>
+			<feGaussianBlur stdDeviation="0"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0.2902 0 0 0 0 1 0 0 0 0 0.31765 0 0 0 0.3 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+		<clipPath id="clip6411_2091">
+			<rect id="shield-zap" rx="-1.333333" width="17.719807" height="17.719807" transform="translate(33.884602 36.590412) rotate(-19.203873)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip6411_2090">
+			<rect id="Frame 385" rx="18.545366" width="37.090744" height="37.090733" transform="translate(21.719999 30.393827) rotate(-19.203873)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient x1="82.750031" y1="4.000003" x2="82.750031" y2="79.000000" id="paint_linear_6411_2057_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#22C55E"/>
+			<stop offset="1.000000" stop-color="#105F2D" stop-opacity="0.000000"/>
+		</linearGradient>
+	</defs>
+	<mask id="mask6411_2057" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="434.000000" height="79.000000">
+		<rect id="Rectangle 3760" rx="15.000000" width="434.000000" height="79.000000" fill="url(#paint_linear_6411_2057_0)" fill-opacity="1.000000"/>
+		<rect id="Rectangle 3760" x="0.250000" y="0.250000" rx="15.000000" width="433.500000" height="78.500000" stroke="#E4E2E1" stroke-opacity="0" stroke-width="0.500000"/>
+	</mask>
+	<g mask="url(#mask6411_2057)">
+		<path id="Vector" d="M100.69 42.8C100.69 38.73 100.33 34.8 99.65 31.04L45.49 31.04L45.49 53.28L76.44 53.28C75.11 60.47 71.06 66.56 64.97 70.64L64.97 85.06L83.55 85.06C94.42 75.05 100.69 60.31 100.69 42.8Z" fill="#4285F4" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M45.5 98.99C61.02 98.99 74.04 93.84 83.55 85.06L64.97 70.63C59.82 74.08 53.23 76.12 45.5 76.12C30.52 76.12 17.84 66.01 13.32 52.42L-5.89 52.42L-5.89 67.31C3.57 86.11 23.02 98.99 45.5 98.99Z" fill="#34A853" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M13.32 52.42C12.17 48.97 11.52 45.29 11.52 41.5C11.52 37.71 12.17 34.02 13.32 30.57L13.32 15.67L-5.89 15.67C-9.91 23.69 -12.01 32.53 -12 41.5C-12 50.77 -9.78 59.56 -5.89 67.32L13.32 52.42Z" fill="#FBBC05" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M45.5 6.86C53.94 6.86 61.52 9.77 67.48 15.46L83.97 -1.03C74.01 -10.31 60.99 -16 45.5 -16C23.02 -16 3.57 -3.12 -5.89 15.67L13.32 30.57C17.84 16.98 30.52 6.86 45.5 6.86Z" fill="#EA4335" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+	<g mask="url(#mask6411_2057)">
+		<g filter="url(#filter_6411_2090_dd)">
+			<rect id="Frame 385" rx="18.545366" width="37.090744" height="37.090733" transform="translate(21.719999 30.393827) rotate(-19.203873)" fill="#22C55E" fill-opacity="1.000000"/>
+			<g clip-path="url(#clip6411_2090)">
+				<rect id="shield-zap" rx="-1.333333" width="17.719807" height="17.719807" transform="translate(33.884602 36.590412) rotate(-19.203873)" fill="#FFFFFF" fill-opacity="0"/>
+				<g clip-path="url(#clip6411_2091)">
+					<path id="Icon" d="M51.94 39.29L50.61 35.45C50.38 34.81 50.27 34.49 50.07 34.25C49.89 34.04 49.67 33.88 49.41 33.77C49.12 33.65 48.78 33.65 48.1 33.63L43.24 33.52C43.05 33.51 42.96 33.51 42.87 33.53C42.79 33.54 42.71 33.57 42.64 33.61C42.56 33.65 42.48 33.71 42.34 33.83L38.6 36.94C38.08 37.37 37.82 37.59 37.66 37.86C37.53 38.1 37.45 38.37 37.45 38.65C37.44 38.96 37.55 39.28 37.77 39.92L39.11 43.76C40.48 47.7 45.77 49.07 47.65 49.43C47.87 49.47 47.97 49.5 48.11 49.48C48.21 49.47 48.35 49.42 48.44 49.36C48.56 49.29 48.63 49.21 48.77 49.04C50.02 47.59 53.31 43.23 51.94 39.29ZM45.07 37.64L43.5 40.88L47.27 41.37L45.7 44.61" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
