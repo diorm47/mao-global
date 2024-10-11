@@ -1,0 +1,84 @@
+@import url(./dashboard-main.css);
+
+.withdrawal_block .make_payment_block_part:last-child {
+  width: 66%;
+}
+.withdrawal_block .send_btn3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.withdrawal_block .amount_card_value {
+  justify-content: start;
+  gap: 6px;
+}
+
+.make_payment_block_part_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.make_payment_block_part_title span {
+  color: rgb(130, 130, 130);
+  font-family: Cygre;
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+
+.withd_amount {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(234, 234, 234);
+  border-radius: 9px;
+  padding: 11px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.withd_amount input {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  height: 100%;
+}
+.withd_amount div {
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 7px;
+  padding: 8px 7px 8px 7px;
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 0%;
+  text-align: left;
+  background: rgb(255, 255, 255);
+}
+
+.transaction_table h4 {
+  color: rgb(133, 133, 133);
+  font-family: Cygre;
+  font-size: 16px;
+  font-weight: 400;
+
+  letter-spacing: 0%;
+  text-align: left;
+}
+.trans_stat_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 31px;
+}
+.menu {
+  cursor: pointer;
+}

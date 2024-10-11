@@ -21,8 +21,12 @@
       href="../assets/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="../assets/favicon/site.webmanifest" />
-    <title>Dashboard</title>
+    <title>History of Operations</title>
     <link rel="stylesheet" href="./styles/dashboard.css" />
+
+    <link rel="stylesheet" href="../styles/investments.css" />
+    <link rel="stylesheet" href="./styles/withdrawal.css" />
+    <link rel="stylesheet" href="./styles/topup.css" />
   </head>
   <body>
     <div class="dashboard_nav">
@@ -72,7 +76,7 @@
         </div>
         <div class="nav_bottom">
           <div class="nav_bottom_left_links">
-            <a href="./dashboard.html" class="active_nav_link">
+            <a href="./dashboard.html">
               <svg
                 width="15.500000"
                 height="15.500000"
@@ -251,7 +255,7 @@
 
               <p>My Career</p>
             </a>
-            <a href="./operations.html">
+            <a href="./operations.html" class="active_nav_link">
               <svg
                 width="15.500000"
                 height="15.500000"
@@ -388,14 +392,14 @@
         <div class="pages_navigation_wrapper container">
           <a href="./dashboard.html"> <button class="btn_grey">Home</button></a>
           <img src="./assets/icons/arrow-right.svg" alt="" />
-          <p>Dashboard</p>
+          <p>Operations</p>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="pages_title">
         <div class="pages_title_wrapper">
-          <h3>Dashboard</h3>
+          <h3>History of Operations</h3>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
         <button class="btn_grey open_depobtn">
@@ -430,360 +434,122 @@
           Open Deposit
         </button>
       </div>
-      <div class="dashboard_wrapper">
-        <div class="left_dashb">
-          <div class="main_block">
-            <div class="main_block_title">
-              <h4>Available Balance</h4>
-            </div>
-            <div class="main_block_content balance_block">
-              <div class="balance_block_cur">
-                <img src="./assets/icons/us.svg" alt="" />
-                <p>US Dollar</p>
-              </div>
-              <div class="balance_block_balance">
-                <h4>$51,920.23</h4>
-                <img src="./assets/icons/eye.svg" alt="" />
-              </div>
-              <div class="balance_block_actions">
-                <button class="btn_grey">
-                  <svg
-                    width="15.500000"
-                    height="15.500000"
-                    viewBox="0 0 15.5 15.5"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <desc>Created with Pixso.</desc>
-                    <defs />
-                    <path
-                      id="Vector"
-                      d="M9.72 9.72L5.77 5.77M5.77 9.23L5.77 5.77L9.23 5.77"
-                      stroke="#FFFFFF"
-                      stroke-opacity="1.000000"
-                      stroke-width="1.500000"
-                      stroke-linejoin="round"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      id="Vector"
-                      d="M14.75 7.75C14.75 3.88 11.61 0.75 7.75 0.75C3.88 0.75 0.75 3.88 0.75 7.75C0.75 11.61 3.88 14.75 7.75 14.75C11.61 14.75 14.75 11.61 14.75 7.75Z"
-                      stroke="#FFFFFF"
-                      stroke-opacity="1.000000"
-                      stroke-width="1.500000"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  Top Up
-                </button>
-                <button class="btn_grey">
-                  <svg
-                    width="15.500000"
-                    height="15.500000"
-                    viewBox="0 0 15.5 15.5"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <desc>Created with Pixso.</desc>
-                    <defs />
-                    <path
-                      id="Vector"
-                      d="M5.77 5.77L9.72 9.72M9.72 6.26L9.72 9.72L6.26 9.72"
-                      stroke="#242424"
-                      stroke-opacity="1.000000"
-                      stroke-width="1.500000"
-                      stroke-linejoin="round"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      id="Vector"
-                      d="M0.75 7.75C0.75 11.61 3.88 14.75 7.75 14.75C11.61 14.75 14.75 11.61 14.75 7.75C14.75 3.88 11.61 0.75 7.75 0.75C3.88 0.75 0.75 3.88 0.75 7.75Z"
-                      stroke="#242424"
-                      stroke-opacity="1.000000"
-                      stroke-width="1.500000"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
 
-                  Withdraw
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="main_block cr_dp_bl">
-            <p>
-              Lorem ipsum dolor sit amet <br />
-              consectetur. <span>Dignissim quam</span> risus <br />
-              volutpat convallis.
-            </p>
-            <button class="btn_grey red_btn">Create Deposit</button>
-          </div>
-          <div class="main_block">
-            <div class="main_block_title">
-              <h4>News</h4>
-            </div>
-            <div class="news_desc">
-              <div class="news_desc_img">
-                <img src="./assets/images/news.png" alt="" />
-              </div>
-              <div class="news_desc_text">
-                <p>Jule 22, 2024</p>
-                <span
-                  >Lorem ipsum dolor sit amet consectetur. Lorem purus sed
-                  malesuada eat auctor mi.</span
-                >
-              </div>
-              <div class="news_card_desc_auth">
-                <div class="news_author">
-                  <img src="../assets/icons/mao-logo.svg" alt="" />
-                  <p>Team Mao</p>
-                </div>
-                <button class="btn_grey" style="margin: 0">Read</button>
-              </div>
-            </div>
-          </div>
+      <div class="main_block transactions_table">
+        <div class="main_block_title">
+          <h4>Transactions</h4>
         </div>
-        <div class="right_dashb">
-          <div class="right_dashb_top">
-            <div class="right_dashb_top_left">
-              <div class="main_block">
-                <div class="main_block_title">
-                  <h4>Total Amount Deposit</h4>
-                  <button class="btn_grey grey_btn">
-                    <img src="./assets/icons/face-id 1.svg" alt="" />
-                    Верификация
-                  </button>
-                </div>
-                <div class="main_block_content limit_block">
-                  <img
-                    class="limit_img"
-                    src="./assets/icons/limit.svg"
-                    alt=""
-                  />
-                  <h4>$304,541.50</h4>
-                  <p>
-                    Пройдите <span>верификацию</span>, для <br />
-                    увеличения лимита в $500.000
-                  </p>
-                </div>
-              </div>
-              <div class="main_block stats_block_wrapper">
-                <div class="main_block_title">
-                  <h4>Statistics</h4>
-                </div>
-                <div class="stats_block">
-                  <img src="./assets/images/truck.png" alt="" />
-                  <div class="stats_block_list">
-                    <div>
-                      <h4>Successfully Completed</h4>
-                      <p>42</p>
-                    </div>
-                    <div>
-                      <h4>In Delivery</h4>
-                      <p>12</p>
-                    </div>
-                    <div>
-                      <h4>All Orders</h4>
-                      <p>647</p>
-                    </div>
+        <div class="main_block_content transaction_table">
+          <table>
+            <thead>
+              <tr>
+                <td>Date</td>
+                <td>Type</td>
+
+                <td>Amount</td>
+                <td>Status</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sep 27, 2024 <span>10:22:49</span></td>
+                <td><h4>Deposit</h4></td>
+                <td>
+                  <div class="amount_val">
+                    <img src="../assets/icons/usdt.svg" alt="" />
+                    <p>100 USDT</p>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="right_dashb_top_right">
-              <div class="google_auth">
-                <div>
-                  <p>Google Authenticator</p>
-                  <span>Set it up for your safety</span>
-                </div>
-                <button>Activate 2FA</button>
-              </div>
-              <div class="main_block">
-                <div class="main_block_title">
-                  <h4>Your Sessions</h4>
-                </div>
-                <div class="main_block_content sessions_list">
-                  <div class="session_item">
-                    <div class="session_item_brow">
-                      <img src="./assets/icons/chrome.png" alt="" />
+                </td>
+                <td>
+                  <div class="trans_stat_wrapper">
+                    <div class="trans_stat trans_stat_suc">
+                      <img src="./assets/icons/completed.svg" alt="" />
+                      <p>Completed</p>
                     </div>
-                    <div class="session_item_desc">
-                      <div class="session_item_desc_title">
-                        <h4>Chrome on Desktop</h4>
-                        <img src="./assets/icons/active.svg" alt="" />
-                      </div>
-                      <p>51.215.15.84</p>
-                      <div class="session_date">Signed in May 24, 2024</div>
-                    </div>
+                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
                   </div>
-                  <div class="session_item">
-                    <div class="session_item_brow">
-                      <img src="./assets/icons/chrome.png" alt="" />
-                    </div>
-                    <div class="session_item_desc">
-                      <div class="session_item_desc_title">
-                        <h4>Chrome on Desktop</h4>
-                      </div>
-                      <p>51.215.15.84</p>
-                      <div class="session_date">Signed in May 24, 2024</div>
-                    </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Sep 27, 2024 <span>10:22:49</span></td>
+                <td><h4>Profit</h4></td>
+                <td>
+                  <div class="amount_val">
+                    <img src="../assets/icons/usdt.svg" alt="" />
+                    <p>100 USDT</p>
                   </div>
-                  <div class="session_item">
-                    <div class="session_item_brow">
-                      <img src="./assets/icons/chrome.png" alt="" />
+                </td>
+                <td>
+                  <div class="trans_stat_wrapper">
+                    <div class="trans_stat trans_stat_rej">
+                      <img src="./assets/icons/rejected.svg" alt="" />
+                      <p>Rejected</p>
                     </div>
-                    <div class="session_item_desc">
-                      <div class="session_item_desc_title">
-                        <h4>Chrome on Desktop</h4>
-                      </div>
-                      <p>51.215.15.84</p>
-                      <div class="session_date">Signed in May 24, 2024</div>
+                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Sep 27, 2024 <span>10:22:49</span></td>
+                <td><h4>Withdrawal</h4></td>
+                <td>
+                  <div class="amount_val">
+                    <img src="../assets/icons/usdt.svg" alt="" />
+                    <p>100 USDT</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="trans_stat_wrapper">
+                    <div class="trans_stat trans_stat_appr">
+                      <img src="./assets/icons/approved.svg" alt="" />
+                      <p>Approved</p>
                     </div>
+                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="dash_plan" style="margin-bottom: 48px;">
-            <div class="dash_plan_top">
-              <div class="dash_plan_top_left">
-                <div class="dash_plan_status">
-                  <img src="./assets/icons/rocket.svg" alt="" />
-                  <div>
-                    <p>Активный</p>
-                    <span>До начисления 23:54:00</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Sep 27, 2024 <span>10:22:49</span></td>
+                <td><h4>Referral commission</h4></td>
+                <td>
+                  <div class="amount_val">
+                    <img src="../assets/icons/usdt.svg" alt="" />
+                    <p>100 USDT</p>
                   </div>
-                </div>
-                <div class="plan_date">
-                  <p>План на</p>
-                  <div class="plan_date_time">
-                    <h5>1 месяц</h5>
-                    <div class="session_date">Ежедневный</div>
-                  </div>
-                </div>
-              </div>
-              <div class="dash_plan_top_rigth">
-                <div class="dash_plan_top_rigth_blocks">
-                  <div class="dash_plan_top_rigth_card">
-                    <div>
-                      <p>Amount Charges:</p>
-                      <span>$695</span>
+                </td>
+                <td>
+                  <div class="trans_stat_wrapper">
+                    <div class="trans_stat trans_stat_inp">
+                      <img src="./assets/icons/inprogress.svg" alt="" />
+                      <p>In progress</p>
                     </div>
+                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
                   </div>
-                  <div class="dash_plan_top_rigth_card">
-                    <div>
-                      <p>Total Received:</p>
-                      <span>$120</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Sep 27, 2024 <span>10:22:49</span></td>
+                <td><h4>Deposit</h4></td>
+                <td>
+                  <div class="amount_val">
+                    <img src="../assets/icons/usdt.svg" alt="" />
+                    <p>100 USDT</p>
+                  </div>
+                </td>
+                <td>
+                  <div class="trans_stat_wrapper">
+                    <div class="trans_stat trans_stat_pend">
+                      <img src="./assets/icons/pending.png" alt="" />
+                      <p>Pending</p>
                     </div>
+                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
+
                   </div>
-                </div>
-                <div
-                  class="dash_plan_top_rigth_card dash_plan_top_rigth_card_dates"
-                >
-                  <img src="./assets/icons/date-line.svg" alt="" />
-                  <div class="dash_plan_top_rigth_card_datas">
-                    <div>
-                      <p>Opening Date:</p>
-                      <span>Sep 27 2024 20:21</span>
-                    </div>
-                    <div>
-                      <p>Completion Date:</p>
-                      <span>Sep 27 2024 20:21</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="dash_plan_bottom">
-              <button class="btn_grey contract_btn">
-                <img src="./assets/icons/contract.svg" alt="" /> Contract
-              </button>
-              <div class="progress_block">
-                <div class="progress_block_title">
-                  <h5>Прогресс</h5>
-                  <div>64%</div>
-                </div>
-                <div class="progress_block_line">
-                  <div class="progress_block_value" style="width: 64%"></div>
-                </div>
-                <div class="progress_block_desc">
-                  <p>0 Дней</p>
-                  <p>30 Дней</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="dash_plan" > 
-            <div class="dash_plan_top">
-              <div class="dash_plan_top_left">
-                <div class="dash_plan_status">
-                  <img src="./assets/icons/rocket.svg" alt="" />
-                  <div>
-                    <p>Активный</p>
-                    <span>До начисления 23:54:00</span>
-                  </div>
-                </div>
-                <div class="plan_date">
-                  <p>План на</p>
-                  <div class="plan_date_time">
-                    <h5>1 месяц</h5>
-                    <div class="session_date">Ежедневный</div>
-                  </div>
-                </div>
-              </div>
-              <div class="dash_plan_top_rigth">
-                <div class="dash_plan_top_rigth_blocks">
-                  <div class="dash_plan_top_rigth_card">
-                    <div>
-                      <p>Amount Charges:</p>
-                      <span>$695</span>
-                    </div>
-                  </div>
-                  <div class="dash_plan_top_rigth_card">
-                    <div>
-                      <p>Total Received:</p>
-                      <span>$120</span>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="dash_plan_top_rigth_card dash_plan_top_rigth_card_dates"
-                >
-                  <img src="./assets/icons/date-line.svg" alt="" />
-                  <div class="dash_plan_top_rigth_card_datas">
-                    <div>
-                      <p>Opening Date:</p>
-                      <span>Sep 27 2024 20:21</span>
-                    </div>
-                    <div>
-                      <p>Completion Date:</p>
-                      <span>Sep 27 2024 20:21</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="dash_plan_bottom">
-              <button class="btn_grey contract_btn">
-                <img src="./assets/icons/contract.svg" alt="" /> Contract
-              </button>
-              <div class="progress_block">
-                <div class="progress_block_title">
-                  <h5>Прогресс</h5>
-                  <div>64%</div>
-                </div>
-                <div class="progress_block_line">
-                  <div class="progress_block_value" style="width: 64%"></div>
-                </div>
-                <div class="progress_block_desc">
-                  <p>0 Дней</p>
-                  <p>30 Дней</p>
-                </div>
-              </div>
-            </div>
-          </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
