@@ -21,12 +21,8 @@
       href="../assets/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="../assets/favicon/site.webmanifest" />
-    <title>History of Operations</title>
-    <link rel="stylesheet" href="./styles/dashboard.css" />
-
-    <link rel="stylesheet" href="../styles/investments.css" />
-    <link rel="stylesheet" href="./styles/withdrawal.css" />
-    <link rel="stylesheet" href="./styles/topup.css" />
+    <title>Open Deposit</title>
+    <link rel="stylesheet" href="./styles/deposit.css" />
   </head>
   <body>
     <div class="dashboard_nav">
@@ -183,7 +179,7 @@
 
               <p>Withdrawal</p>
             </a>
-            <a href="./deposit.html">
+            <a href="./deposit.html" class="active_nav_link">
               <svg
                 width="15.500000"
                 height="15.500000"
@@ -255,7 +251,7 @@
 
               <p>My Career</p>
             </a>
-            <a href="./operations.html" class="active_nav_link">
+            <a href="./operations.html">
               <svg
                 width="15.500000"
                 height="15.500000"
@@ -340,7 +336,7 @@
 
               <p>Wallets</p>
             </a>
-            <a  href="./settings.html">
+            <a href="./settings.html">
               <svg
                 width="15.500732"
                 height="15.500610"
@@ -392,265 +388,18 @@
         <div class="pages_navigation_wrapper container">
           <a href="./dashboard.html"> <button class="btn_grey">Home</button></a>
           <img src="./assets/icons/arrow-right.svg" alt="" />
-          <p>Operations</p>
+          <p>Open Deposit</p>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="pages_title">
         <div class="pages_title_wrapper">
-          <h3>History of Operations</h3>
+          <h3>Open Deposit</h3>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
-        <button class="btn_grey open_depobtn">
-          <svg
-            width="15.500000"
-            height="15.500000"
-            viewBox="0 0 15.5 15.5"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <desc>Created with Pixso.</desc>
-            <defs />
-            <path
-              id="Vector"
-              d="M14.75 13C14.75 13.96 13.96 14.75 13 14.75L2.5 14.75C1.53 14.75 0.75 13.96 0.75 13L0.75 2.5C0.75 1.53 1.53 0.75 2.5 0.75L13 0.75C13.96 0.75 14.75 1.53 14.75 2.5L14.75 13Z"
-              stroke="#FFFFFF"
-              stroke-opacity="1.000000"
-              stroke-width="1.500000"
-              stroke-linejoin="round"
-            />
-            <path
-              id="Vector"
-              d="M7.75 5.12L7.75 0.75"
-              stroke="#FFFFFF"
-              stroke-opacity="1.000000"
-              stroke-width="1.500000"
-              stroke-linejoin="round"
-              stroke-linecap="round"
-            />
-          </svg>
-          Open Deposit
-        </button>
-      </div>
-
-      <div class="main_block transactions_table">
-        <div class="main_block_title">
-          <h4>Transactions</h4>
-        </div>
-        <div class="main_block_content transaction_table">
-          <table>
-            <thead>
-              <tr>
-                <td>Date</td>
-                <td>Type</td>
-
-                <td>Amount</td>
-                <td>Status</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Deposit</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_suc">
-                      <img src="./assets/icons/completed.svg" alt="" />
-                      <p>Completed</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Profit</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_rej">
-                      <img src="./assets/icons/rejected.svg" alt="" />
-                      <p>Rejected</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Withdrawal</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_appr">
-                      <img src="./assets/icons/approved.svg" alt="" />
-                      <p>Approved</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Referral commission</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_inp">
-                      <img src="./assets/icons/inprogress.svg" alt="" />
-                      <p>In progress</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Deposit</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_pend">
-                      <img src="./assets/icons/pending.png" alt="" />
-                      <p>Pending</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <button class="btn_grey open_depobtn">Gif Banner</button>
       </div>
     </div>
-
-    <footer>
-      <div class="footer_wrapper container">
-        <div class="footer_left">
-          <a href="./index.html">
-            <img class="footer_logo" src="../assets/logo.svg" alt="" />
-          </a>
-          <div class="footer_desc">
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Facilisi massa nibh leo
-              sed condimentum ac risus risus. Netus lectus lacus nibh augue
-              morbi hendrerit mauris.
-            </p>
-          </div>
-          <a href="tel:+841 548 54 58" class="phone_num">
-            <img src="../assets/icons/phone.svg" alt="" />
-            <p>+841 548 54 58</p>
-          </a>
-        </div>
-        <div class="footer_right">
-          <div class="footer_menu">
-            <h3>Company</h3>
-            <a href="../index.html"><p>Home</p></a>
-            <a href="../about.html"><p>About</p></a>
-            <a href="../investments.html"><p>Investments</p></a>
-            <a href="../partners.html"><p>Partners</p></a>
-            <a href="../services.html"><p>Services</p></a>
-            <a href="../faqs.html"><p>FAQ</p></a>
-            <a href="../news.html"><p>News</p></a>
-          </div>
-          <div class="footer_menu">
-            <h3>More</h3>
-            <a href="../delivery-logistics.html"><p>Delivery & Logistics</p></a>
-            <a href="../testimonials.html"><p>Testimonials</p></a>
-            <a href="../contacts.html"><p>Contact</p></a>
-          </div>
-          <div class="footer_menu">
-            <h3>Platform</h3>
-            <a href="#"><p>Roadmap</p></a>
-            <a href="#"><p>Who are We</p></a>
-            <a href="#"><p>Advantages</p></a>
-            <a href="#"
-              ><p>
-                How do We <br />
-                Optimize Logistics
-              </p></a
-            >
-            <a href="#"
-              ><p>
-                Logistics Services and <br />
-                Transportation
-              </p></a
-            >
-            <a href="#"><p>Customs Clearance</p></a>
-            <a href="#"><p>Strategic Partnerships</p></a>
-            <a href="#"><p>Logistical Opportunities</p></a>
-          </div>
-        </div>
-      </div>
-      <div class="footer_socials_list container">
-        <div class="nav_bottom_socials">
-          <a href="#"><img src="../assets/icons/socials/tw.svg" alt="" /></a>
-          <a href="#"><img src="../assets/icons/socials/fb.svg" alt="" /></a>
-          <a href="#"><img src="../assets/icons/socials/ins.svg" alt="" /></a>
-
-          <a href="#"
-            ><img src="../assets/icons/socials/tg.svg" alt="" />
-            <p>Group</p></a
-          >
-          <a href="#"
-            ><img src="../assets/icons/socials/tg.svg" alt="" />
-            <p>Channel</p></a
-          >
-        </div>
-        <button class="readmore_btn" style="margin: 0">
-          <img src="../assets/icons/mail.svg" alt="" />
-          maoglobal.support
-        </button>
-      </div>
-      <div class="footer_bottom">
-        <div class="footer_bottom_wrapper container">
-          <div class="footer_bottom_list">
-            <a href="#">
-              <p>Privacy policy</p>
-              <img src="../assets/icons/link-arrow.svg" alt="" />
-            </a>
-            <a href="#">
-              <p>Terms of use</p>
-              <img src="../assets/icons/link-arrow.svg" alt="" />
-            </a>
-            <a href="#">
-              <p>Documents on investor rights protection</p>
-              <img src="../assets/icons/link-arrow.svg" alt="" />
-            </a>
-          </div>
-          <p>© Mao Global. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>

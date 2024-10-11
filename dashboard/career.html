@@ -21,11 +21,9 @@
       href="../assets/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="../assets/favicon/site.webmanifest" />
-    <title>History of Operations</title>
-    <link rel="stylesheet" href="./styles/dashboard.css" />
-
-    <link rel="stylesheet" href="../styles/investments.css" />
-    <link rel="stylesheet" href="./styles/withdrawal.css" />
+    <title>My Career</title>
+    <link rel="stylesheet" href="./styles/career.css" />
+    <link rel="stylesheet" href="./styles/settings.css" />
     <link rel="stylesheet" href="./styles/topup.css" />
   </head>
   <body>
@@ -215,7 +213,7 @@
 
               <p>Open Deposit</p>
             </a>
-            <a href="./career.html">
+            <a href="./career.html" class="active_nav_link">
               <svg
                 width="15.499756"
                 height="16.323486"
@@ -255,7 +253,7 @@
 
               <p>My Career</p>
             </a>
-            <a href="./operations.html" class="active_nav_link">
+            <a href="./operations.html">
               <svg
                 width="15.500000"
                 height="15.500000"
@@ -340,7 +338,7 @@
 
               <p>Wallets</p>
             </a>
-            <a  href="./settings.html">
+            <a href="./settings.html">
               <svg
                 width="15.500732"
                 height="15.500610"
@@ -392,168 +390,295 @@
         <div class="pages_navigation_wrapper container">
           <a href="./dashboard.html"> <button class="btn_grey">Home</button></a>
           <img src="./assets/icons/arrow-right.svg" alt="" />
-          <p>Operations</p>
+          <p>My Career</p>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="pages_title">
         <div class="pages_title_wrapper">
-          <h3>History of Operations</h3>
+          <h3>My Career</h3>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
-        <button class="btn_grey open_depobtn">
-          <svg
-            width="15.500000"
-            height="15.500000"
-            viewBox="0 0 15.5 15.5"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <desc>Created with Pixso.</desc>
-            <defs />
-            <path
-              id="Vector"
-              d="M14.75 13C14.75 13.96 13.96 14.75 13 14.75L2.5 14.75C1.53 14.75 0.75 13.96 0.75 13L0.75 2.5C0.75 1.53 1.53 0.75 2.5 0.75L13 0.75C13.96 0.75 14.75 1.53 14.75 2.5L14.75 13Z"
-              stroke="#FFFFFF"
-              stroke-opacity="1.000000"
-              stroke-width="1.500000"
-              stroke-linejoin="round"
-            />
-            <path
-              id="Vector"
-              d="M7.75 5.12L7.75 0.75"
-              stroke="#FFFFFF"
-              stroke-opacity="1.000000"
-              stroke-width="1.500000"
-              stroke-linejoin="round"
-              stroke-linecap="round"
-            />
-          </svg>
-          Open Deposit
-        </button>
-      </div>
-
-      <div class="main_block transactions_table">
-        <div class="main_block_title">
-          <h4>Transactions</h4>
+        <div class="pages_title_btns">
+          <button class="btn_grey">Promo Video</button>
+          <button class="btn_grey">Whitepaper</button>
+          <button class="btn_grey open_depobtn">Gif Banner</button>
         </div>
-        <div class="main_block_content transaction_table">
-          <table>
-            <thead>
-              <tr>
-                <td>Date</td>
-                <td>Type</td>
+      </div>
+      <div class="career_top_cards">
+        <div class="main_block">
+          <div class="main_block_title">
+            <h4>Referral Information</h4>
+          </div>
+          <div class="main_block_content">
+            <div class="referal_title">
+              <img src="./assets/icons/ref-icon.svg" alt="" />
+              <div>
+                <p>About referral</p>
+                <span
+                  >Lorem ipsum dolor sit amet consectetur. Risus turpis a leo
+                  sit.</span
+                >
+              </div>
+            </div>
+            <div class="ref_link">
+              <p>Share Link</p>
+              <div class="ref_link_input">
+                <input
+                  type="text"
+                  value="https://maoglobal.com/?ref=asdm21d1m2dsd912md2"
+                />
+                <div class="ref_copy">
+                  <img src="./assets/icons/ref-copy.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="upline">
+              <img src="./assets/icons/user-upline.png" alt="" />
+              <p>Upline:</p>
+              <div>N/A</div>
+            </div>
+          </div>
+        </div>
+        <div class="main_block">
+          <div class="main_block_title">
+            <h4>Referral Statistics</h4>
+          </div>
+          <div class="main_block_content">
+            <h6>Your Position</h6>
+            <div class="ref_s_title">
+              <p>Career 1</p>
+              <img src="./assets/icons/line.svg" alt="" />
+              <p>Career 2</p>
+            </div>
+            <div class="ref_volume">
+              <div class="ref_volume_value" style="width: 46%"></div>
+            </div>
+            <div class="ref_stats_cards">
+              <div class="ref_stats_card">
+                <img src="./assets/icons/ref-stat.svg" alt="" />
+                <div>
+                  <p>Personal Investment</p>
+                  <h4><span>$100</span> / $500</h4>
+                </div>
+              </div>
+              <div class="ref_stats_card">
+                <img src="./assets/icons/ref-stat.svg" alt="" />
+                <div>
+                  <p>Partners Turnover</p>
+                  <h4><span>$0</span> / $500.000</h4>
+                </div>
+              </div>
+            </div>
+            <div class="ref_totals">
+              <div class="ref_total">
+                <svg
+                  width="12.000000"
+                  height="12.000000"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <desc>Created with Pixso.</desc>
+                  <defs />
+                  <circle
+                    id="Ellipse 217"
+                    cx="6.000000"
+                    cy="6.000000"
+                    r="3.000000"
+                    fill="#F1F1F1"
+                    fill-opacity="1.000000"
+                  />
+                  <circle
+                    id="Ellipse 217"
+                    cx="6.000000"
+                    cy="6.000000"
+                    r="4.500000"
+                    stroke="#FFFFFF"
+                    stroke-opacity="1.000000"
+                    stroke-width="3.000000"
+                  />
+                </svg>
 
-                <td>Amount</td>
-                <td>Status</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Deposit</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_suc">
-                      <img src="./assets/icons/completed.svg" alt="" />
-                      <p>Completed</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Profit</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_rej">
-                      <img src="./assets/icons/rejected.svg" alt="" />
-                      <p>Rejected</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
+                <p>Total Partners</p>
+              </div>
+              <div class="ref_total">
+                <svg
+                  width="12.000000"
+                  height="12.000000"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <desc>Created with Pixso.</desc>
+                  <defs />
+                  <circle
+                    id="Ellipse 199"
+                    cx="6.000000"
+                    cy="6.000000"
+                    r="3.000000"
+                    fill="#22C55E"
+                    fill-opacity="1.000000"
+                  />
+                  <circle
+                    id="Ellipse 199"
+                    cx="6.000000"
+                    cy="6.000000"
+                    r="4.500000"
+                    stroke="#FFFFFF"
+                    stroke-opacity="1.000000"
+                    stroke-width="3.000000"
+                  />
+                </svg>
 
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Withdrawal</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_appr">
-                      <img src="./assets/icons/approved.svg" alt="" />
-                      <p>Approved</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Referral commission</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_inp">
-                      <img src="./assets/icons/inprogress.svg" alt="" />
-                      <p>In progress</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Deposit</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_pend">
-                      <img src="./assets/icons/pending.png" alt="" />
-                      <p>Pending</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
+                <p>Active Partners</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="career_table_wrapper">
+        <div class="settings_menu_wrapper">
+          <div class="settings_menu">
+            <div class="settings_menu_item setting_menu_item_active">
+              <p>1 level</p>
+            </div>
+            <div class="settings_menu_item">
+              <p>2 level</p>
+            </div>
+            <div class="settings_menu_item">
+              <p>3 level</p>
+            </div>
+          </div>
+        </div>
 
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="main_block transactions_table">
+          <div class="main_block_title">
+            <h4>Your Referrals</h4>
+          </div>
+          <div class="main_block_content transaction_table">
+            <table>
+              <thead>
+                <tr>
+                  <td>#</td>
+                  <td>Login</td>
+                  <td>Email</td>
+                  <td>Invested</td>
+                  <td>Commission</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><h5>1</h5></td>
+                  <td>
+                    <div class="amount_val">
+                      <img src="./assets/icons/user-ava.png" alt="" />
+                      <p>Mary Walton</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="block_text_wrapper">
+                      <div class="block_text">qwerty@gmail.com</div>
+                    </div>
+                  </td>
+                  <td>
+                    <p>$1.000</p>
+                  </td>
+                  <td>
+                    <p class="green">+ $100</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><h5>2</h5></td>
+                  <td>
+                    <div class="amount_val">
+                      <img src="./assets/icons/user-ava.png" alt="" />
+                      <p>Mary Walton</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="block_text_wrapper">
+                      <div class="block_text">qwerty@gmail.com</div>
+                    </div>
+                  </td>
+                  <td>
+                    <p>$1.000</p>
+                  </td>
+                  <td>
+                    <p class="green">+ $100</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><h5>3</h5></td>
+                  <td>
+                    <div class="amount_val">
+                      <img src="./assets/icons/user-ava.png" alt="" />
+                      <p>Mary Walton</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="block_text_wrapper">
+                      <div class="block_text">qwerty@gmail.com</div>
+                    </div>
+                  </td>
+                  <td>
+                    <p>$1.000</p>
+                  </td>
+                  <td>
+                    <p class="green">+ $100</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><h5>4</h5></td>
+                  <td>
+                    <div class="amount_val">
+                      <img src="./assets/icons/user-ava.png" alt="" />
+                      <p>Mary Walton</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="block_text_wrapper">
+                      <div class="block_text">qwerty@gmail.com</div>
+                    </div>
+                  </td>
+                  <td>
+                    <p>$1.000</p>
+                  </td>
+                  <td>
+                    <p class="green">+ $100</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><h5>5</h5></td>
+                  <td>
+                    <div class="amount_val">
+                      <img src="./assets/icons/user-ava.png" alt="" />
+                      <p>Mary Walton</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="block_text_wrapper">
+                      <div class="block_text">qwerty@gmail.com</div>
+                    </div>
+                  </td>
+                  <td>
+                    <p>$1.000</p>
+                  </td>
+                  <td>
+                    <p class="green">+ $100</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
 
+    
     <footer>
       <div class="footer_wrapper container">
         <div class="footer_left">
