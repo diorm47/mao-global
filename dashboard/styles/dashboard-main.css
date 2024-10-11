@@ -8,6 +8,10 @@ body {
   color: rgb(255, 255, 255);
   background: rgb(36, 36, 36);
 }
+.open_depobtn:hover {
+  background: #000 !important;
+  transition: all 0.4s ease;
+}
 
 .nav_bottom_left_links {
   gap: 3px;
@@ -392,6 +396,11 @@ body {
   padding: 9px 22px;
   background: rgb(34, 197, 94);
 }
+.google_auth button:hover {
+  background: rgb(28, 171, 81);
+  transition: all 0.4s ease;
+
+}
 .google_auth {
   margin-bottom: 41px;
 }
@@ -416,6 +425,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.session_item_desc {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.top_nav_right button:hover {
+  background: rgb(128, 128, 128, 0.3) !important;
 }
 
 .session_item_desc_title h4 {
@@ -658,7 +675,11 @@ body {
   background: rgb(222, 36, 8);
   color: #fff;
 }
+.redtbn:hover {
+  background: rgb(200, 34, 8) !important;
+  transition: all 0.4s ease;
 
+}
 .send_btn3 {
   display: flex;
   align-items: end;
@@ -680,4 +701,28 @@ footer {
 .footer_wrapper {
   padding-top: 138px;
   border-top: 0.5px solid rgb(228, 226, 225);
+}
+
+@media only screen and (max-width: 500px) {
+  .dashboard_nav {
+    padding-top: 0;
+  }
+  .pages_title {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .footer_wrapper {
+    padding-top: 20px;
+  }
+  footer {
+    margin-top: 30px;
+  }
+  .main_block_content {
+    padding: 15px !important;
+  }
+  .main_block_title {
+    padding: 15px;
+    height: 40px;
+  }
 }

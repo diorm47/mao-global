@@ -267,3 +267,44 @@
 .deposit_cards_right .main_block {
   max-width: 100%;
 }
+
+@media only screen and (max-width: 1000px) {
+  .deposit_cards {
+    flex-direction: column;
+  }
+  .deposit_cards_left,
+  .deposit_cards_right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .conafiguration_wrapper {
+    flex-direction: column;
+  }
+  .conafiguration_wrapper_left,
+  .conafiguration_wrapper_right {
+    max-width: 100%;
+  }
+  .conafiguration_wrapper_left .make_payment_block_part {
+    margin-bottom: 30px;
+  }
+  .conafiguration_wrapper {
+    gap: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .plan_item {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .redtbn {
+    width: 100%;
+    justify-content: center;
+  }
+  .deposit_cards {
+    gap: 20px;
+  }
+}

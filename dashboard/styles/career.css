@@ -281,9 +281,42 @@
 }
 
 .green {
-    color: rgb(34, 195, 93);
+  color: rgb(34, 195, 93);
 }
 .block_text_wrapper {
-    display: flex;
-    align-items: start;
+  display: flex;
+  align-items: start;
+}
+
+@media only screen and (max-width: 1000px) {
+  .career_top_cards {
+    flex-direction: column;
+  }
+  .career_top_cards .main_block {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .pages_title_btns button {
+    font-size: 14px;
+  }
+  .ref_link_input input {
+    padding-right: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .ref_stats_cards,
+  .ref_s_title {
+    flex-direction: column;
+  }
+  .ref_stats_card {
+    width: 100%;
+  }
+  .career_top_cards {
+    margin-bottom: 20px;
+    gap: 20px;
+  }
 }

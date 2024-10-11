@@ -276,3 +276,25 @@ body {
 .success_block span {
   color: rgb(36, 36, 36);
 }
+
+
+@media only screen and (max-width: 500px) {
+
+  .auth_leave {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .auth_wrapper {
+    padding: 0 10px;
+  }
+
+  .auth_wrapper_content_block_title h2 {
+    line-height: 130%;
+  }
+  .auth_logo {
+    margin-bottom: 20px;
+  }
+  .otp_container input {
+    height: 60px;
+  }
+}

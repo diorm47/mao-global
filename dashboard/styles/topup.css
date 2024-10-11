@@ -256,3 +256,41 @@
   background: rgba(176, 116, 252, 0.1);
   width: 110px;
 }
+
+
+@media only screen and (max-width: 1000px) {
+  .topup_top {
+    flex-direction: column;
+    gap: 0;
+  }
+  .topup_top_left, .topup_top_right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .make_payment_block {
+    flex-direction: column;
+  }
+  .make_payment_block_part {
+    width: 100%;
+  }
+  .transaction_table {
+    overflow: auto;
+  }
+  .transaction_table table {
+    width: 770px;
+  }
+  .send_btn3 button {
+    width: 100%;
+    justify-content: center;
+  }
+  .withdrawal_block .make_payment_block_part:last-child {
+    width: 100%;
+  }
+  .send_btn3 {
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+}

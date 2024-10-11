@@ -302,10 +302,85 @@
   background: transparent;
   margin-top: 30px;
 }
+.setting_factor
+.btn_grey:hover {
+  transition: all 0.4s ease;
+  background: #e3e1e1;
+}
 .setting_factor_item:last-child input {
   text-indent: 17px;
 }
 .setting_factor_item:last-child button {
   background: rgb(222, 36, 8);
   color: #fff;
+}
+
+
+@media only screen and (max-width: 920px) {
+  .setting_page1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .settings_auth .main_block_content {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .setting_page1 {
+    gap: 20px;
+  }
+  .setting_inputs {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .setting_inputs .setting_input {
+    width: 100%;
+  }
+  .avatar_block_top {
+    flex-direction: column;
+  }
+  .avatar_block_upload p {
+    line-height: 130%;
+    width: 70%;
+  }
+  .avatar_block_upload {
+    padding: 20px 0;
+  }
+  .save_btn button {
+    width: 100%;
+    justify-content: center;
+  }
+  .setting_factor {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .setting_factor_item {
+    width: 100%;
+  }
+  .settings_auth_left_right img {
+    width: 100%;
+  }
+  .session_item_desc_title {
+    flex-direction: column;
+  }
+  .session_item_desc p {
+    margin-top: 15px;
+  }
+  .session_item_status {
+    position: static;
+  }
+  .session_item {
+    flex-wrap: wrap;
+  }
+  .settings_menu_item {
+    padding: 2px 7px;
+  }
+  .settings_menu_item p {
+    font-size: 13px;
+
+  }
+  .setting_factor {
+    padding: 10px;
+  }
 }

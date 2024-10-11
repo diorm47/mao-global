@@ -1,6 +1,5 @@
 @import url(./dashboard-main.css);
 
-
 .dashboard_wrapper {
   display: flex;
   align-items: start;
@@ -114,4 +113,96 @@
 
 .cr_dp_bl p span {
   color: rgb(36, 36, 36);
+}
+
+@media only screen and (max-width: 1100px) {
+  .right_dashb_top {
+    flex-direction: column;
+  }
+  .right_dashb_top_left {
+    width: 100%;
+  }
+  .right_dashb_top_right {
+    width: 100%;
+  }
+  .right_dashb_top_right .main_block,
+  .right_dashb_top_left .main_block {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .dashboard_wrapper {
+    flex-direction: column;
+  }
+  .left_dashb,
+  .right_dashb {
+    width: 100%;
+  }
+  .main_block {
+    max-width: 100%;
+  }
+  .right_dashb_top {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .dash_plan_top {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .main_block {
+    margin-bottom: 20px;
+  }
+  .limit_img {
+    width: 90%;
+  }
+  .limit_block p {
+    position: relative;
+    width: 60%;
+  }
+  .dashboard_wrapper {
+    gap: 20px;
+  }
+  .stats_block {
+    flex-direction: column;
+    align-items: start;
+  }
+  .stats_block_wrapper {
+    height: auto;
+  }
+  .stats_block_list {
+    padding: 20px;
+  }
+  .google_auth {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .right_dashb_top {
+    gap: 20px;
+  }
+  .dash_plan_top_rigth {
+    flex-direction: column;
+    width: 100%;
+  }
+  .dash_plan_top_rigth_card,
+  .dash_plan_top_rigth_blocks,
+  .dash_plan_top_left {
+    max-width: 100%;
+    width: 100%;
+  }
+  .dash_plan_bottom {
+    flex-direction: column;
+  }
+  .progress_block {
+    width: 100%;
+  }
+  .cr_dp_bl {
+    background-position: center
+  }
 }

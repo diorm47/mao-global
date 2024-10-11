@@ -94,3 +94,29 @@
 .trash {
     cursor: pointer;
 }
+
+@media only screen and (max-width: 500px) {
+  .wallet_payment {
+    flex-direction: column;
+  }
+  .wallet_payment .wallet_payment_block:first-child, .wallet_payment .wallet_payment_block_right:last-child {
+    max-width: 100%;
+    width: 100%;
+  }
+  .wallet_payment .wallet_payment_block:first-child input {
+    width: 80%;
+  }
+  .wallet_payment_block_right {
+    flex-direction: column;
+    align-items: center;
+  }
+  .wallet_payment_block_right .wallet_payment_block {
+    width: 100% !important;
+  }
+  .redtbn {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
