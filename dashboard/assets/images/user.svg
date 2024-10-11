@@ -1,0 +1,51 @@
+<svg width="124.000000" height="124.000000" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip6487_1341">
+			<rect id="User 07c" rx="49.500000" width="99.000000" height="99.000000" transform="translate(12.500000 12.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient x1="60.374004" y1="28.349609" x2="60.374004" y2="89.928596" id="paint_linear_11_600_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#E6864E"/>
+			<stop offset="1.000000" stop-color="#EB965E"/>
+		</linearGradient>
+		<linearGradient x1="61.999996" y1="79.666016" x2="61.999996" y2="113.435349" id="paint_linear_11_610_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#1D0024"/>
+			<stop offset="1.000000" stop-color="#100014"/>
+		</linearGradient>
+		<linearGradient x1="61.999996" y1="79.666016" x2="61.999996" y2="113.435349" id="paint_linear_11_611_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#1D0024"/>
+			<stop offset="1.000000" stop-color="#100014"/>
+		</linearGradient>
+		<linearGradient x1="62.000000" y1="7.000000" x2="62.000000" y2="117.000000" id="paint_linear_6487_1342_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#E4E2E1"/>
+			<stop offset="0.515000" stop-color="#E4E2E1" stop-opacity="0.000000"/>
+			<stop offset="1.000000" stop-color="#E4E2E1"/>
+		</linearGradient>
+		<linearGradient x1="62.000000" y1="0.000000" x2="62.000000" y2="124.000000" id="paint_linear_6487_1343_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#E4E2E1"/>
+			<stop offset="0.515000" stop-color="#E4E2E1" stop-opacity="0.000000"/>
+			<stop offset="1.000000" stop-color="#E4E2E1"/>
+		</linearGradient>
+	</defs>
+	<rect id="User 07c" rx="49.500000" width="99.000000" height="99.000000" transform="translate(12.500000 12.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<rect id="User 07c" rx="49.500000" width="99.000000" height="99.000000" transform="translate(12.500000 12.500000)" fill="#F4F4F4" fill-opacity="1.000000"/>
+	<g clip-path="url(#clip6487_1341)">
+		<path id="Combined Shape" d="M51.33 74.92C51.29 78.03 48.73 80.39 43.66 81.92C49.77 86.37 55.88 89.92 62 89.92C68.11 89.92 74.22 86.37 80.33 81.92C75.29 80.39 72.74 78.1 72.66 75.06C72.66 74.51 72.7 62.59 72.72 57.39C77.5 51.2 75.74 43.94 74.25 44.12C72.41 44.34 56.51 29.25 53.46 28.48C50.41 27.71 42.66 30.2 41.33 37.16C40 44.12 39.44 61.66 44.5 68.66C45.93 70.66 48.23 71.43 51.33 71C51.33 72.45 51.33 74.92 51.33 74.92Z" fill="url(#paint_linear_11_600_0)" fill-opacity="0" fill-rule="nonzero"/>
+		<path id="Combined Shape" d="M51.33 74.92C51.29 78.03 48.73 80.39 43.66 81.92C49.77 86.37 55.88 89.92 62 89.92C68.11 89.92 74.22 86.37 80.33 81.92C75.29 80.39 72.74 78.1 72.66 75.06C72.66 74.51 72.7 62.59 72.72 57.39C77.5 51.2 75.74 43.94 74.25 44.12C72.41 44.34 56.51 29.25 53.46 28.48C50.41 27.71 42.66 30.2 41.33 37.16C40 44.12 39.44 61.66 44.5 68.66C45.93 70.66 48.23 71.43 51.33 71C51.33 72.45 51.33 74.92 51.33 74.92Z" fill="#FFD7B8" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Path 48" d="M51.33 71C58.66 70.16 63.33 67 63.33 67C63.33 67 59.33 73.66 51.33 75L51.33 71Z" fill="#FFCCA8" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Path 22" d="M75.16 57.5C77.46 51.97 86.66 40.72 78.73 33.72C76.06 20.72 61.33 22.16 51.5 25.16C44.89 27.18 39.89 31.16 38.83 28.16C32.16 33.72 35.5 39.16 39.89 40.72C43.88 42.14 50.63 43.56 62.1 42.22C64.15 41.98 63.72 48.26 64.81 48.94C66.45 49.95 67.73 43.56 72.23 45.48C76.73 47.4 74.06 56.31 69.23 56.31C67.56 56.31 66.73 60.89 71.23 63.06C74.5 64.66 73.67 61.08 75.16 57.5Z" fill="#140124" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Combined Shape" d="M97 92.1C100.17 98.55 102 113.43 102 113.43L22 113.43C22 113.43 23.82 98.55 27 92.1C30.17 85.65 48.7 79.66 48.7 79.66C52.27 87 71.86 87 75.29 79.66C75.29 79.66 93.82 85.65 97 92.1Z" fill="url(#paint_linear_11_610_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<mask id="mask11_611" mask-type="alpha" maskUnits="userSpaceOnUse" x="22.000000" y="79.666016" width="80.000000" height="33.769531">
+			<path id="Combined Shape" d="M97 92.1C100.17 98.55 102 113.43 102 113.43L22 113.43C22 113.43 23.82 98.55 27 92.1C30.17 85.65 48.7 79.66 48.7 79.66C52.27 87 71.86 87 75.29 79.66C75.29 79.66 93.82 85.65 97 92.1Z" fill="url(#paint_linear_11_611_0)" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</mask>
+		<g mask="url(#mask11_611)">
+			<path id="Combined Shape" d="M18.66 106.66L18.66 104L105.33 104L105.33 106.66L18.66 106.66ZM18.66 100L18.66 97.33L105.33 97.33L105.33 100L18.66 100ZM18.66 93.33L18.66 90.66L105.33 90.66L105.33 93.33L18.66 93.33Z" fill="#6E5C5A" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+	</g>
+	<circle id="Ellipse 204" cx="62.000000" cy="62.000000" r="55.000000" fill="#D9D9D9" fill-opacity="0"/>
+	<circle id="Ellipse 204" cx="62.000000" cy="62.000000" r="54.750000" stroke="url(#paint_linear_6487_1342_0)" stroke-opacity="1.000000" stroke-width="0.500000"/>
+	<circle id="Ellipse 203" cx="62.000000" cy="62.000000" r="62.000000" fill="#D9D9D9" fill-opacity="0"/>
+	<circle id="Ellipse 203" cx="62.000000" cy="62.000000" r="61.750000" stroke="url(#paint_linear_6487_1343_0)" stroke-opacity="1.000000" stroke-width="0.500000"/>
+</svg>

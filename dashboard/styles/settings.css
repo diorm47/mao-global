@@ -1,0 +1,311 @@
+@import url(./dashboard-main.css);
+@import url(./dashboard.css);
+
+.settings_menu {
+  display: flex;
+  align-items: center;
+  border-radius: 9px;
+  gap: 2px;
+  background: rgb(250, 250, 252);
+}
+.pages_title {
+  margin-bottom: 30px;
+}
+.settings_menu_item {
+  cursor: pointer;
+  border-radius: 9px;
+  padding: 4px 15px;
+}
+.settings_menu .setting_menu_item_active {
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 9px;
+
+  box-shadow: 0px 4px 3.7px 0px rgba(238, 238, 238, 0.25);
+  background: rgb(255, 255, 255);
+}
+.settings_menu .setting_menu_item_active p {
+  color: rgb(36, 36, 36);
+}
+.settings_menu_item p {
+  color: rgb(181, 181, 181);
+  font-family: Cygre SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0%;
+}
+.settings_menu_wrapper {
+  display: flex;
+  align-items: start;
+  margin-bottom: 22px;
+}
+
+.menu_item_content {
+  display: none;
+}
+.setting_pages_content .setting_menu_item_active {
+  display: block;
+}
+
+.setting_page1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+}
+
+.setting_page1 .main_block {
+  width: 100%;
+  max-width: 100%;
+}
+.avatar_block {
+  padding: 32px 28px 39px;
+}
+
+.avatar_block_top {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-bottom: 33px;
+}
+.avatar_block_details h4 {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 7px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.avatar_block_details h5 {
+  color: rgb(133, 133, 133);
+  font-family: Cygre;
+  font-size: 14px;
+  font-weight: 350;
+
+  letter-spacing: 0%;
+  text-align: left;
+}
+.avatar_block_top_actions {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 18px;
+}
+
+.avatar_block_top_actions p:first-child {
+  color: rgb(181, 181, 181);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.avatar_block_top_actions p:last-child {
+  color: rgb(223, 54, 30);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  cursor: pointer;
+  text-align: left;
+}
+
+.avatar_block_upload {
+  box-sizing: border-box;
+  border: 0.5px dashed rgb(189, 189, 189);
+  border-radius: 15px;
+  padding: 39px 0 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+  cursor: pointer;
+}
+.main_block {
+  margin-bottom: 0;
+}
+
+.avatar_block_upload p {
+  font-family: Cygre;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 0px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(163, 163, 163);
+}
+
+.setting_input {
+  margin-bottom: 20px;
+}
+.avatar_block_upload p span {
+  color: rgb(223, 54, 30);
+}
+.setting_input_content {
+  padding: 20px 28px 35px;
+}
+.setting_input p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre Medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.setting_input_w {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.setting_input_w input {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(234, 234, 234);
+  border-radius: 9px;
+  height: 45px;
+  width: 100%;
+  text-indent: 48px;
+
+  color: #000;
+  font-family: Cygre;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.setting_input_w input::placeholder {
+  color: rgb(163, 163, 163);
+}
+
+.setting_input_w img {
+  position: absolute;
+  left: 19px;
+}
+
+.save_btn {
+  margin-top: 27px;
+}
+
+.save_btn button {
+  padding: 11px 28px;
+}
+.setting_inputs {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 48px;
+}
+.setting_inputs .setting_input {
+  width: 50%;
+}
+
+.setting_page3 .main_block {
+  max-width: 100%;
+}
+.session_date {
+  margin: 0;
+}
+.session_item {
+  position: relative;
+}
+.session_item_status {
+  position: absolute;
+  right: 0;
+  top: 39px;
+}
+.settings_auth {
+  max-width: 100%;
+}
+.settings_auth .main_block_content {
+  padding: 27px 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.settings_auth_left h4 {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 31px;
+}
+.settings_auth_left {
+  max-width: 850px;
+  width: 100%;
+}
+.setting_factor {
+  border-radius: 15px;
+  padding: 22px;
+  width: 100%;
+  background: rgb(250, 250, 252);
+  display: flex;
+  align-items: start;
+  gap: 48px;
+}
+.setting_factor_item {
+  width: 50%;
+}
+.setting_factor_item_step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid rgb(223, 54, 30);
+  border-radius: 7px;
+  width: 49px;
+  height: 24px;
+  background: rgb(250, 250, 252);
+  margin-bottom: 6px;
+}
+.setting_factor_item_step p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.setting_factor_item h5 {
+    color: rgb(36, 36, 36);
+font-family: Cygre SemiBold;
+font-size: 16px;
+font-weight: 600;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: left;
+}
+.setting_factor_item_line {
+    width: 100%;
+    height: 1px;
+    background: rgb(228, 226, 225);
+    margin: 22px 0 15px;
+}
+.setting_factor input {
+    background: transparent
+}
+.setting_factor .btn_grey {
+    background: transparent;
+    margin-top: 30px;
+}
+.setting_factor_item:last-child input {
+    text-indent: 17px;
+}
+.setting_factor_item:last-child button {
+    background: rgb(222, 36, 8);
+    color: #fff;
+}

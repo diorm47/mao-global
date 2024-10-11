@@ -21,12 +21,8 @@
       href="../assets/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="../assets/favicon/site.webmanifest" />
-    <title>Withdrawal Funds</title>
-    <link rel="stylesheet" href="./styles/dashboard.css" />
-
-    <link rel="stylesheet" href="../styles/investments.css" />
-    <link rel="stylesheet" href="./styles/withdrawal.css" />
-    <link rel="stylesheet" href="./styles/topup.css" />
+    <title>Wallets</title>
+    <link rel="stylesheet" href="./styles/wallet.css" />
   </head>
   <body>
     <div class="dashboard_nav">
@@ -151,7 +147,7 @@
 
               <p>Top Up</p>
             </a>
-            <a href="./withdrawal.html" class="active_nav_link">
+            <a href="./withdrawal.html">
               <svg
                 width="15.500000"
                 height="15.500000"
@@ -297,7 +293,7 @@
 
               <p>Operations</p>
             </a>
-            <a href="./wallets.html">
+            <a href="./wallets.html" class="active_nav_link">
               <svg
                 width="15.500000"
                 height="15.500000"
@@ -392,14 +388,14 @@
         <div class="pages_navigation_wrapper container">
           <a href="./dashboard.html"> <button class="btn_grey">Home</button></a>
           <img src="./assets/icons/arrow-right.svg" alt="" />
-          <p>Withdrawal Funds</p>
+          <p>Wallets</p>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="pages_title">
         <div class="pages_title_wrapper">
-          <h3>Withdrawal Funds</h3>
+          <h3>Wallets</h3>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
         <button class="btn_grey open_depobtn">
@@ -434,333 +430,75 @@
           Open Deposit
         </button>
       </div>
-
-      <div class="topup_top">
-        <div class="topup_top_left">
-          <div class="main_block">
-            <div class="main_block_title">
-              <h4>Available Balance</h4>
-            </div>
-            <div class="main_block_content balance_block">
-              <div class="balance_block_cur">
-                <img src="./assets/icons/us.svg" alt="" />
-                <p>US Dollar</p>
-              </div>
-              <div class="balance_block_balance">
-                <h4>$51,920.23</h4>
-                <img src="./assets/icons/eye.svg" alt="" />
-              </div>
-              <div class="balance_block_actions">
-                <button class="btn_grey">
-                  <svg
-                    width="15.500000"
-                    height="15.500000"
-                    viewBox="0 0 15.5 15.5"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <desc>Created with Pixso.</desc>
-                    <defs />
-                    <path
-                      id="Vector"
-                      d="M9.72 9.72L5.77 5.77M5.77 9.23L5.77 5.77L9.23 5.77"
-                      stroke="#FFFFFF"
-                      stroke-opacity="1.000000"
-                      stroke-width="1.500000"
-                      stroke-linejoin="round"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      id="Vector"
-                      d="M14.75 7.75C14.75 3.88 11.61 0.75 7.75 0.75C3.88 0.75 0.75 3.88 0.75 7.75C0.75 11.61 3.88 14.75 7.75 14.75C11.61 14.75 14.75 11.61 14.75 7.75Z"
-                      stroke="#FFFFFF"
-                      stroke-opacity="1.000000"
-                      stroke-width="1.500000"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  Top Up
-                </button>
-                <button class="btn_grey">
-                  <svg
-                    width="15.500000"
-                    height="15.500000"
-                    viewBox="0 0 15.5 15.5"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <desc>Created with Pixso.</desc>
-                    <defs />
-                    <path
-                      id="Vector"
-                      d="M5.77 5.77L9.72 9.72M9.72 6.26L9.72 9.72L6.26 9.72"
-                      stroke="#242424"
-                      stroke-opacity="1.000000"
-                      stroke-width="1.500000"
-                      stroke-linejoin="round"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      id="Vector"
-                      d="M0.75 7.75C0.75 11.61 3.88 14.75 7.75 14.75C11.61 14.75 14.75 11.61 14.75 7.75C14.75 3.88 11.61 0.75 7.75 0.75C3.88 0.75 0.75 3.88 0.75 7.75Z"
-                      stroke="#242424"
-                      stroke-opacity="1.000000"
-                      stroke-width="1.500000"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-
-                  Withdraw
-                </button>
-              </div>
-            </div>
-          </div>
+      <div class="main_block select_payment_w">
+        <div class="main_block_title">
+          <h4>Select Payment System</h4>
         </div>
-
-        <div class="main_block topup_top_right">
-          <div class="main_block_title">
-            <h4>Withdrawal</h4>
-            <button class="btn_grey grey_btn">
-              <img src="./assets/icons/apple-wallet.svg" alt="" />
-              Setting wallet
-            </button>
+        <div class="main_block_content wallet_payment">
+          <div class="wallet_payment_block">
+            <h4>Select a Crypto</h4>
+            <div class="wallet_input">
+              <img src="../assets/icons/usdt.svg" alt="" />
+              <input type="text" value="Tether" />
+              <svg
+                width="9.333496"
+                height="5.074219"
+                viewBox="0 0 9.3335 5.07422"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <desc>Created with Pixso.</desc>
+                <defs />
+                <path
+                  id="Vector"
+                  d="M0.54 0.03C0.38 0.07 0.21 0.18 0.11 0.37C-0.1 0.76 -0.01 1.3 0.29 1.56L4.29 4.93C4.51 5.12 4.81 5.12 5.04 4.93L9.03 1.56C9.34 1.3 9.42 0.76 9.22 0.37C9.01 -0.01 8.59 -0.12 8.28 0.14L4.66 3.19L1.04 0.14C0.89 0.01 0.71 -0.01 0.54 0.03Z"
+                  fill="#828282"
+                  fill-opacity="1.000000"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </div>
           </div>
-          <div class="main_block_content make_payment_block withdrawal_block">
-            <div class="make_payment_block_part">
-              <div class="make_payment_block_part_title">
-                <p>Select payment system</p>
-              </div>
-              <div class="deposit_input_white">
-                <div class="deposit_input">
-                  <img src="../assets/icons/usdt.svg" alt="" />
-                  <input type="text" value="Tether" />
-                  <div class="deposit_input_select">
-                    <p>USDT</p>
-                    <svg
-                      width="9.333984"
-                      height="5.074951"
-                      viewBox="0 0 9.33398 5.07495"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                    >
-                      <desc>Created with Pixso.</desc>
-                      <defs></defs>
-                      <path
-                        id="Vector"
-                        d="M0.54 0.03C0.38 0.07 0.21 0.18 0.11 0.37C-0.1 0.76 -0.01 1.3 0.29 1.56L4.29 4.93C4.51 5.12 4.81 5.12 5.04 4.93L9.03 1.56C9.34 1.3 9.42 0.76 9.22 0.37C9.01 -0.01 8.59 -0.12 8.28 0.14L4.66 3.19L1.04 0.14C0.89 0.01 0.71 -0.01 0.54 0.03Z"
-                        fill="#828282"
-                        fill-opacity="1.000000"
-                        fill-rule="nonzero"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="make_payment_block_part_title" style="margin-top: 18px;">
-                <p>Amount</p>
-                <span>1 USDT = 87.48$</span>
-              </div>
-              <div class="withd_amount">
-                <input type="text" value="540">
-                <div>MAX</div>
+          <div class="wallet_payment_block_right">
+            <div class="wallet_payment_block">
+              <h4>Enter Address</h4>
+              <div class="wallet_input">
+                <img src="../assets/icons/usdt.svg" alt="" />
+                <input type="text" placeholder="Enter tether wallet" />
+                <span>USDT</span>
               </div>
             </div>
-            <div class="make_payment_block_part">
-              <div class="make_payment_block_part_title">
-                <p>Withdraw Address</p>
-              </div>
-              <div class="amount_card">
-                <input type="text" placeholder="Enter withdrawal address" />
-                <div class="amount_card_value">
-                  <svg
-                    width="11.666748"
-                    height="11.666504"
-                    viewBox="0 0 11.6667 11.6665"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <desc>Created with Pixso.</desc>
-                    <defs />
-                    <path
-                      id="Vector"
-                      d="M5.83 0C2.61 0 0 2.61 0 5.83C0 9.05 2.61 11.66 5.83 11.66C9.05 11.66 11.66 9.05 11.66 5.83C11.66 2.61 9.05 0 5.83 0ZM5.83 2.91C6.15 2.91 6.41 3.17 6.41 3.5C6.41 3.82 6.15 4.08 5.83 4.08C5.51 4.08 5.25 3.82 5.25 3.5C5.25 3.17 5.51 2.91 5.83 2.91ZM5.25 4.66C5.34 4.66 5.75 4.66 5.83 4.66C6.2 4.66 6.47 4.99 6.39 5.35L5.96 7.58L6.41 7.58C6.73 7.58 7 7.84 7 8.16C7 8.48 6.73 8.75 6.41 8.75L5.83 8.75C5.14 8.75 4.65 8.15 4.79 7.47L5.14 5.79C4.87 5.74 4.66 5.53 4.66 5.25C4.66 4.92 4.92 4.66 5.25 4.66Z"
-                      fill="#828282"
-                      fill-opacity="1.000000"
-                      fill-rule="nonzero"
-                    />
-                  </svg>
-                  <p>
-                    Set or delete the wallet address in the “Wallets” section.
-                  </p>
-                </div>
-              </div>
-              <div class="send_btn3">
-                <div class="total_balance">
-                  <img src="./assets/icons/total.svg" alt="" />
-                  <p>Total amount</p>
-                  <h5>540 USDT</h5>
-                </div>
-                <button class="btn_grey redtbn">
-                  <svg
-                    width="15.500000"
-                    height="15.500000"
-                    viewBox="0 0 15.5 15.5"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                  >
-                    <desc>Created with Pixso.</desc>
-                    <defs />
-                    <path
-                      id="Vector"
-                      d="M5.77 5.77L9.72 9.72M9.72 6.26L9.72 9.72L6.26 9.72"
-                      stroke="#FFFFFF"
-                      stroke-opacity="1.000000"
-                      stroke-width="1.500000"
-                      stroke-linejoin="round"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      id="Vector"
-                      d="M0.75 7.75C0.75 11.61 3.88 14.75 7.75 14.75C11.61 14.75 14.75 11.61 14.75 7.75C14.75 3.88 11.61 0.75 7.75 0.75C3.88 0.75 0.75 3.88 0.75 7.75Z"
-                      stroke="#FFFFFF"
-                      stroke-opacity="1.000000"
-                      stroke-width="1.500000"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-
-                  Withdraw
-                </button>
-              </div>
-            </div>
+            <button class="btn_grey redtbn">Save Wallet Address</button>
           </div>
         </div>
       </div>
-
       <div class="main_block transactions_table">
         <div class="main_block_title">
-          <h4>Transactions</h4>
+          <h4>Address Management</h4>
         </div>
         <div class="main_block_content transaction_table">
           <table>
             <thead>
               <tr>
-                <td>Type</td>
-                <td>Date</td>
-                <td>Amount</td>
-                <td>Status</td>
+                <td>Coin</td>
+                <td>Wallet</td>
+                <td></td>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>
-                  <div class="repleish_stat">
-                    <img src="./assets/icons/withdrawal.svg" alt="" />
-                    <p>Withdrawal</p>
-                  </div>
-                </td>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td>
                   <div class="amount_val">
                     <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
+                    <p>Tether</p>
                   </div>
                 </td>
                 <td>
-                  <div class="trans_stat trans_stat_suc">
-                    <img src="./assets/icons/completed.svg" alt="" />
-                    <p>Completed</p>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="repleish_stat">
-                    <img src="./assets/icons/withdrawal.svg" alt="" />
-                    <p>Withdrawal</p>
-                  </div>
-                </td>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
+                  <p>TRmqwXBYXd65yfx5bnFMstw46jcwtaTXd1</p>
                 </td>
                 <td>
-                  <div class="trans_stat trans_stat_rej">
-                    <img src="./assets/icons/rejected.svg" alt="" />
-                    <p>Rejected</p>
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <div class="repleish_stat">
-                    <img src="./assets/icons/withdrawal.svg" alt="" />
-                    <p>Withdrawal</p>
-                  </div>
-                </td>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat trans_stat_appr">
-                    <img src="./assets/icons/approved.svg" alt="" />
-                    <p>Approved</p>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="repleish_stat">
-                    <img src="./assets/icons/withdrawal.svg" alt="" />
-                    <p>Withdrawal</p>
-                  </div>
-                </td>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat trans_stat_inp">
-                    <img src="./assets/icons/inprogress.svg" alt="" />
-                    <p>In progress</p>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="repleish_stat">
-                    <img src="./assets/icons/withdrawal.svg" alt="" />
-                    <p>Withdrawal</p>
-                  </div>
-                </td>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat trans_stat_pend">
-                    <img src="./assets/icons/pending.png" alt="" />
-                    <p>Pending</p>
-                  </div>
+                  <img src="./assets/icons/trash.svg" class="trash" alt="">
                 </td>
               </tr>
             </tbody>
@@ -768,7 +506,6 @@
         </div>
       </div>
     </div>
-
     <footer>
       <div class="footer_wrapper container">
         <div class="footer_left">

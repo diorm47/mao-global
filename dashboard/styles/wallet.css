@@ -1,0 +1,96 @@
+@import url(./dashboard-main.css);
+@import url(./dashboard.css);
+@import url(./topup.css);
+
+.select_payment_w {
+  max-width: 100%;
+  height: auto;
+}
+
+.wallet_payment {
+  height: auto;
+  min-height: auto;
+  padding: 20px 28px;
+}
+.wallet_payment_block h4 {
+  margin-bottom: 14px;
+  color: rgb(36, 36, 36);
+  font-family: Cygre Medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.wallet_input {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(234, 234, 234);
+  border-radius: 9px;
+  height: 45px;
+  padding: 10px;
+  padding-right: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.wallet_input input {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  height: 100%;
+}
+.wallet_input input::placeholder {
+  color: rgb(163, 163, 163);
+  font-family: Cygre;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.wallet_payment {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 21px;
+}
+.wallet_payment .wallet_payment_block:first-child {
+  width: 212px;
+}
+.wallet_payment .wallet_payment_block_right:last-child {
+  width: 83%;
+}
+.wallet_payment .wallet_payment_block_right:last-child input {
+  width: 93% !important;
+}
+.wallet_payment .wallet_payment_block:first-child input {
+  width: 122px;
+}
+
+.wallet_payment_block span {
+  color: rgb(130, 130, 130);
+  font-family: Cygre;
+  font-size: 14px;
+  font-weight: 350;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.wallet_payment_block_right {
+    display: flex;
+    align-items: end;
+    gap: 21px;
+}
+.wallet_payment_block_right .wallet_payment_block {
+    width: 81% !important;
+}
+.main_block_content {
+    min-height: auto;
+}
+.trash {
+    cursor: pointer;
+}
