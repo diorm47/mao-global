@@ -238,6 +238,13 @@ body {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 1000px) {
+  .left_sh,
+  .right_sh {
+    display: none;
+  }
+
+}
 @media only screen and (max-width: 500px) {
   .partners_pr_card {
     width: 100%;

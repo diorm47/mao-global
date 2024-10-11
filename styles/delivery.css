@@ -11,7 +11,7 @@ body {
 
 .delivery_img img {
   width: 100%;
-
+  border-radius: 20px;
   margin-bottom: 83px;
 }
 .logistics_title {
@@ -173,7 +173,11 @@ body {
   justify-content: center;
   margin-top: 38px;
 }
-
+@media only screen and (max-width: 1920px) {
+  .delivery_img img {
+    border-radius: 0;
+  }
+}
 @media only screen and (max-width: 500px) {
   .header_text p {
     margin: 30px 0;
