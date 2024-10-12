@@ -28,6 +28,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <header>
@@ -212,7 +214,11 @@
           </h3>
         </div>
         <div class="about_section_right_content">
-          <div class="about_section_right_stats">
+          <div
+            class="about_section_right_stats"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <h5>
               Lorem ipsum dolor sit amet consectetur. Faucibus sed tellus
               viverra sit commodo.
@@ -220,7 +226,13 @@
             <div class="about_section_right_line"></div>
             <div class="about_section_right_status">
               <div class="about_section_right_status_top">
-                <h3>82.835</h3>
+                <h3>
+                  <span class="value" data-value="82">0</span>.<span
+                    class="value"
+                    data-value="835"
+                    >0</span
+                  >
+                </h3>
                 <img src="./assets/icons/up.svg" alt="" />
               </div>
               <p>
@@ -231,7 +243,7 @@
             <div class="about_section_right_line"></div>
             <div class="about_section_right_status">
               <div class="about_section_right_status_top">
-                <h3>1835</h3>
+                <h3 class="value" data-value="1835"></h3>
                 <img src="./assets/icons/up.svg" alt="" />
               </div>
               <p>
@@ -240,10 +252,20 @@
               </p>
             </div>
           </div>
-          <div class="about_section_right_stat">
+          <div
+            class="about_section_right_stat"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <div class="about_section_right_status">
               <div class="about_section_right_status_top">
-                <h3><span>$</span>7.2M</h3>
+                <h3>
+                  $<span class="value" data-value="7">0</span>.<span
+                    class="value"
+                    data-value="2"
+                    >0</span
+                  >M
+                </h3>
                 <img src="./assets/icons/up.svg" alt="" />
               </div>
               <p>
@@ -253,10 +275,14 @@
             </div>
             <img src="./assets/icons/green-line.png" alt="" />
           </div>
-          <div class="about_section_right_stat">
+          <div
+            class="about_section_right_stat"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <div class="about_section_right_status">
               <div class="about_section_right_status_top">
-                <h3><span>$</span>13.5B</h3>
+                <h3>$<span class="value" data-value="13">0</span>.<span class="value" data-value="5">0</span>B</h3>
                 <img src="./assets/icons/up.svg" alt="" />
               </div>
               <p>
@@ -493,23 +519,65 @@
               the media
             </p>
             <div class="media_list_block">
-              <div class="media_list_wrapper">
-                <a href="#"
-                  ><img
-                    src="./assets/icons/media/wall-street-journal.svg"
-                    alt=""
-                /></a>
-                <a href="#"
-                  ><img src="./assets/icons/media/benzinga-seeklogo.svg" alt=""
-                /></a>
-                <a href="#"
-                  ><img src="./assets/icons/media/morningstar-1.svg" alt=""
-                /></a>
-                <a href="#"
-                  ><img
-                    src="./assets/icons/media/Digital-Journal-Logosm@2x.svg"
-                    alt=""
-                /></a>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="media_list_item">
+                    <img
+                      src="./assets/icons/media/wall-street-journal.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="media_list_item">
+                    <img
+                      src="./assets/icons/media/benzinga-seeklogo.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="media_list_item">
+                    <img src="./assets/icons/media/morningstar-1.svg" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="media_list_item">
+                    <img
+                      src="./assets/icons/media/Digital-Journal-Logosm@2x.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="media_list_item">
+                    <img
+                      src="./assets/icons/media/wall-street-journal.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="media_list_item">
+                    <img
+                      src="./assets/icons/media/benzinga-seeklogo.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="media_list_item">
+                    <img src="./assets/icons/media/morningstar-1.svg" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="media_list_item">
+                    <img
+                      src="./assets/icons/media/Digital-Journal-Logosm@2x.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -859,7 +927,68 @@
           },
         });
       });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".media_list_block", {
+          loop: false,
+          spaceBetween: 10,
+          slidesPerView: 3,
+          autoplay: true,
+          delay: 1000,
+        });
+      });
     </script>
     <script src="./scripts/main.js"></script>
+    <script>
+      // Функция для анимации счетчика
+      function animateValue(singleValue) {
+        let startValue = 0;
+        let endValue = parseInt(singleValue.getAttribute("data-value"));
+        let duration = 2000; // 2 секунды
+        let startTime = null;
+
+        // Функция для анимации
+        function updateValue(timestamp) {
+          if (!startTime) startTime = timestamp; // Запоминаем время старта
+          let elapsed = timestamp - startTime; // Прошедшее время
+          let progress = Math.min(elapsed / duration, 1); // Прогресс (0 до 1)
+
+          // Вычисляем текущее значение
+          singleValue.textContent = Math.floor(progress * endValue);
+
+          if (progress < 1) {
+            requestAnimationFrame(updateValue); // Запускаем следующий кадр
+          }
+        }
+
+        requestAnimationFrame(updateValue); // Начинаем анимацию
+      }
+
+      // Функция для обработки видимости элементов
+      function handleIntersection(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateValue(entry.target); // Запускаем анимацию, если элемент виден
+            observer.unobserve(entry.target); // Прекращаем наблюдение за этим элементом
+          }
+        });
+      }
+
+      // Настройка Intersection Observer
+      let observer = new IntersectionObserver(handleIntersection, {
+        threshold: 1.0, // Устанавливаем порог видимости (100%)
+      });
+
+      // Получаем все элементы с классом "value"
+      let allValues = document.querySelectorAll(".value");
+
+      // Наблюдаем за каждым элементом
+      allValues.forEach((value) => {
+        observer.observe(value);
+      });
+    </script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

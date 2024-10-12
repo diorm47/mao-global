@@ -237,6 +237,23 @@ body {
   font-size: 14px;
   font-weight: 600;
 }
+.partners_mob_car {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 10px;
+  display: none;
+}
+.partner_slide_item {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner_slide_item img {
+  max-width: 100px;
+}
+
 
 @media only screen and (max-width: 1000px) {
   .left_sh,
@@ -246,6 +263,12 @@ body {
 
 }
 @media only screen and (max-width: 500px) {
+  .partners_list {
+    display: none;
+  }
+  .partners_mob_car {
+    display: block;
+  }
   .partners_pr_card {
     width: 100%;
     padding: 20px;
