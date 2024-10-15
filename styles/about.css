@@ -421,14 +421,103 @@ body {
   margin-bottom: 24px;
 }
 
+.about_carousel {
+  width: 100%;
+  background: #fff;
+}
+
+.about_car_item {
+  padding: 18px;
+}
+.about_car_item img {
+  width: 100%;
+  border-radius: 23px;
+  filter: blur(4px);
+  opacity: 0.7;
+}
+.about_carousel .swiper-slide {
+  max-width: 920px;
+  width: 100%;
+}
+
+.about_carousel .swiper-slide-active {
+  max-width: 920px;
+}
+.about_carousel .swiper-slide-active .about_car_item {
+  border: 0.5px solid rgb(234, 234, 234);
+  border-radius: 30px;
+  padding: 18px;
+}
+.about_carousel .swiper-slide-active img {
+  opacity: 1;
+  filter: none;
+}
+.swiper-pagination {
+  position: static !important;
+  margin-top: 20px;
+}
+.swiper-pagination-bullet-active {
+  background: rgb(223, 54, 30) !important;
+}
+.about_carousel {
+  position: relative;
+}
+.about_carousel_arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.about_carousel_arrow {
+  width: 62px !important;
+  height: 62px !important;
+  box-sizing: border-box;
+  border: 0.5px solid rgb(234, 234, 234);
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  top: 50%;
+  margin-top: -31px !important;
+}
+.swiper-button-next {
+  right: 25% !important;
+}
+.swiper-button-prev {
+  left: 25% !important;
+}
+.about_carousel_arrow::after {
+  content: none !important;
+}
 @media only screen and (max-width: 950px) {
   .about_header,
   .about_innovators {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .swiper-button-next {
+    right: 50px !important;
+  }
+  .swiper-button-prev {
+    left: 50px !important;
+  }
 }
 @media only screen and (max-width: 500px) {
+  .about_carousel .swiper-slide-active .about_car_item {
+    border: 0.5px solid rgb(234, 234, 234);
+    border-radius: 15px;
+    padding: 5px;
+  }
+  .about_carousel .swiper-slide-active img {
+    border-radius: 10px;
+  }
+  .about_carousel_arrow {
+    display: none !important;
+  }
   .about_header {
     margin-top: 30px;
     padding-top: 20px;

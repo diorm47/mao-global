@@ -616,48 +616,7 @@ body {
 }
 
 
-/*  */
 
-input[type="radio"] {
-  display: none;
-}
-
-/* Стили для кастомной радиокнопки */
-.custom-radio {
-  display: inline-block;
-  width: 18px; /* Увеличиваем размер для большего радиуса */
-  height: 18px;
-  border: 2px solid rgb(181, 181, 181); /* Толстая зелёная граница */
-  border-radius: 50%;
-  position: relative;
-  cursor: pointer;
-}
-
-/* Стиль при активном состоянии */
-input[type="radio"]:checked + .custom-radio {
-  border-color: #4CAF50;
-  background-color: transparent;
-}
-
-/* Внутренний зелёный кружок */
-.custom-radio::before {
-  content: '';
-  display: block;
-  width: 50%; /* Размер внутреннего круга относительно внешнего */
-  height: 50%;
-  background: #4CAF50;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-}
-
-/* Появление внутреннего кружка при активации */
-input[type="radio"]:checked + .custom-radio::before {
-  opacity: 1;
-}
 @media only screen and (max-width: 1920px) {
   .global_block {
     border-radius: 0;

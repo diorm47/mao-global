@@ -302,8 +302,7 @@
   background: transparent;
   margin-top: 30px;
 }
-.setting_factor
-.btn_grey:hover {
+.setting_factor .btn_grey:hover {
   transition: all 0.4s ease;
   background: #e3e1e1;
 }
@@ -315,18 +314,93 @@
   color: #fff;
 }
 
+.verification_page {
+  display: flex;
+  align-items: start;
+  gap: 50px;
+  padding: 20px 28px 33px;
+}
+.verification_page_left,
+.verification_page_right {
+  width: 50%;
+}
 
+.verification_page_left_form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 20px;
+}
+.verification_type {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(234, 234, 234);
+  border-radius: 9px;
+  height: 45px;
+  padding-left: 14px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  cursor: pointer;
+  width: 100%;
+}
+.verification_types label {
+  width: 33%;
+}
+.verification_type p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.verification_types {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.active_verification_type {
+  box-sizing: border-box;
+  border: 1px solid rgb(34, 197, 94);
+  border-radius: 9px;
+}
+.verification_page_right .setting_input {
+  margin-bottom: 0;
+}
+
+.verification_page_right .avatar_block_upload {
+  height: 280px;
+}
 @media only screen and (max-width: 920px) {
   .setting_page1 {
     display: flex;
     flex-direction: column;
   }
-  .settings_auth .main_block_content {
+  .settings_auth .main_block_content, .verification_page {
     flex-direction: column;
   }
+  .verification_page_left, .verification_page_right {
+    width: 100%;
+}
 }
 
 @media only screen and (max-width: 500px) {
+  .verification_page_left_form {
+    flex-direction: column;
+    display: flex;
+  }
+  .verification_page {
+    gap: 30px;
+  }
+  .verification_types {
+    flex-direction: column;
+  }
+  .verification_types label {
+    width: 100%;
+}
   .setting_page1 {
     gap: 20px;
   }
@@ -378,7 +452,6 @@
   }
   .settings_menu_item p {
     font-size: 13px;
-
   }
   .setting_factor {
     padding: 10px;

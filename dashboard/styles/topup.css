@@ -51,6 +51,9 @@
   justify-content: space-between;
   cursor: pointer;
 }
+.active_payments_item {
+  border: 1px solid rgb(34, 197, 94);
+}
 
 .payments_item div {
   display: flex;

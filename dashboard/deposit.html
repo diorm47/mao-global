@@ -717,7 +717,8 @@
                     <label for="payment1">
                       <div class="payments_item">
                         <div>
-                          <input type="radio" name="" id="payment1" />
+                          <input type="radio" name="payment" id="payment1" />
+                          <span class="custom-radio"></span>
                           <p>Ежедневный</p>
                         </div>
                         <img src="./assets/icons/arrow-right.svg" alt="" />
@@ -726,7 +727,8 @@
                     <label for="payment2">
                       <div class="payments_item">
                         <div>
-                          <input type="radio" name="" id="payment2" />
+                          <input type="radio" name="payment" id="payment2" />
+                          <span class="custom-radio"></span>
                           <p>Ежемесячный</p>
                         </div>
                         <img src="./assets/icons/arrow-right.svg" alt="" />
@@ -735,7 +737,8 @@
                     <label for="payment3">
                       <div class="payments_item" style="margin: 0">
                         <div>
-                          <input type="radio" name="" id="payment3" />
+                          <input type="radio" name="payment" id="payment3" />
+                          <span class="custom-radio"></span>
                           <p>В конце срока</p>
                         </div>
                         <img src="./assets/icons/arrow-right.svg" alt="" />
@@ -760,240 +763,253 @@
                   <p>Select plan</p>
                 </div>
                 <div class="plan_list">
-                  <div class="plan_item">
-                    <div class="plan_item_left">
-                      <div class="plan_item_left_icon">
-                        <svg
-                          width="27.377197"
-                          height="27.376953"
-                          viewBox="0 0 27.3772 27.377"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                        >
-                          <desc>Created with Pixso.</desc>
-                          <defs />
-                          <path
-                            id="Vector"
-                            d="M11.19 19.12L7.89 15.83L11.63 8.68C12.69 6.65 14.69 5.27 16.97 4.99L21.84 4.39C22.3 4.33 22.68 4.72 22.62 5.17L22.03 10.04C21.75 12.32 20.36 14.32 18.33 15.38L11.19 19.12Z"
-                            stroke="#000"
-                            stroke-opacity="1.000000"
-                            stroke-width="2.000000"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            id="Vector"
-                            d="M5.41 18.3C3.76 19.95 4.59 22.42 4.59 22.42C4.59 22.42 7.06 23.25 8.71 21.6"
-                            stroke="#000"
-                            stroke-opacity="1.000000"
-                            stroke-width="2.000000"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          />
-                          <path
-                            id="Vector"
-                            d="M10.36 10.88C5.41 10.05 3.76 15 3.76 15L7.89 15.83"
-                            stroke="#000"
-                            stroke-opacity="1.000000"
-                            stroke-width="2.000000"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          />
-                          <path
-                            id="Vector"
-                            d="M16.49 17.01C17.31 21.95 12.37 23.6 12.37 23.6L11.54 19.48"
-                            stroke="#000"
-                            stroke-opacity="1.000000"
-                            stroke-width="2.000000"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          />
-                          <path
-                            id="Vector"
-                            d="M14.49 9.23C15.4 8.32 16.87 8.32 17.78 9.23C18.7 10.14 18.7 11.62 17.78 12.53C16.87 13.44 15.4 13.44 14.49 12.53C13.57 11.62 13.57 10.14 14.49 9.23Z"
-                            stroke="#000"
-                            stroke-opacity="1.000000"
-                            stroke-width="2.000000"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
+                  <label for="depo1">
+                    <div class="plan_item">
+                      <div class="plan_item_left">
+                        <div class="plan_item_left_icon">
+                          <svg
+                            width="27.377197"
+                            height="27.376953"
+                            viewBox="0 0 27.3772 27.377"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <desc>Created with Pixso.</desc>
+                            <defs />
+                            <path
+                              id="Vector"
+                              d="M11.19 19.12L7.89 15.83L11.63 8.68C12.69 6.65 14.69 5.27 16.97 4.99L21.84 4.39C22.3 4.33 22.68 4.72 22.62 5.17L22.03 10.04C21.75 12.32 20.36 14.32 18.33 15.38L11.19 19.12Z"
+                              stroke="#000"
+                              stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              id="Vector"
+                              d="M5.41 18.3C3.76 19.95 4.59 22.42 4.59 22.42C4.59 22.42 7.06 23.25 8.71 21.6"
+                              stroke="#000"
+                              stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              id="Vector"
+                              d="M10.36 10.88C5.41 10.05 3.76 15 3.76 15L7.89 15.83"
+                              stroke="#000"
+                              stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              id="Vector"
+                              d="M16.49 17.01C17.31 21.95 12.37 23.6 12.37 23.6L11.54 19.48"
+                              stroke="#000"
+                              stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              id="Vector"
+                              d="M14.49 9.23C15.4 8.32 16.87 8.32 17.78 9.23C18.7 10.14 18.7 11.62 17.78 12.53C16.87 13.44 15.4 13.44 14.49 12.53C13.57 11.62 13.57 10.14 14.49 9.23Z"
+                              stroke="#000"
+                              stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div>
+                          <p>1 месяц</p>
+                          <span>Lorem ipsum dolor onsectetur. </span>
+                        </div>
                       </div>
-                      <div>
-                        <p>1 месяц</p>
-                        <span>Lorem ipsum dolor onsectetur. </span>
+                      <div class="plan_item_right">
+                        <p>0.65% / ежедневно</p>
+                        <input type="radio" id="depo1" name="plan" />
+                        <span class="custom-radio"></span>
+                      </div></div
+                  ></label>
+                  <label for="depo2">
+                    <div class="plan_item">
+                      <div class="plan_item_left">
+                        <div class="plan_item_left_icon">
+                          <svg
+                            width="23.738281"
+                            height="23.738281"
+                            viewBox="0 0 23.7383 23.7383"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <desc>Created with Pixso.</desc>
+                            <defs />
+                            <path
+                              id="Vector"
+                              d="M15.12 7.52C15.12 12.9 17.42 15.12 22.73 15.12C17.42 15.12 15.12 17.42 15.12 22.73C15.12 17.42 12.81 15.12 7.52 15.12C12.81 15.12 15.12 12.9 15.12 7.52Z"
+                              stroke="#000000"
+                              stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              id="Vector"
+                              d="M5.89 1C5.89 4.45 7.36 5.89 10.78 5.89C7.36 5.89 5.89 7.36 5.89 10.78C5.89 7.36 4.4 5.89 1 5.89C4.4 5.89 5.89 4.45 5.89 1Z"
+                              stroke="#000000"
+                              stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div>
+                          <p>3 месяц</p>
+                          <span>Lorem ipsum dolor onsectetur. </span>
+                        </div>
                       </div>
-                    </div>
-                    <div class="plan_item_right">
-                      <p>0.65% / ежедневно</p>
-                      <input type="radio" />
-                    </div>
-                  </div>
-                  <div class="plan_item">
-                    <div class="plan_item_left">
-                      <div class="plan_item_left_icon">
-                        <svg
-                          width="23.738281"
-                          height="23.738281"
-                          viewBox="0 0 23.7383 23.7383"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                        >
-                          <desc>Created with Pixso.</desc>
-                          <defs />
-                          <path
-                            id="Vector"
-                            d="M15.12 7.52C15.12 12.9 17.42 15.12 22.73 15.12C17.42 15.12 15.12 17.42 15.12 22.73C15.12 17.42 12.81 15.12 7.52 15.12C12.81 15.12 15.12 12.9 15.12 7.52Z"
-                            stroke="#000000"
-                            stroke-opacity="1.000000"
-                            stroke-width="2.000000"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            id="Vector"
-                            d="M5.89 1C5.89 4.45 7.36 5.89 10.78 5.89C7.36 5.89 5.89 7.36 5.89 10.78C5.89 7.36 4.4 5.89 1 5.89C4.4 5.89 5.89 4.45 5.89 1Z"
-                            stroke="#000000"
-                            stroke-opacity="1.000000"
-                            stroke-width="2.000000"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </div>
-                      <div>
-                        <p>3 месяц</p>
-                        <span>Lorem ipsum dolor onsectetur. </span>
-                      </div>
-                    </div>
-                    <div class="plan_item_right">
-                      <p>0.65% / ежедневно</p>
-                      <input type="radio" />
-                    </div>
-                  </div>
-                  <div class="plan_item">
-                    <div class="plan_item_left">
-                      <div class="plan_item_left_icon">
-                        <svg
-                          width="15.572266"
-                          height="22.875000"
-                          viewBox="0 0 15.5723 22.875"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                        >
-                          <desc>Created with Pixso.</desc>
-                          <defs />
-                          <path
-                            id="Vector"
-                            d="M10.67 9.81L14.56 1M5.5 10.01L1 1M9.1 9.4L5 1M10.77 1L9.68 3.61M8.3 21.87C11.76 21.87 14.56 19.07 14.56 15.61C14.56 12.15 11.76 9.35 8.3 9.35C4.84 9.35 2.04 12.15 2.04 15.61C2.04 19.07 4.84 21.87 8.3 21.87Z"
-                            stroke="#000000"
-                            stroke-opacity="1.000000"
-                            stroke-width="2.000000"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          />
-                        </svg>
-                      </div>
-                      <div>
-                        <p>6 месяц</p>
-                        <span>Lorem ipsum dolor onsectetur. </span>
+                      <div class="plan_item_right">
+                        <p>0.65% / ежедневно</p>
+                        <input type="radio" id="depo2"   name="plan"/>
+                        <span class="custom-radio"></span>
                       </div>
                     </div>
-                    <div class="plan_item_right">
-                      <p>0.65% / ежедневно</p>
-                      <input type="radio" />
-                    </div>
-                  </div>
-                  <div class="plan_item">
-                    <div class="plan_item_left">
-                      <div class="plan_item_left_icon">
-                        <svg
-                          width="23.000244"
-                          height="18.333984"
-                          viewBox="0 0 23.0002 18.334"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                        >
-                          <desc>Created with Pixso.</desc>
-                          <defs />
-                          <path
-                            id="Vector"
-                            d="M8 17.33L8 9.75L8 5.2C8 4.81 8.31 4.5 8.69 4.5L14.3 4.5C14.68 4.5 15 4.81 15 5.2L15 12.08L15 17.33L8 17.33Z"
-                            stroke="#000000"
-                            stroke-opacity="1.000000"
-                            stroke-width="2.000000"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            id="Vector"
-                            d="M15 1L8 1"
-                            stroke="#000000"
-                            stroke-opacity="1.000000"
-                            stroke-width="2.000000"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                          />
-                          <path
-                            id="Vector"
-                            d="M15 17.33L15 12.78C15 12.39 15.31 12.08 15.7 12.08L21.3 12.08C21.68 12.08 22 12.39 22 12.78L22 16.63C22 17.02 21.68 17.33 21.3 17.33L15 17.33Z"
-                            stroke="#000000"
-                            stroke-opacity="1.000000"
-                            stroke-width="2.000000"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            id="Vector"
-                            d="M8 10.45C8 10.06 7.68 9.75 7.3 9.75L1.69 9.75C1.31 9.75 1 10.06 1 10.45L1 16.63C1 17.02 1.31 17.33 1.69 17.33L8 17.33L8 10.45Z"
-                            stroke="#000000"
-                            stroke-opacity="1.000000"
-                            stroke-width="2.000000"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
+                  </label>
+
+                  <label for="depo3">
+                    <div class="plan_item">
+                      <div class="plan_item_left">
+                        <div class="plan_item_left_icon">
+                          <svg
+                            width="15.572266"
+                            height="22.875000"
+                            viewBox="0 0 15.5723 22.875"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <desc>Created with Pixso.</desc>
+                            <defs />
+                            <path
+                              id="Vector"
+                              d="M10.67 9.81L14.56 1M5.5 10.01L1 1M9.1 9.4L5 1M10.77 1L9.68 3.61M8.3 21.87C11.76 21.87 14.56 19.07 14.56 15.61C14.56 12.15 11.76 9.35 8.3 9.35C4.84 9.35 2.04 12.15 2.04 15.61C2.04 19.07 4.84 21.87 8.3 21.87Z"
+                              stroke="#000000"
+                              stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </div>
+                        <div>
+                          <p>6 месяц</p>
+                          <span>Lorem ipsum dolor onsectetur. </span>
+                        </div>
                       </div>
-                      <div>
-                        <p>9 месяц</p>
-                        <span>Lorem ipsum dolor onsectetur. </span>
+                      <div class="plan_item_right">
+                        <p>0.65% / ежедневно</p>
+                        <input type="radio" id="depo3"  name="plan"/>
+                        <span class="custom-radio"></span>
                       </div>
                     </div>
-                    <div class="plan_item_right">
-                      <p>0.65% / ежедневно</p>
-                      <input type="radio" />
-                    </div>
-                  </div>
-                  <div class="plan_item">
-                    <div class="plan_item_left">
-                      <div class="plan_item_left_icon">
-                        <svg
-                          width="21.800049"
-                          height="13.000000"
-                          viewBox="0 0 21.8 13"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                        >
-                          <desc>Created with Pixso.</desc>
-                          <defs />
-                          <path
-                            id="Vector"
-                            d="M20.8 1L13.87 4.29L10.89 1L7.92 4.29L1 1L2.97 12L18.82 12L20.8 1Z"
-                            stroke="#000000"
-                            stroke-opacity="1.000000"
-                            stroke-width="2.000000"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
+                  </label>
+                  <label for="depo4">
+                    <div class="plan_item">
+                      <div class="plan_item_left">
+                        <div class="plan_item_left_icon">
+                          <svg
+                            width="23.000244"
+                            height="18.333984"
+                            viewBox="0 0 23.0002 18.334"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <desc>Created with Pixso.</desc>
+                            <defs />
+                            <path
+                              id="Vector"
+                              d="M8 17.33L8 9.75L8 5.2C8 4.81 8.31 4.5 8.69 4.5L14.3 4.5C14.68 4.5 15 4.81 15 5.2L15 12.08L15 17.33L8 17.33Z"
+                              stroke="#000000"
+                              stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              id="Vector"
+                              d="M15 1L8 1"
+                              stroke="#000000"
+                              stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              id="Vector"
+                              d="M15 17.33L15 12.78C15 12.39 15.31 12.08 15.7 12.08L21.3 12.08C21.68 12.08 22 12.39 22 12.78L22 16.63C22 17.02 21.68 17.33 21.3 17.33L15 17.33Z"
+                              stroke="#000000"
+                              stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              id="Vector"
+                              d="M8 10.45C8 10.06 7.68 9.75 7.3 9.75L1.69 9.75C1.31 9.75 1 10.06 1 10.45L1 16.63C1 17.02 1.31 17.33 1.69 17.33L8 17.33L8 10.45Z"
+                              stroke="#000000"
+                              stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div>
+                          <p>9 месяц</p>
+                          <span>Lorem ipsum dolor onsectetur. </span>
+                        </div>
                       </div>
-                      <div>
-                        <p>1 год</p>
-                        <span>Lorem ipsum dolor onsectetur. </span>
+                      <div class="plan_item_right">
+                        <p>0.65% / ежедневно</p>
+                        <input type="radio" id="depo4"  name="plan" />
+                        <span class="custom-radio"></span>
+                      </div></div
+                  ></label>
+                  <label for="depo5">
+                    <div class="plan_item">
+                      <div class="plan_item_left">
+                        <div class="plan_item_left_icon">
+                          <svg
+                            width="21.800049"
+                            height="13.000000"
+                            viewBox="0 0 21.8 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                          >
+                            <desc>Created with Pixso.</desc>
+                            <defs />
+                            <path
+                              id="Vector"
+                              d="M20.8 1L13.87 4.29L10.89 1L7.92 4.29L1 1L2.97 12L18.82 12L20.8 1Z"
+                              stroke="#000000"
+                              stroke-opacity="1.000000"
+                              stroke-width="2.000000"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div>
+                          <p>1 год</p>
+                          <span>Lorem ipsum dolor onsectetur. </span>
+                        </div>
                       </div>
-                    </div>
-                    <div class="plan_item_right">
-                      <p>0.65% / ежедневно</p>
-                      <input type="radio" />
-                    </div>
-                  </div>
+                      <div class="plan_item_right">
+                        <p>0.65% / ежедневно</p>
+                        <input type="radio" id="depo5"  name="plan" />
+                        <span class="custom-radio"></span>
+                      </div></div
+                  ></label>
                 </div>
               </div>
             </div>
@@ -1164,13 +1180,13 @@
                 </div>
               </div>
               <div class="deposit_inc">
-                <div class="deposit_inc_item">
+                <div class="deposit_inc_item dec">
                   <img src="../assets/icons/dec.png" alt="" />
                 </div>
                 <div class="deposit_inc_wrapper">
                   <div class="deposit_inc_value" style="width: 45%"></div>
                 </div>
-                <div class="deposit_inc_item">
+                <div class="deposit_inc_item inc">
                   <img src="../assets/icons/inc.png" alt="" />
                 </div>
               </div>
@@ -1312,5 +1328,6 @@
       </div>
     </footer>
     <script src="../scripts/main.js"></script>
+    <script src="./scripts/deposit.js"></script>
   </body>
 </html>

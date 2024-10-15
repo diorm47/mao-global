@@ -79,6 +79,21 @@
   margin-bottom: 7px;
   cursor: pointer;
 }
+.active_plan_item {
+  box-sizing: border-box;
+border: 1px solid rgb(34, 197, 94);
+border-radius: 15px;
+
+background: rgba(34, 197, 94, 0.1);
+}
+.active_plan_item .plan_item_left_icon {
+  border-radius: 9px;
+
+  background: rgb(34, 197, 94);
+}
+.active_plan_item .plan_item_left_icon svg *{
+  stroke: #fff ;
+}
 
 .plan_item_left {
   display: flex;

@@ -132,7 +132,103 @@ body {
   margin: 40px auto 120px;
 }
 
+.write_review {
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 0.5px solid rgb(228, 226, 225);
+  padding-top: 48px;
+  padding-bottom: 126px;
+}
+.write_review h3 {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 36px;
+}
+
+.write_review_input p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 8px;
+}
+.write_review_input input {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(228, 226, 225);
+  border-radius: 9px;
+  height: 46px;
+  background: transparent;
+  text-indent: 16px;
+  width: 100%;
+  color: #000;
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.write_review_input input::placeholder,
+.write_review_input textarea::placeholder {
+  color: rgb(181, 181, 181);
+}
+.write_review_input textarea {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(228, 226, 225);
+  border-radius: 9px;
+  height: 147px;
+  width: 100%;
+  color: rgb(181, 181, 181);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 11px 16px;
+  background: transparent;
+}
+.write_review_inputs {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 27px;
+}
+.write_review_inputs .write_review_input {
+  width: 50%;
+}
+
+.write_review_form .btn_send {
+  margin-top: 36px;
+}
+@media only screen and (max-width: 800px) {
+  .write_review,
+  .testimonials_cards {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 @media only screen and (max-width: 500px) {
+  .write_review_inputs {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .write_review_inputs .write_review_input {
+    width: 100%;
+  }
+
+  .write_review {
+    padding-bottom: 40px;
+  }
   .main_testimonial_card_content {
     height: auto;
     padding: 20px;

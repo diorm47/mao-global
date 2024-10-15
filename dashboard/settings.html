@@ -744,6 +744,9 @@
           <div class="settings_menu_item menu_item" data-id="menu3">
             <p>Sessions</p>
           </div>
+          <div class="settings_menu_item menu_item" data-id="menu4">
+            <p>Sessions</p>
+          </div>
         </div>
       </div>
 
@@ -1024,6 +1027,117 @@
             </div>
           </div>
         </div>
+
+        <!-- page 4 -->
+
+        <div class="setting_page menu_item_content" id="menu4">
+          <div class="setting_page3">
+            <div class="main_block">
+              <div class="main_block_title">
+                <h4>Verification</h4>
+              </div>
+              <div class="main_block_content verification_page">
+                <div class="verification_page_left">
+                  <div class="verification_page_left_form">
+                    <div class="setting_input">
+                      <p>First Name</p>
+                      <div class="setting_input_w">
+                        <img src="./assets/icons/user.png" alt="" />
+                        <input type="text" placeholder="Enter first name" />
+                      </div>
+                    </div>
+                    <div class="setting_input">
+                      <p>Last Name</p>
+                      <div class="setting_input_w">
+                        <img src="./assets/icons/user.png" alt="" />
+                        <input type="text" placeholder="Enter last name" />
+                      </div>
+                    </div>
+                    <div class="setting_input">
+                      <p>City</p>
+                      <div class="setting_input_w">
+                        <img src="./assets/icons/city.svg" alt="" />
+                        <input type="text" placeholder="Enter your city" />
+                      </div>
+                    </div>
+                    <div class="setting_input">
+                      <p>Postal Code / ZIP</p>
+                      <div class="setting_input_w">
+                        <img src="./assets/icons/zip.svg" alt="" />
+                        <input type="text" placeholder="Enter postal code" />
+                      </div>
+                    </div>
+                    <div class="setting_input">
+                      <p>Country</p>
+                      <div class="setting_input_w">
+                        <img src="./assets/icons/city.svg" alt="" />
+                        <input type="text" placeholder="United State" />
+                      </div>
+                    </div>
+                    <div class="setting_input">
+                      <p>Mobile Phone Number</p>
+                      <div class="setting_input_w">
+                        <img
+                          src="./assets/icons/smartphone-device 1.svg"
+                          alt=""
+                        />
+                        <input
+                          type="text"
+                          placeholder="Enter your phone number"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="setting_input">
+                    <p>Street Address</p>
+                    <div class="setting_input_w">
+                      <img src="./assets/icons/map-pin.svg" alt="" />
+                      <input type="text" placeholder="Enter street address" />
+                    </div>
+                  </div>
+                  <div class="save_btn">
+                    <button class="btn_grey redtbn">Send</button>
+                  </div>
+                </div>
+                <div class="verification_page_right">
+                  <div class="setting_input">
+                    <p>Document Type</p>
+                  </div>
+                  <div class="verification_types">
+                    <label for="passport">
+                      <div class="verification_type">
+                        <input type="radio" name="typev" id="passport" />
+                        <span class="custom-radio"></span>
+                        <p>Passport</p>
+                      </div>
+                    </label>
+                    <label for="dl">
+                      <div class="verification_type">
+                        <input type="radio" name="typev" id="dl" />
+                        <span class="custom-radio"></span>
+                        <p>Drive License</p>
+                      </div>
+                    </label>
+                    <label for="ic">
+                      <div class="verification_type">
+                        <input type="radio" name="typev" id="ic" />
+                        <span class="custom-radio"></span>
+                        <p>Identify Card</p>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="avatar_block_upload">
+                    <img src="./assets/icons/upload.png" alt="" />
+                    <p>
+                      <span>Click to upload</span> or drag and drop SVG, PNG,
+                      JPG (max. 500x500px)
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -1127,5 +1241,22 @@
     </footer>
     <script src="./scripts/settings.js"></script>
     <script src="../scripts/main.js"></script>
+    <script>
+      const verifItems = document.querySelectorAll(".verification_type");
+
+      verifItems.forEach((item) => {
+        item.querySelector("input").addEventListener("change", function () {
+          // Удалить класс активности у всех элементов
+          verifItems.forEach((el) =>
+            el.classList.remove("active_verification_type")
+          );
+
+          // Добавить класс активности к выбранному элементу
+          if (this.checked) {
+            item.classList.add("active_verification_type");
+          }
+        });
+      });
+    </script>
   </body>
 </html>
