@@ -833,31 +833,99 @@
                 <p>Select payment system</p>
               </div>
               <div class="deposit_input_white">
-                <div class="deposit_input">
-                  <img src="../assets/icons/usdt.svg" alt="" />
-                  <input type="text" value="Tether" />
-                  <div class="deposit_input_select">
-                    <p>USDT</p>
-                    <svg
-                      width="9.333984"
-                      height="5.074951"
-                      viewBox="0 0 9.33398 5.07495"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                    >
-                      <desc>Created with Pixso.</desc>
-                      <defs></defs>
-                      <path
-                        id="Vector"
-                        d="M0.54 0.03C0.38 0.07 0.21 0.18 0.11 0.37C-0.1 0.76 -0.01 1.3 0.29 1.56L4.29 4.93C4.51 5.12 4.81 5.12 5.04 4.93L9.03 1.56C9.34 1.3 9.42 0.76 9.22 0.37C9.01 -0.01 8.59 -0.12 8.28 0.14L4.66 3.19L1.04 0.14C0.89 0.01 0.71 -0.01 0.54 0.03Z"
-                        fill="#828282"
-                        fill-opacity="1.000000"
-                        fill-rule="nonzero"
-                      ></path>
-                    </svg>
+                <div class="deposit_input wallet_drop">
+                  <div class="wallet_selected">
+                    <div class="wallet_selected_left">
+                      <img src="../assets/icons/usdt.svg" alt="USDT Icon" class="wallet_icon" />
+                      <input type="text" value="Tether" readonly class="wallet_name" />
+                    </div>
+                 
+                    <div class="deposit_input_select">
+                      <p class="wallet_code">USDT</p>
+                      <img src="./assets/icons/arrow-btm.svg" alt="Arrow" />
+                    </div>
+                  </div>
+                
+                  <div class="wallet_drop_list">
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/Bitcoin Symbol.svg" data-name="Bitcoin" data-code="BTC">
+                      <img src="../assets/icons/tokens/Bitcoin Symbol.svg" alt="Bitcoin" />
+                      <p>Bitcoin</p>
+                    </div>
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/Ethereum Symbol.svg" data-name="Ethereum" data-code="ETH">
+                      <img src="../assets/icons/tokens/Ethereum Symbol.svg" alt="Ethereum" />
+                      <p>Ethereum</p>
+                    </div>
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/Litecoin Symbol.svg" data-name="Litecoin" data-code="LTC">
+                      <img src="../assets/icons/tokens/Litecoin Symbol.svg" alt="Litecoin" />
+                      <p>Litecoin</p>
+                    </div>
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/Dash Symbol.svg" data-name="Dash" data-code="DASH">
+                      <img src="../assets/icons/tokens/Dash Symbol.svg" alt="Dash" />
+                      <p>Dash</p>
+                    </div>
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/Bitcoin Cash Symbol.svg" data-name="BitcoinCash" data-code="BCH">
+                      <img src="../assets/icons/tokens/Bitcoin Cash Symbol.svg" alt="BitcoinCash" />
+                      <p>BitcoinCash</p>
+                    </div>
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/Dogecoin Symbol.svg" data-name="Dogecoin" data-code="DOGE">
+                      <img src="../assets/icons/tokens/Dogecoin Symbol.svg" alt="Dogecoin" />
+                      <p>Dogecoin</p>
+                    </div>
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/TRON Symbol.svg" data-name="Tron" data-code="TRX">
+                      <img src="../assets/icons/tokens/TRON Symbol.svg" alt="Tron" />
+                      <p>Tron</p>
+                    </div>
+                
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/ripple.svg" data-name="Ripple" data-code="XRP">
+                      <img src="../assets/icons/tokens/ripple.svg" alt="Ripple" />
+                      <p>Ripple</p>
+                    </div>
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/Solana Symbol.svg" data-name="Solana" data-code="SOL">
+                      <img src="../assets/icons/tokens/Solana Symbol.svg" alt="Solana" />
+                      <p>Solana</p>
+                    </div>
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/Polygon Symbol.svg" data-name="Polygon" data-code="MATIC">
+                      <img src="../assets/icons/tokens/Polygon Symbol.svg" alt="Polygon" />
+                      <p>Polygon</p>
+                    </div>
+
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/Tether Symbol.svg" data-name="Tether" data-code="BEP20">
+                      <img src="../assets/icons/tokens/Tether Symbol.svg" alt="Tether" />
+                      <p>Tether</p>
+                    </div>
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/Tether Symbol.svg" data-name="Tether" data-code="TRC20">
+                      <img src="../assets/icons/tokens/Tether Symbol.svg" alt="Tether" />
+                      <p>Tether</p>
+                    </div>
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/Tether Symbol.svg" data-name="Tether" data-code="TON20">
+                      <img src="../assets/icons/tokens/Tether Symbol.svg" alt="Tether" />
+                      <p>Tether</p>
+                    </div>
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/Tether Symbol.svg" data-name="Tether" data-code="SOL20">
+                      <img src="../assets/icons/tokens/Tether Symbol.svg" alt="Tether" />
+                      <p>Tether</p>
+                    </div>
+
+
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/visa.svg" data-name="Visa" data-code="RUB">
+                      <img src="../assets/icons/tokens/visa.svg" alt="Visa" />
+                      <p>Visa</p>
+                    </div>
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/mas.svg" data-name="Mastercard" data-code="RUB">
+                      <img src="../assets/icons/tokens/mas.svg" alt="Mastercard" />
+                      <p>Mastercard</p>
+                    </div>
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/mir.svg" data-name="Mir" data-code="RUB">
+                      <img src="../assets/icons/tokens/mir.svg" alt="Mir" />
+                      <p>Mir</p>
+                    </div>
+                    <div class="wallet_drop_item" data-icon="../assets/icons/tokens/sbp.svg" data-name="Sbp" data-code="RUB">
+                      <img src="../assets/icons/tokens/sbp.svg" alt="Sbp" />
+                      <p>Sbp</p>
+                    </div>
                   </div>
                 </div>
+                
               </div>
               <div
                 class="make_payment_block_part_title"
@@ -1171,5 +1239,35 @@
       </div>
     </footer>
     <script src="../scripts/main.js"></script>
+    <script>
+      const selectedWallet = document.querySelector(".wallet_selected");
+      const walletDropdown = document.querySelector(".wallet_drop_list");
+      const walletItems = document.querySelectorAll(".wallet_drop_item");
+
+      selectedWallet.addEventListener("click", () => {
+        walletDropdown.style.display =
+          walletDropdown.style.display === "block" ? "none" : "block";
+      });
+
+      walletItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          const icon = item.getAttribute("data-icon");
+          const name = item.getAttribute("data-name");
+          const code = item.getAttribute("data-code");
+
+          document.querySelector(".wallet_icon").src = icon;
+          document.querySelector(".wallet_name").value = name;
+          document.querySelector(".wallet_code").textContent = code;
+
+          walletDropdown.style.display = "none";
+        });
+      });
+
+      window.addEventListener("click", (e) => {
+        if (!selectedWallet.contains(e.target)) {
+          walletDropdown.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>

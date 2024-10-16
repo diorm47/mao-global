@@ -23,6 +23,7 @@
     <link rel="manifest" href="../assets/favicon/site.webmanifest" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="./styles/dashboard.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
   </head>
   <body>
     <div class="dashboard_nav">
@@ -421,7 +422,7 @@
                     stroke-width="1.500000"
                   />
                 </svg>
-  
+
                 <p>Dashboard</p>
               </a>
               <a href="./topup.html">
@@ -453,7 +454,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-  
+
                 <p>Top Up</p>
               </a>
               <a href="./withdrawal.html">
@@ -485,7 +486,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-  
+
                 <p>Withdrawal</p>
               </a>
               <a href="./deposit.html">
@@ -517,7 +518,7 @@
                     stroke-linecap="round"
                   />
                 </svg>
-  
+
                 <p>Open Deposit</p>
               </a>
               <a href="./career.html">
@@ -557,7 +558,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-  
+
                 <p>My Career</p>
               </a>
               <a href="./operations.html">
@@ -599,7 +600,7 @@
                     stroke-linecap="round"
                   />
                 </svg>
-  
+
                 <p>Operations</p>
               </a>
               <a href="./wallets.html">
@@ -642,7 +643,7 @@
                     stroke-width="1.500000"
                   />
                 </svg>
-  
+
                 <p>Wallets</p>
               </a>
               <a href="./settings.html">
@@ -675,7 +676,7 @@
                     stroke-linecap="round"
                   />
                 </svg>
-  
+
                 <p>Settings</p>
               </a>
             </div>
@@ -857,11 +858,7 @@
                   </button>
                 </div>
                 <div class="main_block_content limit_block">
-                  <img
-                    class="limit_img"
-                    src="./assets/icons/limit.svg"
-                    alt=""
-                  />
+                  <div class="progress-bar" id="loyalty"></div>
                   <h4>$304,541.50</h4>
                   <p>
                     Пройдите <span>верификацию</span>, для <br />
@@ -1187,5 +1184,6 @@
       </div>
     </footer>
     <script src="../scripts/main.js"></script>
+    <script src="./scripts/dashboard.js"></script>
   </body>
 </html>

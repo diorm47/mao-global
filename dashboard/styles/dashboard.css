@@ -115,6 +115,24 @@
   color: rgb(36, 36, 36);
 }
 
+/*  */
+
+.progress-bar  svg text{
+  display: none;
+}
+
+.progress-bar {
+   position: absolute;
+   transform: scale(1.6);
+   top: 80px;
+}
+
+.limit_block {
+  position: relative;
+  overflow: hidden;
+}
+
+
 @media only screen and (max-width: 1100px) {
   .right_dashb_top {
     flex-direction: column;
