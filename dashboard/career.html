@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="./styles/career.css" />
     <link rel="stylesheet" href="./styles/settings.css" />
     <link rel="stylesheet" href="./styles/topup.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="dashboard_nav">
@@ -423,7 +425,7 @@
                     stroke-width="1.500000"
                   />
                 </svg>
-  
+
                 <p>Dashboard</p>
               </a>
               <a href="./topup.html">
@@ -455,7 +457,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-  
+
                 <p>Top Up</p>
               </a>
               <a href="./withdrawal.html">
@@ -487,7 +489,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-  
+
                 <p>Withdrawal</p>
               </a>
               <a href="./deposit.html">
@@ -519,7 +521,7 @@
                     stroke-linecap="round"
                   />
                 </svg>
-  
+
                 <p>Open Deposit</p>
               </a>
               <a href="./career.html" class="active_nav_link">
@@ -559,7 +561,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-  
+
                 <p>My Career</p>
               </a>
               <a href="./operations.html">
@@ -601,7 +603,7 @@
                     stroke-linecap="round"
                   />
                 </svg>
-  
+
                 <p>Operations</p>
               </a>
               <a href="./wallets.html">
@@ -644,7 +646,7 @@
                     stroke-width="1.500000"
                   />
                 </svg>
-  
+
                 <p>Wallets</p>
               </a>
               <a href="./settings.html">
@@ -677,7 +679,7 @@
                     stroke-linecap="round"
                   />
                 </svg>
-  
+
                 <p>Settings</p>
               </a>
             </div>
@@ -755,14 +757,14 @@
             </div>
             <div class="ref_stats_cards">
               <div class="ref_stats_card">
-                <img src="./assets/icons/ref-stat.svg" alt="" />
+                <div class="chart" data-percent="30"></div>
                 <div>
                   <p>Personal Investment</p>
                   <h4><span>$100</span> / $500</h4>
                 </div>
               </div>
               <div class="ref_stats_card">
-                <img src="./assets/icons/ref-stat.svg" alt="" />
+                <div class="chart" data-percent="60"></div>
                 <div>
                   <p>Partners Turnover</p>
                   <h4><span>$0</span> / $500.000</h4>
@@ -976,7 +978,6 @@
       </div>
     </div>
 
-    
     <footer>
       <div class="footer_wrapper container">
         <div class="footer_left">
@@ -1076,5 +1077,18 @@
       </div>
     </footer>
     <script src="../scripts/main.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(".chart").easyPieChart({
+          size: 160,
+          barColor: " rgb(34, 195, 93)",
+          scaleLength: 0,
+          lineWidth: 20,
+          trackColor: "rgb(242, 242, 242)",
+          lineCap: "circle",
+          animate: 2000,
+        });
+      });
+    </script>
   </body>
 </html>

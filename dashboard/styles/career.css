@@ -288,6 +288,17 @@
   align-items: start;
 }
 
+.chart {
+  position: relative;
+  width: 20px;
+  height: 20px;
+
+}
+.chart canvas {
+  width: 19px !important; 
+  height: 19px !important;
+}
+
 @media only screen and (max-width: 1000px) {
   .career_top_cards {
     flex-direction: column;

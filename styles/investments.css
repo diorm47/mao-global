@@ -422,7 +422,7 @@ body {
   position: relative;
 }
 .employes_list {
-  padding: 140px 0 260px;
+  padding: 140px 0 60px;
   border-bottom: 0.5px solid rgb(234, 234, 234);
 }
 .employes_list_block {
@@ -440,8 +440,8 @@ body {
 }
 
 .empl_arrow {
-  width: 62px;
-  height: 62px;
+  width: 62px !important;
+  height: 62px !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -449,15 +449,81 @@ body {
   border-radius: 50%;
   box-sizing: border-box;
   border: 0.5px solid rgb(234, 234, 234);
+  position: static;
+  z-index: 11;
+}
+.empl_arrow::after{
+  content: none !important;
+}
+.employer_car {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+
   position: relative;
+}
+.empl_arrow svg {
+  width: auto !important;
+  height: auto !important;
 }
 
 .employer_card {
-  position: absolute;
-  top: 0;
-  left: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
+.swiper-slide-active .employer_card {
+  width: 472px;
+  height: 680px;
+  background: url(../assets/images/badge.png);
+  align-items: end;
+  justify-content: flex-end;
+  margin-left: -120px;
+}
+.employer_card_content h4 {
+  margin-top: 42px;
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.swiper-slide-active .employer_card_content {
+  padding-bottom: 120px;
+  padding-right: 70px;
+}
+.employer_card_content p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.employer_card_content p,
+.employer_card_content h4 {
+  display: none;
+}
+.swiper-slide-active .employer_card_content p,
+.swiper-slide-active .employer_card_content h4 {
+  display: block;
+}
+.employer_card_content img {
+  width: 178px;
+  height: 178px;
+  filter: blur(6px);
+}
+.swiper-slide-active .employer_card_content img {
+  filter: none;
+}
+.swiper-slide-active {
+  margin-top: -273px;
+}
 .employes_variant {
   display: flex;
   align-items: center;
@@ -615,8 +681,6 @@ body {
   border-bottom: none;
 }
 
-
-
 @media only screen and (max-width: 1920px) {
   .global_block {
     border-radius: 0;
@@ -655,9 +719,7 @@ body {
     font-size: 30px;
     line-height: 140%;
   }
-  .employer_card img {
-    width: 300px;
-  }
+
   .employer_card {
     z-index: 1;
   }

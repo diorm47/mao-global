@@ -23,6 +23,11 @@
     <link rel="manifest" href="./assets/favicon/site.webmanifest" />
     <title>Investment with Mao | Mao Global</title>
     <link rel="stylesheet" href="./styles/investments.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="inv_wrapper">
@@ -658,13 +663,14 @@
           </div>
         </div>
       </div>
+
       <div class="employes_list">
         <div class="block_title center">
           <h2>Our <span>employees.</span></h2>
           <p>Lorem ipsum dolor sit amet consectetur</p>
         </div>
         <div class="employes_list_block">
-          <div class="empl_arrow">
+          <div class="empl_arrow swiper-button-prev">
             <svg
               width="17.048828"
               height="13.918457"
@@ -684,10 +690,8 @@
               />
             </svg>
           </div>
-          <div class="employer_card">
-            <img src="./assets/images/badge.png" alt="" />
-          </div>
-          <div class="empl_arrow">
+
+          <div class="empl_arrow swiper-button-next">
             <svg
               width="17.048828"
               height="13.918457"
@@ -708,12 +712,63 @@
             </svg>
           </div>
         </div>
-        <div class="employes_variant">
-          <div>
-            <img src="./assets/images/test-auth.png" alt="" />
-          </div>
-          <div>
-            <img src="./assets/images/test-auth.png" alt="" />
+
+        <div class="employer_car">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="employer_card">
+                <div class="employer_card_content">
+                  <img src="./assets/images/employer.png" alt="" />
+                  <h4>Derrick Miller 1</h4>
+                  <p>Chief investment officer</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="employer_card">
+                <div class="employer_card_content">
+                  <img src="./assets/images/employer.png" alt="" />
+                  <h4>Derrick Miller 2</h4>
+                  <p>Chief investment officer</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="employer_card">
+                <div class="employer_card_content">
+                  <img src="./assets/images/employer.png" alt="" />
+                  <h4>Derrick Miller 3</h4>
+                  <p>Chief investment officer</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="employer_card">
+                <div class="employer_card_content">
+                  <img src="./assets/images/employer.png" alt="" />
+                  <h4>Derrick Miller 4</h4>
+                  <p>Chief investment officer</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="employer_card">
+                <div class="employer_card_content">
+                  <img src="./assets/images/employer.png" alt="" />
+                  <h4>Derrick Miller 5</h4>
+                  <p>Chief investment officer</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="employer_card">
+                <div class="employer_card_content">
+                  <img src="./assets/images/employer.png" alt="" />
+                  <h4>Derrick Miller 6</h4>
+                  <p>Chief investment officer</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1074,6 +1129,30 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".employer_car", {
+          loop: true,
+          slidesPerView: "auto",
+          centeredSlides: true,
+          slidesPerView: 3,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            350: {
+              slidesPerView: 1, 
+            },
+
+            1024: {
+              slidesPerView: 3,
+     
+            },
+          },
+        });
+      });
+    </script>
     <script src="./scripts/investments.js"></script>
     <script src="./scripts/main.js"></script>
   </body>

@@ -88,15 +88,20 @@ header {
   display: flex;
   align-items: center;
   gap: 17px;
+  cursor: pointer;
 }
+
 .about_section_left_list_item_title h4 {
-  color: rgb(36, 36, 36);
+  color: rgb(144, 144, 144);
   font-family: Cygre SemiBold;
   font-size: 24px;
   font-weight: 600;
   line-height: 40px;
   letter-spacing: 0%;
   text-align: left;
+}
+.active h4 {
+  color: rgb(36, 36, 36);
 }
 .about_section_left_list_item_content p {
   padding-top: 13px;

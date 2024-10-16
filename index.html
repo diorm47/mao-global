@@ -181,25 +181,37 @@
         </div>
         <div class="about_section_left_list">
           <div class="about_section_left_list_item">
-            <div class="about_section_left_list_item_title">
+            <div class="about_section_left_list_item_title ">
               <div class="about_section_left_list_item_icon">
                 <img src="./assets/icons/mission.svg" alt="" />
               </div>
               <h4>Mission</h4>
             </div>
-            <div class="about_section_left_list_item_content">
+            <div
+              class="about_section_left_list_item_content"
+              style="display: none"
+            >
               <p>
                 Lorem ipsum dolor sit amet consectetur. A quam bibendum dui sit
                 vulputate turpis. Nec et in pharetra nulla.
               </p>
             </div>
           </div>
-          <div
-            class="about_section_left_list_item about_section_left_list_item_sec"
-          >
-            <div class="about_section_left_list_item_title">
-              <div class="about_section_left_list_item_icon"></div>
-              <h4>Our goal</h4>
+          <div class="about_section_left_list_item">
+            <div class="about_section_left_list_item_title ">
+              <div class="about_section_left_list_item_icon">
+                <img src="./assets/icons/mission.svg" alt="" />
+              </div>
+              <h4>Our Goals</h4>
+            </div>
+            <div
+              class="about_section_left_list_item_content"
+              style="display: none"
+            >
+              <p>
+                Lorem ipsum dolor sit amet consectetur. A quam bibendum dui sit
+                vulputate turpis. Nec et in pharetra nulla.
+              </p>
             </div>
           </div>
         </div>
@@ -282,7 +294,13 @@
           >
             <div class="about_section_right_status">
               <div class="about_section_right_status_top">
-                <h3>$<span class="value" data-value="13">0</span>.<span class="value" data-value="5">0</span>B</h3>
+                <h3>
+                  $<span class="value" data-value="13">0</span>.<span
+                    class="value"
+                    data-value="5"
+                    >0</span
+                  >B
+                </h3>
                 <img src="./assets/icons/up.svg" alt="" />
               </div>
               <p>
@@ -324,7 +342,7 @@
       <div class="benefits_cards_list">
         <div class="benefits_card">
           <div class="benefits_card_icon">
-            <img src="./assets/icons/benefits/1.png" alt="" />
+            <img src="./assets/icons/benefits/1.svg" alt="" />
           </div>
           <h4>Lorem ipsum dolor sit</h4>
           <p>
@@ -334,7 +352,7 @@
         </div>
         <div class="benefits_card">
           <div class="benefits_card_icon">
-            <img src="./assets/icons/benefits/2.png" alt="" />
+            <img src="./assets/icons/benefits/2.svg" alt="" />
           </div>
           <h4>Lorem ipsum dolor sit</h4>
           <p>
@@ -344,7 +362,7 @@
         </div>
         <div class="benefits_card">
           <div class="benefits_card_icon">
-            <img src="./assets/icons/benefits/3.png" alt="" />
+            <img src="./assets/icons/benefits/3.svg" alt="" />
           </div>
           <h4>Lorem ipsum dolor sit</h4>
           <p>
@@ -356,7 +374,7 @@
       <div class="benefits_cards_bottom">
         <div class="benefits_card">
           <div class="benefits_card_icon">
-            <img src="./assets/icons/benefits/4.png" alt="" />
+            <img src="./assets/icons/benefits/4.svg" alt="" />
           </div>
           <h4>Lorem ipsum dolor sit</h4>
           <p>
@@ -543,10 +561,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="media_list_item">
-                    <img
-                      src="./assets/icons/media/Digital-Journal-Logosm@2x.svg"
-                      alt=""
-                    />
+                    <img src="./assets/icons/media/Digital-2.svg" alt="" />
                   </div>
                 </div>
                 <div class="swiper-slide">
@@ -572,10 +587,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div class="media_list_item">
-                    <img
-                      src="./assets/icons/media/Digital-Journal-Logosm@2x.svg"
-                      alt=""
-                    />
+                    <img src="./assets/icons/media/Digital-2.svg" alt="" />
                   </div>
                 </div>
               </div>
@@ -989,6 +1001,28 @@
     </script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      const listItems = document.querySelectorAll(
+        ".about_section_left_list_item_title"
+      );
+
+      listItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          const parent = item.parentElement;
+          const content = parent.querySelector(
+            ".about_section_left_list_item_content"
+          );
+
+          if (parent.classList.contains("active")) {
+            parent.classList.remove("active");
+            content.style.display = "none";
+          } else {
+            parent.classList.add("active");
+            content.style.display = "block";
+          }
+        });
+      });
     </script>
   </body>
 </html>
