@@ -374,17 +374,90 @@
 .verification_page_right .avatar_block_upload {
   height: 280px;
 }
+
+.settings_auth_deactive {
+  width: 100%;
+  max-width: 100%;
+}
+.settings_deactive_content {
+  padding: 35px 30px 44px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+}
+.settings_deactive_left {
+  max-width: 355px;
+}
+.settings_deactive_left h2 {
+  margin: 6px 0 4px;
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.settings_deactive_left p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.settings_deactive_right {
+  width: 66%;
+}
+.settings_deactive_right input {
+  text-indent: 18px;
+}
+.deact_warning {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;border-radius: 9px;
+padding: 10px 14px;
+  box-shadow: inset 0px 0px 17.5px 0px rgb(255, 255, 255);
+  backdrop-filter: blur(19.2px);
+  background: rgba(255, 165, 29, 0.16);
+
+  margin-bottom: 24px;
+}
+.deact_warning p {
+  color: rgb(255, 165, 29);
+font-family: Cygre SemiBold;
+font-size: 16px;
+font-weight: 600;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: left;
+}
 @media only screen and (max-width: 920px) {
   .setting_page1 {
     display: flex;
     flex-direction: column;
   }
-  .settings_auth .main_block_content, .verification_page {
+  .settings_auth .main_block_content,
+  .verification_page {
     flex-direction: column;
   }
-  .verification_page_left, .verification_page_right {
+  .verification_page_left,
+  .verification_page_right {
     width: 100%;
-}
+  }
+  .settings_deactive_content {
+    flex-direction: column;
+  }
+  .settings_deactive_left {
+    max-width: 100%;
+  }
+  .settings_deactive_right {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -400,7 +473,7 @@
   }
   .verification_types label {
     width: 100%;
-}
+  }
   .setting_page1 {
     gap: 20px;
   }

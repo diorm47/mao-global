@@ -493,6 +493,47 @@ body {
 .about_carousel_arrow::after {
   content: none !important;
 }
+
+.about_road_content {
+  padding-top: 105px;
+  padding-bottom: 50px;
+}
+.about_road .dev_path_list {
+  flex-direction: column;
+}
+.about_road .dev_path_item {
+  width: 100%;
+  border: none;
+}
+.about_road .dev_path_arrows {
+  margin: 0;
+}
+.about_road .block_title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.about_road {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+.about_road .dev_path_item_title {
+  padding-bottom: 0;
+  border: none;
+}
+.about_road_line img {
+  margin-left: -20.5px;
+}
+.about_road_content {
+  width: 95%;
+}
+.about_road .dev_path_item_content_item_desc_text p {
+  height: auto;
+}
+.about_road .dev_path_item_content_item {
+  margin-bottom: 37px;
+}
 @media only screen and (max-width: 950px) {
   .about_header,
   .about_innovators {
@@ -507,6 +548,26 @@ body {
   }
 }
 @media only screen and (max-width: 500px) {
+  .about_road .dev_path_item .dev_path_item_title,
+  .about_road .dev_path_item .dev_path_item_content {
+    padding-left: 0;
+  }
+  .about_road_line img {
+   display: none;
+  }
+  .about_road .block_title {
+    flex-direction: column;
+    align-self: start;
+    justify-content: start;
+    gap: 20px;
+  }
+  .about_road .dev_path_arrows {
+    width: 100%;
+  }
+  .about_road_content {
+    width: 100%;
+    padding: 30px 0 0;
+  }
   .about_carousel .swiper-slide-active .about_car_item {
     border: 0.5px solid rgb(234, 234, 234);
     border-radius: 15px;

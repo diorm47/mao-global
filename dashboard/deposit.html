@@ -872,7 +872,7 @@
                       </div>
                       <div class="plan_item_right">
                         <p>0.65% / ежедневно</p>
-                        <input type="radio" id="depo2"   name="plan"/>
+                        <input type="radio" id="depo2" name="plan" />
                         <span class="custom-radio"></span>
                       </div>
                     </div>
@@ -910,7 +910,7 @@
                       </div>
                       <div class="plan_item_right">
                         <p>0.65% / ежедневно</p>
-                        <input type="radio" id="depo3"  name="plan"/>
+                        <input type="radio" id="depo3" name="plan" />
                         <span class="custom-radio"></span>
                       </div>
                     </div>
@@ -971,7 +971,7 @@
                       </div>
                       <div class="plan_item_right">
                         <p>0.65% / ежедневно</p>
-                        <input type="radio" id="depo4"  name="plan" />
+                        <input type="radio" id="depo4" name="plan" />
                         <span class="custom-radio"></span>
                       </div></div
                   ></label>
@@ -1006,7 +1006,7 @@
                       </div>
                       <div class="plan_item_right">
                         <p>0.65% / ежедневно</p>
-                        <input type="radio" id="depo5"  name="plan" />
+                        <input type="radio" id="depo5" name="plan" />
                         <span class="custom-radio"></span>
                       </div></div
                   ></label>
@@ -1058,7 +1058,10 @@
                 <img src="./assets/icons/eye.svg" alt="" />
               </div>
               <div class="balance_block_actions">
-                <button class="btn_grey redtbn">
+                <button
+                  class="btn_grey redtbn"
+                  style="visibility: hidden; position: absolute"
+                >
                   <svg
                     width="15.500000"
                     height="15.500000"
@@ -1126,102 +1129,133 @@
           </div>
 
           <div class="investment_card deposit_calc">
-            <div class="investment_card_top">
-              <div class="investment_card_top_icon">
-                <svg
-                  width="22.000000"
-                  height="22.000000"
-                  viewBox="0 0 22 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                >
-                  <desc>Created with Pixso.</desc>
-                  <defs />
-                  <path
-                    id="Vector"
-                    d="M7.33 1.84C5.3 1.84 3.66 3.48 3.66 5.51L3.66 16.51C3.66 18.53 5.3 20.17 7.33 20.17L14.66 20.17C16.69 20.17 18.33 18.53 18.33 16.51L18.33 5.51C18.33 3.48 16.69 1.84 14.66 1.84L7.33 1.84ZM7.33 3.67L14.66 3.67C15.67 3.67 16.49 4.5 16.49 5.51L16.49 16.51C16.49 17.52 15.67 18.34 14.66 18.34L7.33 18.34C6.31 18.34 5.49 17.52 5.49 16.51L5.49 5.51C5.49 4.5 6.31 3.67 7.33 3.67ZM8.24 5.51C7.74 5.51 7.33 5.92 7.33 6.42L7.33 7.34C7.33 7.85 7.74 8.26 8.24 8.26L13.74 8.26C14.25 8.26 14.66 7.85 14.66 7.34L14.66 6.42C14.66 5.92 14.25 5.51 13.74 5.51L8.24 5.51ZM8.24 9.17C7.74 9.17 7.33 9.59 7.33 10.09C7.33 10.6 7.74 11.01 8.24 11.01C8.75 11.01 9.16 10.6 9.16 10.09C9.16 9.59 8.75 9.17 8.24 9.17ZM10.99 9.17C10.49 9.17 10.08 9.59 10.08 10.09C10.08 10.6 10.49 11.01 10.99 11.01C11.5 11.01 11.91 10.6 11.91 10.09C11.91 9.59 11.5 9.17 10.99 9.17ZM13.74 9.17C13.24 9.17 12.83 9.59 12.83 10.09C12.83 10.6 13.24 11.01 13.74 11.01C14.25 11.01 14.66 10.6 14.66 10.09C14.66 9.59 14.25 9.17 13.74 9.17ZM8.24 11.92C7.74 11.92 7.33 12.34 7.33 12.84C7.33 13.35 7.74 13.76 8.24 13.76C8.75 13.76 9.16 13.35 9.16 12.84C9.16 12.34 8.75 11.92 8.24 11.92ZM10.99 11.92C10.49 11.92 10.08 12.34 10.08 12.84C10.08 13.35 10.49 13.76 10.99 13.76C11.5 13.76 11.91 13.35 11.91 12.84C11.91 12.34 11.5 11.92 10.99 11.92ZM13.74 11.92C13.24 11.92 12.83 12.34 12.83 12.84L12.83 15.59C12.83 16.1 13.24 16.51 13.74 16.51C14.25 16.51 14.66 16.1 14.66 15.59L14.66 12.84C14.66 12.34 14.25 11.92 13.74 11.92ZM8.24 14.67C7.74 14.67 7.33 15.09 7.33 15.59C7.33 16.1 7.74 16.51 8.24 16.51C8.75 16.51 9.16 16.1 9.16 15.59C9.16 15.09 8.75 14.67 8.24 14.67ZM10.99 14.67C10.49 14.67 10.08 15.09 10.08 15.59C10.08 16.1 10.49 16.51 10.99 16.51C11.5 16.51 11.91 16.1 11.91 15.59C11.91 15.09 11.5 14.67 10.99 14.67Z"
-                    fill="#000"
-                    fill-opacity="1.000000"
-                    fill-rule="nonzero"
-                  />
-                </svg>
-              </div>
-              <h4>Калькулятор</h4>
-              <p>Lorem ipsum dolor sit amet consectetur.</p>
-            </div>
-            <div class="investment_card_content">
-              <div class="investment_card_content_title">
-                <p>Deposit amount:</p>
-              </div>
-              <div class="deposit_input">
-                <img src="../assets/icons/usdt.svg" alt="" />
-                <input type="text" value="254" />
-                <div class="deposit_input_select">
-                  <p>USDT</p>
+            <div class="deposit_calc_content">
+              <div class="investment_card_top">
+                <div class="investment_card_top_icon">
                   <svg
-                    width="9.333984"
-                    height="5.074951"
-                    viewBox="0 0 9.33398 5.07495"
+                    width="22.000000"
+                    height="22.000000"
+                    viewBox="0 0 22 22"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
                   >
                     <desc>Created with Pixso.</desc>
-                    <defs></defs>
+                    <defs />
                     <path
                       id="Vector"
-                      d="M0.54 0.03C0.38 0.07 0.21 0.18 0.11 0.37C-0.1 0.76 -0.01 1.3 0.29 1.56L4.29 4.93C4.51 5.12 4.81 5.12 5.04 4.93L9.03 1.56C9.34 1.3 9.42 0.76 9.22 0.37C9.01 -0.01 8.59 -0.12 8.28 0.14L4.66 3.19L1.04 0.14C0.89 0.01 0.71 -0.01 0.54 0.03Z"
-                      fill="#828282"
+                      d="M7.33 1.84C5.3 1.84 3.66 3.48 3.66 5.51L3.66 16.51C3.66 18.53 5.3 20.17 7.33 20.17L14.66 20.17C16.69 20.17 18.33 18.53 18.33 16.51L18.33 5.51C18.33 3.48 16.69 1.84 14.66 1.84L7.33 1.84ZM7.33 3.67L14.66 3.67C15.67 3.67 16.49 4.5 16.49 5.51L16.49 16.51C16.49 17.52 15.67 18.34 14.66 18.34L7.33 18.34C6.31 18.34 5.49 17.52 5.49 16.51L5.49 5.51C5.49 4.5 6.31 3.67 7.33 3.67ZM8.24 5.51C7.74 5.51 7.33 5.92 7.33 6.42L7.33 7.34C7.33 7.85 7.74 8.26 8.24 8.26L13.74 8.26C14.25 8.26 14.66 7.85 14.66 7.34L14.66 6.42C14.66 5.92 14.25 5.51 13.74 5.51L8.24 5.51ZM8.24 9.17C7.74 9.17 7.33 9.59 7.33 10.09C7.33 10.6 7.74 11.01 8.24 11.01C8.75 11.01 9.16 10.6 9.16 10.09C9.16 9.59 8.75 9.17 8.24 9.17ZM10.99 9.17C10.49 9.17 10.08 9.59 10.08 10.09C10.08 10.6 10.49 11.01 10.99 11.01C11.5 11.01 11.91 10.6 11.91 10.09C11.91 9.59 11.5 9.17 10.99 9.17ZM13.74 9.17C13.24 9.17 12.83 9.59 12.83 10.09C12.83 10.6 13.24 11.01 13.74 11.01C14.25 11.01 14.66 10.6 14.66 10.09C14.66 9.59 14.25 9.17 13.74 9.17ZM8.24 11.92C7.74 11.92 7.33 12.34 7.33 12.84C7.33 13.35 7.74 13.76 8.24 13.76C8.75 13.76 9.16 13.35 9.16 12.84C9.16 12.34 8.75 11.92 8.24 11.92ZM10.99 11.92C10.49 11.92 10.08 12.34 10.08 12.84C10.08 13.35 10.49 13.76 10.99 13.76C11.5 13.76 11.91 13.35 11.91 12.84C11.91 12.34 11.5 11.92 10.99 11.92ZM13.74 11.92C13.24 11.92 12.83 12.34 12.83 12.84L12.83 15.59C12.83 16.1 13.24 16.51 13.74 16.51C14.25 16.51 14.66 16.1 14.66 15.59L14.66 12.84C14.66 12.34 14.25 11.92 13.74 11.92ZM8.24 14.67C7.74 14.67 7.33 15.09 7.33 15.59C7.33 16.1 7.74 16.51 8.24 16.51C8.75 16.51 9.16 16.1 9.16 15.59C9.16 15.09 8.75 14.67 8.24 14.67ZM10.99 14.67C10.49 14.67 10.08 15.09 10.08 15.59C10.08 16.1 10.49 16.51 10.99 16.51C11.5 16.51 11.91 16.1 11.91 15.59C11.91 15.09 11.5 14.67 10.99 14.67Z"
+                      fill="#000"
                       fill-opacity="1.000000"
                       fill-rule="nonzero"
-                    ></path>
+                    />
                   </svg>
                 </div>
+                <h4>Калькулятор</h4>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
               </div>
-              <div class="deposit_inc">
-                <div class="deposit_inc_item dec">
-                  <img src="../assets/icons/dec.png" alt="" />
+              <div class="investment_card_content">
+                <div class="investment_card_content_title">
+                  <p>Deposit amount:</p>
                 </div>
-                <div class="deposit_inc_wrapper">
-                  <div class="deposit_inc_value" style="width: 45%"></div>
+                <div class="deposit_input">
+                  <img src="../assets/icons/usdt.svg" alt="" />
+                  <input type="text" value="254" />
+                  <div class="deposit_input_select">
+                    <p>USDT</p>
+                    <svg
+                      width="9.333984"
+                      height="5.074951"
+                      viewBox="0 0 9.33398 5.07495"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <desc>Created with Pixso.</desc>
+                      <defs></defs>
+                      <path
+                        id="Vector"
+                        d="M0.54 0.03C0.38 0.07 0.21 0.18 0.11 0.37C-0.1 0.76 -0.01 1.3 0.29 1.56L4.29 4.93C4.51 5.12 4.81 5.12 5.04 4.93L9.03 1.56C9.34 1.3 9.42 0.76 9.22 0.37C9.01 -0.01 8.59 -0.12 8.28 0.14L4.66 3.19L1.04 0.14C0.89 0.01 0.71 -0.01 0.54 0.03Z"
+                        fill="#828282"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      ></path>
+                    </svg>
+                  </div>
                 </div>
-                <div class="deposit_inc_item inc">
-                  <img src="../assets/icons/inc.png" alt="" />
+                <div class="deposit_inc">
+                  <div class="deposit_inc_item dec">
+                    <svg width="10.000000" height="2.000000" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <desc>
+                          Created with Pixso.
+                      </desc>
+                      <defs/>
+                      <path id="Vector" d="M1 0C0.44 0 0 0.44 0 1C0 1.55 0.44 2 1 2L9 2C9.55 2 10 1.55 10 1C10 0.44 9.55 0 9 0L1 0Z" fill="#242424" fill-opacity="1.000000" fill-rule="nonzero"/>
+                    </svg>
+                    
+                  </div>
+                  <div class="deposit_inc_wrapper">
+                    <div class="deposit_inc_value" style="width: 45%"></div>
+                  </div>
+                  <div class="deposit_inc_item inc">
+                    <svg width="11.099609" height="11.099609" viewBox="0 0 11.0996 11.0996" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <desc>
+                          Created with Pixso.
+                      </desc>
+                      <defs/>
+                      <path id="Vector" d="M5.54 0.29C5.22 0.29 4.96 0.56 4.96 0.88L4.96 4.96L0.88 4.96C0.56 4.96 0.29 5.22 0.29 5.54C0.29 5.87 0.56 6.13 0.88 6.13L4.96 6.13L4.96 10.21C4.96 10.53 5.22 10.79 5.54 10.79C5.87 10.79 6.13 10.53 6.13 10.21L6.13 6.13L10.21 6.13C10.53 6.13 10.79 5.87 10.79 5.54C10.79 5.22 10.53 4.96 10.21 4.96L6.13 4.96L6.13 0.88C6.13 0.56 5.87 0.29 5.54 0.29Z" fill="#242424" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      <path id="Vector" d="M4.68 0.69Q4.66 0.78 4.66 0.88L4.66 4.66L0.88 4.66Q0.78 4.66 0.69 4.68Q0.61 4.7 0.53 4.73Q0.46 4.76 0.39 4.81Q0.32 4.86 0.25 4.92Q0.19 4.98 0.14 5.06Q0.1 5.12 0.06 5.2Q0.03 5.28 0.01 5.36Q0 5.45 0 5.54Q0 5.64 0.01 5.73Q0.03 5.81 0.06 5.89Q0.1 5.96 0.14 6.03Q0.19 6.11 0.25 6.17Q0.32 6.23 0.39 6.28Q0.46 6.33 0.53 6.36Q0.61 6.39 0.69 6.41Q0.78 6.43 0.88 6.43L4.66 6.43L4.66 10.21Q4.66 10.31 4.68 10.4Q4.7 10.48 4.73 10.56Q4.76 10.63 4.81 10.7Q4.86 10.77 4.92 10.84Q4.98 10.9 5.06 10.95Q5.12 10.99 5.2 11.03Q5.28 11.06 5.36 11.08Q5.45 11.09 5.54 11.09Q5.64 11.09 5.73 11.08Q5.81 11.06 5.89 11.03Q5.96 10.99 6.03 10.95Q6.11 10.9 6.17 10.84Q6.23 10.77 6.28 10.7Q6.33 10.63 6.36 10.56Q6.39 10.48 6.41 10.4Q6.43 10.31 6.43 10.21L6.43 6.43L10.21 6.43Q10.31 6.43 10.4 6.41Q10.48 6.39 10.56 6.36Q10.63 6.33 10.7 6.28Q10.77 6.23 10.84 6.17Q10.9 6.11 10.95 6.03Q10.99 5.96 11.03 5.89Q11.06 5.81 11.08 5.73Q11.09 5.64 11.09 5.54Q11.09 5.45 11.08 5.36Q11.06 5.28 11.03 5.2Q10.99 5.12 10.95 5.06Q10.9 4.98 10.84 4.92Q10.77 4.86 10.7 4.81Q10.63 4.76 10.56 4.73Q10.48 4.7 10.4 4.68Q10.31 4.66 10.21 4.66L6.43 4.66L6.43 0.88Q6.43 0.78 6.41 0.69Q6.39 0.61 6.36 0.53Q6.33 0.46 6.28 0.39Q6.23 0.32 6.17 0.25Q6.11 0.19 6.03 0.14Q5.96 0.1 5.89 0.06Q5.81 0.03 5.73 0.01Q5.64 0 5.54 0Q5.45 0 5.36 0.01Q5.28 0.03 5.2 0.06Q5.12 0.1 5.06 0.14Q4.98 0.19 4.92 0.25Q4.86 0.32 4.81 0.39Q4.76 0.46 4.73 0.53Q4.7 0.61 4.68 0.69ZM6.13 4.66L6.13 0.88C6.13 0.56 5.87 0.29 5.54 0.29C5.22 0.29 4.96 0.56 4.96 0.88L4.96 4.96L0.88 4.96C0.56 4.96 0.29 5.22 0.29 5.54C0.29 5.87 0.56 6.13 0.88 6.13L4.96 6.13L4.96 10.21C4.96 10.53 5.22 10.79 5.54 10.79C5.87 10.79 6.13 10.53 6.13 10.21L6.13 6.13L10.21 6.13C10.53 6.13 10.79 5.87 10.79 5.54C10.79 5.22 10.53 4.96 10.21 4.96L6.13 4.96L6.13 4.66Z" fill="#242424" fill-opacity="1.000000" fill-rule="evenodd"/>
+                    </svg>
+                    
+                  </div>
+                </div>
+                <div class="investment_card_content_title">
+                  <p>Duration deposit:</p>
+                </div>
+                <div class="durations_cards">
+                  <div class="durations_card">
+                    <p>1 month</p>
+                  </div>
+                  <div class="durations_card durations_card_active">
+                    <p>3 month</p>
+                  </div>
+                  <div class="durations_card">
+                    <p>6 month</p>
+                  </div>
+                  <div class="durations_card">
+                    <p>9 month</p>
+                  </div>
+                  <div class="durations_card">
+                    <p>1 year</p>
+                  </div>
                 </div>
               </div>
-              <div class="investment_card_content_title">
-                <p>Duration deposit:</p>
-              </div>
-              <div class="durations_cards">
-                <div class="durations_card">
-                  <p>1 month</p>
-                </div>
-                <div class="durations_card durations_card_active">
-                  <p>3 month</p>
-                </div>
-                <div class="durations_card">
-                  <p>6 month</p>
-                </div>
-                <div class="durations_card">
-                  <p>9 month</p>
-                </div>
-                <div class="durations_card">
-                  <p>1 year</p>
-                </div>
-              </div>
-              <div class="line" style="margin: 27px 0 24px"></div>
-              <div class="calc_stats">
-                <div class="calc_stat">
+            </div>
+            <div class="deposit_calc_stats_list">
+              <div class="deposit_calc_stats_list_item">
+                <div class="deposit_calc_stats_list_item_left">
+                  <img src="./assets/icons/calendar.svg" alt="" />
                   <p>Daily rate</p>
-                  <span>1.00%</span>
-                  <p>At the end of the term</p>
                 </div>
-                <div class="calc_stat">
+                <div class="deposit_calc_stats_list_item_right">
+                  <p>5000.00 (0.50%)</p>
+                </div>
+              </div>
+              <div class="deposit_calc_stats_list_item">
+                <div class="deposit_calc_stats_list_item_left">
+                  <img src="./assets/icons/calendar.svg" alt="" />
                   <p>Monthly rate</p>
-                  <span>1.00%</span>
-                  <h4>115%</h4>
                 </div>
+                <div class="deposit_calc_stats_list_item_right">
+                  <p>150000.00 (0.50%)</p>
+                </div>
+              </div>
+              <div class="deposit_calc_stats_list_item deposit_calc_stats_list_item_l">
+                <div class="deposit_calc_stats_list_item_left">
+                  <img src="./assets/icons/star.svg" alt="" />
+                  <p style="color: rgb(34, 197, 94);">Monthly rate</p>
+                </div>
+       <h4>1800000.00</h4>
               </div>
             </div>
           </div>

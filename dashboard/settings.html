@@ -752,10 +752,7 @@
 
       <div class="setting_pages_content">
         <!-- page 1 -->
-        <div
-          class="setting_page menu_item_content setting_menu_item_active"
-          id="menu1"
-        >
+        <div class="setting_page menu_item_content" id="menu1">
           <div class="setting_page1">
             <div class="main_block">
               <div class="main_block_title">
@@ -894,7 +891,10 @@
         </div>
 
         <!-- page 2 -->
-        <div class="setting_page menu_item_content" id="menu2">
+        <div
+          class="setting_page menu_item_content setting_menu_item_active"
+          id="menu2"
+        >
           <div class="setting_page2">
             <div class="main_block settings_auth">
               <div class="main_block_title">
@@ -970,6 +970,38 @@
                 </div>
                 <div class="settings_auth_left_right">
                   <img src="./assets/icons/qr code.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="main_block  settings_auth_deactive"
+              style="margin-top: 20px"
+            >
+              <div class="main_block_title">
+                <h4>Google Authenticator</h4>
+              </div>
+              <div class="main_block_content settings_deactive_content">
+                <div class="settings_deactive_left">
+                  <img src="./assets/images/deactive.svg" alt="" />
+                  <h2>Deactivation</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Vitae tortor eget
+                    faucibus egestas eget enim mauris ipsum. Cursus vestibulum
+                    magnis libero.
+                  </p>
+                </div>
+                <div class="settings_deactive_right">
+                  <div class="setting_input">
+                    <p>Сode:</p>
+                    <div class="setting_input_w">
+                      <input type="text" placeholder="Enter code" />
+                    </div>
+                  </div>
+                  <div class="deact_warning">
+                    <img src="./assets/icons/info-or.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur. Turpis eget quis sapien feugiat nunc sed facilisi eget.</p>
+                  </div>
+                  <button class="btn_grey redtbn">Deactivation 2FA</button>
                 </div>
               </div>
             </div>

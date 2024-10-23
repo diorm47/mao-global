@@ -1,0 +1,14 @@
+<svg width="26.000000" height="26.000000" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip6520_707">
+			<rect id="Tether Symbol" rx="4.934544" width="25.869089" height="25.869089" transform="translate(0.065456 0.065456)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Tether Symbol" rx="4.934544" width="25.869089" height="25.869089" transform="translate(0.065456 0.065456)" fill="#64B3DF" fill-opacity="1.000000"/>
+	<g clip-path="url(#clip6520_707)">
+		<path id="P" d="M13.58 10.48L11.51 10.48L11.51 13.23L13.58 13.23C14.03 13.23 14.4 13.1 14.7 12.83C15.01 12.56 15.16 12.22 15.16 11.83C15.16 11.44 15.01 11.12 14.71 10.87C14.42 10.61 14.04 10.48 13.58 10.48ZM13.58 15.92L11.51 15.92L11.51 19L8.79 19L8.79 7.79L13.74 7.79C14.92 7.79 15.91 8.18 16.7 8.95C17.49 9.71 17.88 10.67 17.88 11.83C17.88 12.97 17.47 13.94 16.63 14.74C15.8 15.53 14.78 15.92 13.58 15.92Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

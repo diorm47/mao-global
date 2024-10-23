@@ -1,0 +1,119 @@
+.transaction_table_item_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.transaction_table_item_wrapper {
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid rgb(228, 226, 225);
+}
+
+.transaction_table_item_titles p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.transaction_table_item_part {
+  width: 25%;
+}
+
+.transaction_table_item_container {
+  padding-top: 20px;
+}
+.transaction_table_item_container .transaction_table_item_part p,
+.transaction_table_item_desc_content p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.transaction_table_item_desc {
+  padding-top: 19px;
+}
+.transaction_table_item_desc_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 9px;
+  height: 35px;
+
+  background: rgb(250, 250, 252);
+}
+.transaction_table_item_desc_title p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.transaction_table_item_desc_title p:last-child {
+  width: 75%;
+}
+.transaction_table_item_desc_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.transaction_table_item_desc_content span {
+  color: rgb(133, 133, 133);
+  font-family: Cygre;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.wallet {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 75%;
+}
+.wallet img {
+  cursor: pointer;
+}
+.w_25 {
+  width: 25%;
+}
+.transaction_table_item_desc {
+  display: none;
+}
+
+.transaction_table_item_active .transaction_table_item_desc {
+  display: block;
+}
+
+.menu {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+}
+.transaction_table_item_active .menu {
+  border-radius: 9px;
+
+  background: rgb(250, 250, 252);
+}
+
+@media only screen and (max-width: 1100px) {
+  .transaction_table {
+    overflow: auto;
+  }
+  .transaction_table_wrapper {
+    width: 1100px;
+  }
+}

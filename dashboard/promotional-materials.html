@@ -21,14 +21,9 @@
       href="../assets/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="../assets/favicon/site.webmanifest" />
-    <title>History of Operations</title>
-    <link rel="stylesheet" href="./styles/operations.css" />
-
-    <link rel="stylesheet" href="./styles/dashboard.css" />
-
-    <link rel="stylesheet" href="../styles/investments.css" />
-    <link rel="stylesheet" href="./styles/withdrawal.css" />
-    <link rel="stylesheet" href="./styles/topup.css" />
+    <title>Promotional Materials</title>
+    <link rel="stylesheet" href="./styles/settings.css" />
+    <link rel="stylesheet" href="./styles/promotional.css" />
   </head>
   <body>
     <div class="dashboard_nav">
@@ -257,7 +252,7 @@
 
               <p>My Career</p>
             </a>
-            <a href="./operations.html" class="active_nav_link">
+            <a href="./operations.html">
               <svg
                 width="15.500000"
                 height="15.500000"
@@ -342,7 +337,7 @@
 
               <p>Wallets</p>
             </a>
-            <a href="./settings.html">
+            <a href="./settings.html" class="active_nav_link">
               <svg
                 width="15.500732"
                 height="15.500610"
@@ -372,7 +367,6 @@
                   stroke-linecap="round"
                 />
               </svg>
-
               <p>Settings</p>
             </a>
           </div>
@@ -566,7 +560,7 @@
 
                 <p>My Career</p>
               </a>
-              <a href="./operations.html" class="active_nav_link">
+              <a href="./operations.html">
                 <svg
                   width="15.500000"
                   height="15.500000"
@@ -651,7 +645,7 @@
 
                 <p>Wallets</p>
               </a>
-              <a href="./settings.html">
+              <a href="./settings.html" class="active_nav_link">
                 <svg
                   width="15.500732"
                   height="15.500610"
@@ -681,7 +675,6 @@
                     stroke-linecap="round"
                   />
                 </svg>
-
                 <p>Settings</p>
               </a>
             </div>
@@ -692,14 +685,15 @@
         <div class="pages_navigation_wrapper container">
           <a href="./dashboard.html"> <button class="btn_grey">Home</button></a>
           <img src="./assets/icons/arrow-right.svg" alt="" />
-          <p>Operations</p>
+          <p>Promotional Materials</p>
         </div>
       </div>
     </div>
+
     <div class="container">
       <div class="pages_title">
         <div class="pages_title_wrapper">
-          <h3>History of Operations</h3>
+          <h3>Promotional Materials</h3>
           <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
         <a href="./deposit.html">
@@ -737,425 +731,100 @@
         >
       </div>
 
-      <div class="main_block transactions_table">
-        <div class="main_block_title">
-          <h4>Transactions</h4>
+      <div class="settings_menu_wrapper">
+        <div class="settings_menu tabs_list">
+          <div
+            class="settings_menu_item setting_menu_item_active menu_item"
+            data-id="menu1"
+          >
+            <p>Gif Banners</p>
+          </div>
+          <div class="settings_menu_item menu_item" data-id="menu2">
+            <p>White Paper</p>
+          </div>
+          <div class="settings_menu_item menu_item" data-id="menu3">
+            <p>Promo Video</p>
+          </div>
         </div>
-        <div class="main_block_content transaction_table">
-          <!-- <table>
-            <thead>
-              <tr>
-                <td>Date</td>
-                <td>Type</td>
-
-                <td>Amount</td>
-                <td>Status</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Deposit</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_suc">
-                      <img src="./assets/icons/completed.svg" alt="" />
-                      <p>Completed</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Profit</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_rej">
-                      <img src="./assets/icons/rejected.svg" alt="" />
-                      <p>Rejected</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Withdrawal</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_appr">
-                      <img src="./assets/icons/approved.svg" alt="" />
-                      <p>Approved</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Referral commission</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_inp">
-                      <img src="./assets/icons/inprogress.svg" alt="" />
-                      <p>In progress</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Deposit</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_pend">
-                      <img src="./assets/icons/pending.png" alt="" />
-                      <p>Pending</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table> -->
-          <div class="transaction_table_wrapper">
-            <div
-              class="transaction_table_item_wrapper transaction_table_item_titles"
-            >
-              <div class="transaction_table_item">
-                <div class="transaction_table_item_item">
-                  <div class="transaction_table_item_part">
-                    <p>Date</p>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <p>Type</p>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <p>Amount</p>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <p>Status</p>
-                  </div>
-                </div>
-              </div>
+      </div>
+      <div class="promo_mat_wrapper">
+        <div class="gif_banner">
+          <div class="gif_banner_top">
+            <h4>Gif Banners 1200x150</h4>
+            <p>2.95 MB</p>
+          </div>
+          <div class="gif_banner_content">
+            <input type="text" name="" id="" />
+            <div class="gif_banner_link">
+              <a href="#">https://maoglobal.io/cdn/1200.gif</a>
             </div>
-            <div
-              class="transaction_table_item_wrapper transaction_table_item_container"
-            >
-              <div class="transaction_table_item">
-                <div class="transaction_table_item_item">
-                  <div class="transaction_table_item_part">
-                    <p>Sep 27, 2024 <span>10:22:49</span></p>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <h4>Deposit</h4>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <div class="amount_val">
-                      <img src="../assets/icons/usdt.svg" alt="" />
-                      <p>100 USDT</p>
-                    </div>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <div class="trans_stat_wrapper">
-                      <div class="trans_stat trans_stat_suc">
-                        <img src="./assets/icons/completed.svg" alt="" />
-                        <p>Completed</p>
-                      </div>
-                      <div class="menu">
-                        <img src="./assets/icons/menu.svg" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="transaction_table_item_desc">
-                <div class="transaction_table_item_desc_title">
-                  <p class="w_25" style="padding-left: 18px">Internal number</p>
-                  <p class="w_25">Exchange rate</p>
-                  <p class="w_25">Payment system</p>
-                  <p>Transaction id</p>
-                </div>
-                <div class="transaction_table_item_desc_content">
-                  <p class="w_25">#54275</p>
-                  <div class="w_25">
-                    <p>2000.89000000</p>
-                    <span>USDT BEP20</span>
-                  </div>
-                  <div class="w_25">
-                    <div class="amount_val">
-                      <img src="../assets/icons/usdt.svg" alt="" />
-                      <p>Tether</p>
-                    </div>
-                    <span style="padding-left: 40px">USDT BEP20</span>
-                  </div>
-                  <div class="wallet">
-                    <p>0x029d076d2432432d235523523d23432423432ld2ll2421860b</p>
-                    <img src="./assets/icons/copy-red.svg" alt="" />
-                  </div>
-                </div>
-              </div>
+            <div class="gif_banner_btns">
+              <button class="btn_grey">Copy</button>
+              <button class="btn_grey redtbn">Download</button>
             </div>
-            <div
-              class="transaction_table_item_wrapper transaction_table_item_container"
-            >
-              <div class="transaction_table_item">
-                <div class="transaction_table_item_item">
-                  <div class="transaction_table_item_part">
-                    <p>Sep 27, 2024 <span>10:22:49</span></p>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <h4>Deposit</h4>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <div class="amount_val">
-                      <img src="../assets/icons/usdt.svg" alt="" />
-                      <p>100 USDT</p>
-                    </div>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <div class="trans_stat_wrapper">
-                      <div class="trans_stat trans_stat_rej">
-                        <img src="./assets/icons/rejected.svg" alt="" />
-                        <p>Rejected</p>
-                      </div>
-                      <div class="menu">
-                        <img src="./assets/icons/menu.svg" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="transaction_table_item_desc">
-                <div class="transaction_table_item_desc_title">
-                  <p class="w_25" style="padding-left: 18px">Internal number</p>
-                  <p class="w_25">Exchange rate</p>
-                  <p class="w_25">Payment system</p>
-                  <p>Transaction id</p>
-                </div>
-                <div class="transaction_table_item_desc_content">
-                  <p class="w_25">#54275</p>
-                  <div class="w_25">
-                    <p>2000.89000000</p>
-                    <span>USDT BEP20</span>
-                  </div>
-                  <div class="w_25">
-                    <div class="amount_val">
-                      <img src="../assets/icons/usdt.svg" alt="" />
-                      <p>Tether</p>
-                    </div>
-                    <span style="padding-left: 40px">USDT BEP20</span>
-                  </div>
-                  <div class="wallet">
-                    <p>0x029d076d2432432d235523523d23432423432ld2ll2421860b</p>
-                    <img src="./assets/icons/copy-red.svg" alt="" />
-                  </div>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="gif_banner">
+          <div class="gif_banner_top">
+            <h4>Gif Banners 1200x150</h4>
+            <p>2.95 MB</p>
+          </div>
+          <div class="gif_banner_content">
+            <input type="text" name="" id="" />
+            <div class="gif_banner_link">
+              <a href="#">https://maoglobal.io/cdn/1200.gif</a>
             </div>
-            <div
-              class="transaction_table_item_wrapper transaction_table_item_container"
-            >
-              <div class="transaction_table_item">
-                <div class="transaction_table_item_item">
-                  <div class="transaction_table_item_part">
-                    <p>Sep 27, 2024 <span>10:22:49</span></p>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <h4>Deposit</h4>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <div class="amount_val">
-                      <img src="../assets/icons/usdt.svg" alt="" />
-                      <p>100 USDT</p>
-                    </div>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <div class="trans_stat_wrapper">
-                      <div class="trans_stat trans_stat_appr">
-                        <img src="./assets/icons/approved.svg" alt="" />
-                        <p>Approved</p>
-                      </div>
-                      <div class="menu">
-                        <img src="./assets/icons/menu.svg" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="transaction_table_item_desc">
-                <div class="transaction_table_item_desc_title">
-                  <p class="w_25" style="padding-left: 18px">Internal number</p>
-                  <p class="w_25">Exchange rate</p>
-                  <p class="w_25">Payment system</p>
-                  <p>Transaction id</p>
-                </div>
-                <div class="transaction_table_item_desc_content">
-                  <p class="w_25">#54275</p>
-                  <div class="w_25">
-                    <p>2000.89000000</p>
-                    <span>USDT BEP20</span>
-                  </div>
-                  <div class="w_25">
-                    <div class="amount_val">
-                      <img src="../assets/icons/usdt.svg" alt="" />
-                      <p>Tether</p>
-                    </div>
-                    <span style="padding-left: 40px">USDT BEP20</span>
-                  </div>
-                  <div class="wallet">
-                    <p>0x029d076d2432432d235523523d23432423432ld2ll2421860b</p>
-                    <img src="./assets/icons/copy-red.svg" alt="" />
-                  </div>
-                </div>
-              </div>
+            <div class="gif_banner_btns">
+              <button class="btn_grey">Copy</button>
+              <button class="btn_grey redtbn">Download</button>
             </div>
-            <div
-              class="transaction_table_item_wrapper transaction_table_item_container"
-            >
-              <div class="transaction_table_item">
-                <div class="transaction_table_item_item">
-                  <div class="transaction_table_item_part">
-                    <p>Sep 27, 2024 <span>10:22:49</span></p>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <h4>Deposit</h4>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <div class="amount_val">
-                      <img src="../assets/icons/usdt.svg" alt="" />
-                      <p>100 USDT</p>
-                    </div>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <div class="trans_stat_wrapper">
-                      <div class="trans_stat trans_stat_inp">
-                        <img src="./assets/icons/inprogress.svg" alt="" />
-                        <p>In progress</p>
-                      </div>
-                      <div class="menu">
-                        <img src="./assets/icons/menu.svg" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="transaction_table_item_desc">
-                <div class="transaction_table_item_desc_title">
-                  <p class="w_25" style="padding-left: 18px">Internal number</p>
-                  <p class="w_25">Exchange rate</p>
-                  <p class="w_25">Payment system</p>
-                  <p>Transaction id</p>
-                </div>
-                <div class="transaction_table_item_desc_content">
-                  <p class="w_25">#54275</p>
-                  <div class="w_25">
-                    <p>2000.89000000</p>
-                    <span>USDT BEP20</span>
-                  </div>
-                  <div class="w_25">
-                    <div class="amount_val">
-                      <img src="../assets/icons/usdt.svg" alt="" />
-                      <p>Tether</p>
-                    </div>
-                    <span style="padding-left: 40px">USDT BEP20</span>
-                  </div>
-                  <div class="wallet">
-                    <p>0x029d076d2432432d235523523d23432423432ld2ll2421860b</p>
-                    <img src="./assets/icons/copy-red.svg" alt="" />
-                  </div>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="gif_banner">
+          <div class="gif_banner_top">
+            <h4>Gif Banners 1200x150</h4>
+            <p>2.95 MB</p>
+          </div>
+          <div class="gif_banner_content">
+            <input type="text" name="" id="" />
+            <div class="gif_banner_link">
+              <a href="#">https://maoglobal.io/cdn/1200.gif</a>
             </div>
-            <div
-              class="transaction_table_item_wrapper transaction_table_item_container"
-            >
-              <div class="transaction_table_item">
-                <div class="transaction_table_item_item">
-                  <div class="transaction_table_item_part">
-                    <p>Sep 27, 2024 <span>10:22:49</span></p>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <h4>Deposit</h4>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <div class="amount_val">
-                      <img src="../assets/icons/usdt.svg" alt="" />
-                      <p>100 USDT</p>
-                    </div>
-                  </div>
-                  <div class="transaction_table_item_part">
-                    <div class="trans_stat_wrapper">
-                      <div class="trans_stat trans_stat_pend">
-                        <img src="./assets/icons/pending.png" alt="" />
-                        <p>Pending</p>
-                      </div>
-                      <div class="menu">
-                        <img src="./assets/icons/menu.svg" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="transaction_table_item_desc">
-                <div class="transaction_table_item_desc_title">
-                  <p class="w_25" style="padding-left: 18px">Internal number</p>
-                  <p class="w_25">Exchange rate</p>
-                  <p class="w_25">Payment system</p>
-                  <p>Transaction id</p>
-                </div>
-                <div class="transaction_table_item_desc_content">
-                  <p class="w_25">#54275</p>
-                  <div class="w_25">
-                    <p>2000.89000000</p>
-                    <span>USDT BEP20</span>
-                  </div>
-                  <div class="w_25">
-                    <div class="amount_val">
-                      <img src="../assets/icons/usdt.svg" alt="" />
-                      <p>Tether</p>
-                    </div>
-                    <span style="padding-left: 40px">USDT BEP20</span>
-                  </div>
-                  <div class="wallet">
-                    <p>0x029d076d2432432d235523523d23432423432ld2ll2421860b</p>
-                    <img src="./assets/icons/copy-red.svg" alt="" />
-                  </div>
-                </div>
-              </div>
+            <div class="gif_banner_btns">
+              <button class="btn_grey">Copy</button>
+              <button class="btn_grey redtbn">Download</button>
+            </div>
+          </div>
+        </div>
+        <div class="gif_banner">
+          <div class="gif_banner_top">
+            <h4>Gif Banners 1200x150</h4>
+            <p>2.95 MB</p>
+          </div>
+          <div class="gif_banner_content">
+            <input type="text" name="" id="" />
+            <div class="gif_banner_link">
+              <a href="#">https://maoglobal.io/cdn/1200.gif</a>
+            </div>
+            <div class="gif_banner_btns">
+              <button class="btn_grey">Copy</button>
+              <button class="btn_grey redtbn">Download</button>
+            </div>
+          </div>
+        </div>
+        <div class="gif_banner">
+          <div class="gif_banner_top">
+            <h4>Gif Banners 1200x150</h4>
+            <p>2.95 MB</p>
+          </div>
+          <div class="gif_banner_content">
+            <input type="text" name="" id="" />
+            <div class="gif_banner_link">
+              <a href="#">https://maoglobal.io/cdn/1200.gif</a>
+            </div>
+            <div class="gif_banner_btns">
+              <button class="btn_grey">Copy</button>
+              <button class="btn_grey redtbn">Download</button>
             </div>
           </div>
         </div>
@@ -1261,23 +930,5 @@
       </div>
     </footer>
     <script src="../scripts/main.js"></script>
-
-    <script>
-      document
-        .querySelectorAll(".transaction_table_item_container")
-        .forEach((item) => {
-          item.addEventListener("click", () => {
-            item.classList.toggle("transaction_table_item_active");
-
-            document
-              .querySelectorAll(".transaction_table_item_container")
-              .forEach((faq) => {
-                if (faq !== item) {
-                  faq.classList.remove("transaction_table_item_active");
-                }
-              });
-          });
-        });
-    </script>
   </body>
 </html>

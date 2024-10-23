@@ -1,0 +1,37 @@
+<svg width="166.752930" height="127.000000" viewBox="0 0 166.753 127" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path id="Vector" d="M102.59 126C137.08 126 165.05 98.01 165.05 63.5C165.05 28.98 137.08 1 102.59 1C68.1 1 40.13 28.98 40.13 63.5C40.13 98.01 68.1 126 102.59 126Z" fill="#FAFAFC" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Vector" d="M102.59 126C68.1 126 40.13 98.01 40.13 63.5C40.13 28.98 68.1 1 102.59 1C137.08 1 165.05 28.98 165.05 63.5C165.05 98.01 137.08 126 102.59 126Z" stroke="#FAFAFC" stroke-opacity="1.000000" stroke-width="2.000000"/>
+	<mask id="mask6520_1676" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="1.000000" width="166.752930" height="125.000000">
+		<path id="Union" d="M166.75 63.5C166.75 98.01 138.77 126 104.25 126C89.82 126 76.53 121.1 65.95 112.89L0 112.89L0 14.1L65.95 14.1C76.53 5.89 89.82 1 104.25 1C138.77 1 166.75 28.98 166.75 63.5Z" fill="#D9D9D9" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</mask>
+	<g mask="url(#mask6520_1676)">
+		<rect id="Rectangle 3091" x="23.750977" y="23.999512" rx="9.506998" width="85.562981" height="19.013996" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<rect id="Rectangle 3091" x="23.750977" y="23.999512" rx="9.506998" width="85.562981" height="19.013996" stroke="#E4E2E1" stroke-opacity="1.000000" stroke-width="2.000000"/>
+		<path id="Vector 118" d="M36.84 34.98L36.82 35C35.98 35 35.32 34.34 35.32 33.5C35.32 32.66 35.98 32 36.82 32L36.84 32.02L36.84 34.98ZM53.44 32.02L53.46 32C54.3 32 54.96 32.66 54.96 33.5C54.96 34.34 54.3 35 53.46 35L53.44 34.98L53.44 32.02Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector 118" d="M36.82 33.5L53.46 33.5" stroke="#E4E2E1" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linecap="round"/>
+		<path id="Vector 119" d="M60.61 34.98L60.59 35C59.75 35 59.09 34.34 59.09 33.5C59.09 32.66 59.75 32 60.59 32L60.61 32.02L60.61 34.98ZM96.22 32.02L96.24 32C97.08 32 97.74 32.66 97.74 33.5C97.74 34.34 97.08 35 96.24 35L96.22 34.98L96.22 32.02Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector 119" d="M60.59 33.5L96.24 33.5" stroke="#E4E2E1" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linecap="round"/>
+		<rect id="Rectangle 3091" x="117.750977" y="23.999512" rx="9.506998" width="64.562981" height="19.013996" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<rect id="Rectangle 3091" x="117.750977" y="23.999512" rx="9.506998" width="64.562981" height="19.013996" stroke="#E4E2E1" stroke-opacity="1.000000" stroke-width="0.500000"/>
+		<path id="Vector 119" d="M132.59 33.5L168.24 33.5" stroke="#E4E2E1" stroke-opacity="1.000000" stroke-width="0.500000" stroke-linecap="round"/>
+		<rect id="Rectangle 3091" x="26.250977" y="54.013184" rx="9.506998" width="64.562981" height="19.013996" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<rect id="Rectangle 3091" x="26.250977" y="54.013184" rx="9.506998" width="64.562981" height="19.013996" stroke="#E4E2E1" stroke-opacity="1.000000" stroke-width="0.500000"/>
+		<path id="Vector 119" d="M41.09 63.52L76.74 63.52" stroke="#E4E2E1" stroke-opacity="1.000000" stroke-width="0.500000" stroke-linecap="round"/>
+		<rect id="Rectangle 3091" x="99.250977" y="54.013184" rx="9.506998" width="80.562981" height="19.013996" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<rect id="Rectangle 3091" x="99.250977" y="54.013184" rx="9.506998" width="80.562981" height="19.013996" stroke="#E4E2E1" stroke-opacity="1.000000" stroke-width="2.000000"/>
+		<path id="Vector 119" d="M165.72 65L165.74 65.02C166.58 65.02 167.24 64.36 167.24 63.52C167.24 62.68 166.58 62.02 165.74 62.02L165.72 62.04L165.72 65ZM154.11 62.04L154.09 62.02C153.25 62.02 152.59 62.68 152.59 63.52C152.59 64.36 153.25 65.02 154.09 65.02L154.11 65L154.11 62.04Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector 119" d="M165.74 63.52L154.09 63.52" stroke="#E4E2E1" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linecap="round"/>
+		<path id="Vector 120" d="M146.72 65L146.74 65.02C147.58 65.02 148.24 64.36 148.24 63.52C148.24 62.68 147.58 62.02 146.74 62.02L146.72 62.04L146.72 65ZM114.11 62.04L114.09 62.02C113.25 62.02 112.59 62.68 112.59 63.52C112.59 64.36 113.25 65.02 114.09 65.02L114.11 65L114.11 62.04Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector 120" d="M146.74 63.52L114.09 63.52" stroke="#E4E2E1" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linecap="round"/>
+		<rect id="Rectangle 3091" x="96.250977" y="84.027344" rx="9.506998" width="64.562981" height="19.013996" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<rect id="Rectangle 3091" x="96.250977" y="84.027344" rx="9.506998" width="64.562981" height="19.013996" stroke="#E4E2E1" stroke-opacity="1.000000" stroke-width="0.500000"/>
+		<path id="Vector 119" d="M111.09 93.53L146.74 93.53" stroke="#E4E2E1" stroke-opacity="1.000000" stroke-width="0.500000" stroke-linecap="round"/>
+		<rect id="Rectangle 3091" x="45.250977" y="84.027344" rx="9.506998" width="42.562981" height="19.013996" fill="#FFFFFF" fill-opacity="1.000000"/>
+		<rect id="Rectangle 3091" x="45.250977" y="84.027344" rx="9.506998" width="42.562981" height="19.013996" stroke="#E4E2E1" stroke-opacity="1.000000" stroke-width="0.500000"/>
+		<path id="Vector 119" d="M60.09 93.53L73.74 93.53" stroke="#E4E2E1" stroke-opacity="1.000000" stroke-width="0.500000" stroke-linecap="round"/>
+	</g>
+</svg>

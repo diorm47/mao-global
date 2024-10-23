@@ -10,7 +10,32 @@
 .wallet_payment {
   height: auto;
   min-height: auto;
+}
+.main_block_content {
   padding: 20px 28px;
+
+}
+.dest_tag {
+  border-top: 0.5px solid rgb(228, 226, 225);
+  padding-top: 23px;
+  margin-top: 30px;
+}
+
+.dest_tag input {
+  width: 100%;box-sizing: border-box;
+  border: 0.5px solid rgb(234, 234, 234);
+  border-radius: 9px;
+  height: 45px;
+  background: rgb(250, 250, 252);
+  margin-bottom: 33px;
+  color: rgb(36, 36, 36);
+font-family: Cygre SemiBold;
+font-size: 16px;
+font-weight: 600;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: left;
+text-indent: 18px;
 }
 .wallet_payment_block h4 {
   margin-bottom: 14px;
@@ -57,7 +82,7 @@
   justify-content: space-between;
   gap: 21px;
 }
-.wallet_payment .wallet_payment_block:first-child {
+.wallet_payment .crypto_select {
   width: 212px;
 }
 .wallet_payment .wallet_payment_block_right:last-child {
@@ -86,7 +111,7 @@
     gap: 21px;
 }
 .wallet_payment_block_right .wallet_payment_block {
-    width: 81% !important;
+    width: 100%;
 }
 .main_block_content {
     min-height: auto;

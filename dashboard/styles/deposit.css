@@ -81,18 +81,18 @@
 }
 .active_plan_item {
   box-sizing: border-box;
-border: 1px solid rgb(34, 197, 94);
-border-radius: 15px;
+  border: 1px solid rgb(34, 197, 94);
+  border-radius: 15px;
 
-background: rgba(34, 197, 94, 0.1);
+  background: rgba(34, 197, 94, 0.1);
 }
 .active_plan_item .plan_item_left_icon {
   border-radius: 9px;
 
   background: rgb(34, 197, 94);
 }
-.active_plan_item .plan_item_left_icon svg *{
-  stroke: #fff ;
+.active_plan_item .plan_item_left_icon svg * {
+  stroke: #fff;
 }
 
 .plan_item_left {
@@ -227,17 +227,71 @@ background: rgba(34, 197, 94, 0.1);
   box-sizing: border-box;
   border: 0.5px solid rgb(228, 226, 225);
   border-radius: 21px;
-
+  padding: 0;
+  background: rgb(255, 255, 255);
+  padding-bottom: 20px;
+}
+.deposit_calc_content {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(228, 226, 225);
+  border-radius: 21px;
+  padding: 8px;
   background: rgb(250, 250, 252);
 }
-.calc_stat span {
-  color: rgb(36, 36, 36);
+.deposit_calc_content .investment_card_content {
+  padding-bottom: 0px;
 }
-.calc_stat p:last-child,
-.calc_stat h4:last-child {
-  width: 140px;
-}
+.investment_card_top {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(228, 226, 225);
+  border-radius: 15px;
 
+  box-shadow: 0px 4px 3.7px 0px rgba(238, 238, 238, 0.25);
+  background: rgb(255, 255, 255);
+}
+.deposit_calc_stats_list {
+  padding: 19px 26px 0;
+}
+.deposit_calc_stats_list_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+.deposit_calc_stats_list_item_left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.deposit_calc_stats_list_item p {
+  color: rgb(130, 130, 130);
+  font-family: Cygre;
+  font-size: 13px;
+  font-weight: 400;
+
+  letter-spacing: 0%;
+  text-align: left;
+}
+.deposit_calc_stats_list_item_right {
+  border-radius: 19px;
+  height: 22px;
+  background: rgba(130, 130, 130, 0.08);
+  display: flex;
+  align-items: center;
+  padding: 0 7px;
+}
+.deposit_calc_stats_list_item_l {
+  margin: 0;
+}
+.deposit_calc_stats_list_item_l h4 {
+  color: rgb(34, 197, 94);
+  font-family: Cygre;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0%;
+  text-align: right;
+}
 .durations_card {
   box-sizing: border-box;
   border: 0.5px solid rgb(228, 226, 225);
@@ -308,7 +362,6 @@ background: rgba(34, 197, 94, 0.1);
     gap: 20px;
   }
 }
-
 
 @media only screen and (max-width: 500px) {
   .plan_item {

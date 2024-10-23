@@ -292,13 +292,114 @@
   position: relative;
   width: 20px;
   height: 20px;
-
 }
 .chart canvas {
-  width: 19px !important; 
+  width: 19px !important;
   height: 19px !important;
 }
+.career_stats {
+  width: 100%;
+  max-width: 100% !important;
+  margin-top: 55px;
+}
+.career_stats .main_block_content {
+  padding: 38px 28px 0 43px;
+}
+.career_stats_wrapper {
+  width: 100%;
+  border-left: 0.5px solid rgb(228, 226, 225);
+  padding-left: 44px;
+}
+.career_stat_item {
+  margin-bottom: 32px;
+}
+.career_stat_item_title {
+  position: relative;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+}
+.career_stat_num {
+  box-sizing: border-box;
+  border: 1px solid rgb(36, 36, 36);
+  border-radius: 7px;
+  padding: 8px 12px 8px 12px;
+}
+.career_stat_num p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.career_stat_num_arrow {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(228, 226, 225);
+  border-radius: 22px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -60px;
+  background: #fff;
+}
+.career_stat_item_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 150px;
+}
 
+.career_stat_item_w_item p {
+  color: rgb(181, 181, 181);
+  font-family: Cygre;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.career_stat_item_w_item h4 {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.career_stat_item_revard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.career_stat_item_revard_icon {
+  width: 56px;
+  height: 56px;
+  box-sizing: border-box;
+  border: 0.5px solid rgb(228, 226, 225);
+  border-radius: 57px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background: rgb(228, 226, 225);
+  margin-bottom: 50px;
+}
+.career_stats_wrapper .career_stat_item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 42px;
+}
 @media only screen and (max-width: 1000px) {
   .career_top_cards {
     flex-direction: column;
@@ -307,9 +408,23 @@
     width: 100%;
     max-width: 100%;
   }
+  .car_stat_lines {
+    display: none;
+  }
+  .career_stat_item_wrapper {
+    padding-right: 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  .career_stats .main_block_content {
+    padding-left: 40px !important;
+  }
+  .career_stat_item_wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
   .pages_title_btns button {
     font-size: 14px;
   }

@@ -624,6 +624,162 @@ header {
   top: 0;
   opacity: 0.7;
 }
+/*  */
+
+.comp_dev_path {
+  padding: 100px 0;
+  background: rgb(250, 250, 252);
+}
+
+.dev_path_list {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+.dev_path_item_num {
+  width: 17px;
+  height: 17px;
+  box-sizing: border-box;
+  border: 0.5px solid rgb(228, 226, 225);
+  border-radius: 5px;
+
+  box-shadow: 0px 4px 3.7px 0px rgba(238, 238, 238, 0.25);
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dev_path_item_num p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.dev_path_item_title {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid rgb(228, 226, 225);
+}
+.dev_path_item_title h3 {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 24px;
+  font-weight: 600;
+
+  letter-spacing: 0%;
+  text-align: left;
+}
+.dev_path_item {
+  width: 33.33333333333333333333%;
+  border-right: 0.5px solid rgb(228, 226, 225);
+}
+.dev_path_item_content {
+  padding-right: 50px;
+  padding-top: 40px;
+}
+.dev_path_item_content_item {
+  display: flex;
+  align-items: start;
+  gap: 17px;
+  margin-bottom: 10px;
+}
+
+.dev_path_item_content_item_desc_title {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 8px;
+}
+
+.dev_path_item_status {
+  height: 23px;
+  border-radius: 11.5px;
+  padding: 0 10px;
+  background: rgb(36, 36, 36);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dev_path_item_status p {
+  color: rgb(255, 255, 255);
+  font-family: Cygre SemiBold;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.dev_path_item_content_item_desc_title h4 {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.dev_path_item_content_item_desc_text p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre Medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+  height: 80px;
+}
+.dev_path_item_content_item_desc {
+  padding-top: 11px;
+}
+.dev_path_item_status_done {
+  border-radius: 11.5px;
+
+  background: rgb(34, 197, 94);
+}
+
+.dev_path_item_last .dev_path_item_title,
+.dev_path_item_last .dev_path_item_content {
+  padding-left: 34px;
+}
+
+.dev_path_arrows {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: -44px;
+}
+.dev_path_arrows img {
+  cursor: pointer;
+}
+.dev_path_year {
+  width: 83px;
+  height: 44px;
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 9px;
+
+  box-shadow: 0px 4px 3.7px 0px rgba(238, 238, 238, 0.25);
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dev_path_year p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre SemiBold;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+}
 @media only screen and (max-width: 1400px) {
   header {
     padding-left: 20px;
@@ -646,12 +802,40 @@ header {
   }
 }
 
+@media only screen and (max-width: 1170px) {
+  .dev_path_item_content {
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  .dev_path_item_last .dev_path_item_title,
+  .dev_path_item_last .dev_path_item_content {
+    padding-left: 20px;
+  }
+}
+
 @media only screen and (max-width: 960px) {
+  .dev_path_list {
+    flex-direction: column;
+  }
+  .dev_path_item {
+    width: 100%;
+    border-left: 0.5px solid rgb(228, 226, 225);
+  }
+  .dev_path_item .dev_path_item_title,
+  .dev_path_item .dev_path_item_content {
+    padding-left: 20px;
+  }
+  .dev_path_arrows {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .media_list {
     width: 100%;
   }
   .media_list_item img {
-    max-width: 150px ;
+    max-width: 150px;
   }
   .parners_list_wrapper {
     width: 100%;
@@ -724,8 +908,14 @@ header {
 }
 
 @media only screen and (max-width: 500px) {
+  .comp_dev_path {
+    padding: 30px 0;
+  }
+  .dev_path_list {
+    margin-top: 20px;
+  }
   .media_list_item img {
-    max-width: 100px ;
+    max-width: 100px;
   }
   .header_content {
     padding-top: 40px;
