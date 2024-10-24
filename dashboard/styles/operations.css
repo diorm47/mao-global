@@ -109,11 +109,116 @@
   background: rgb(250, 250, 252);
 }
 
+.pages_title {
+  position: relative;
+}
+
+.operation_status_snack {
+  min-width: 299px;
+  height: 61px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 30px;
+  position: absolute;
+  right: 0;
+  top: -80px;
+}
+.operation_status_snack p {
+  font-family: Cygre SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.operation_status_snack_s {
+  border-radius: 15px;
+
+  box-shadow: inset 0px 0px 17.5px 0px rgb(255, 255, 255);
+  backdrop-filter: blur(19.2px);
+  background: linear-gradient(
+      90deg,
+      rgba(34, 195, 93, 0) 60.686%,
+      rgba(34, 195, 93, 0.59) 100%
+    ),
+    rgba(34, 195, 93, 0.16);
+  width: 510px;
+}
+.operation_status_snack_s p {
+  color: rgb(34, 195, 93);
+}
+.operation_status_snack_p {
+  border-radius: 15px;
+
+  box-shadow: inset 0px 0px 17.5px 0px rgb(255, 255, 255);
+  backdrop-filter: blur(19.2px);
+  background: linear-gradient(
+      90deg,
+      rgba(29, 97, 255, 0) 60.686%,
+      rgba(29, 97, 255, 0.59) 100%
+    ),
+    rgba(29, 97, 255, 0.16);
+}
+.operation_status_snack_p p {
+  color: rgb(29, 97, 255);
+}
+.operation_status_snack_r {
+  border-radius: 15px;
+
+  box-shadow: inset 0px 0px 17.5px 0px rgb(255, 255, 255);
+  backdrop-filter: blur(19.2px);
+  background: linear-gradient(
+      90deg,
+      rgba(255, 29, 29, 0) 60.686%,
+      rgba(255, 29, 29, 0.59) 100%
+    ),
+    rgba(255, 29, 29, 0.16);
+}
+.operation_status_snack_r p {
+  color: rgb(255, 29, 29);
+}
+.operation_status_snack_a {
+  border-radius: 15px;
+
+  box-shadow: inset 0px 0px 17.5px 0px rgb(255, 255, 255);
+  backdrop-filter: blur(19.2px);
+  background: linear-gradient(
+      90deg,
+      rgba(255, 165, 29, 0) 60.686%,
+      rgba(255, 165, 29, 0.59) 100%
+    ),
+    rgba(255, 165, 29, 0.16);
+}
+.operation_status_snack_a p {
+  color: rgb(255, 165, 29);
+}
+.operation_status_snack {
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+.active_operation_status_snack {
+  transition: all 0.4s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+.operation_status_snack img {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1100px) {
   .transaction_table {
     overflow: auto;
   }
   .transaction_table_wrapper {
     width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .operation_status_snack_s {
+    width: 80%;
   }
 }

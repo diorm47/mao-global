@@ -419,8 +419,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 100%;border-radius: 9px;
-padding: 10px 14px;
+  width: 100%;
+  border-radius: 9px;
+  padding: 10px 14px;
   box-shadow: inset 0px 0px 17.5px 0px rgb(255, 255, 255);
   backdrop-filter: blur(19.2px);
   background: rgba(255, 165, 29, 0.16);
@@ -429,12 +430,42 @@ padding: 10px 14px;
 }
 .deact_warning p {
   color: rgb(255, 165, 29);
-font-family: Cygre SemiBold;
-font-size: 16px;
-font-weight: 600;
-line-height: 26px;
+  font-family: Cygre SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.settings_auth_left_right {
+  width: 342px;
+  height: 348px;
+  background: url(../assets/icons/qrcode.svg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  position: relative;
+}
+.settings_auth_left_right p {
+  color: rgb(133, 133, 133);
+font-family: Cygre Medium;
+font-size: 12px;
+font-weight: 500;
+line-height: 19px;
 letter-spacing: 0%;
-text-align: left;
+text-align: center;
+margin-top: 24px;
+}
+.qr_scan {
+  position: absolute;
+  bottom: 24px;
+  width: 100%;
+
 }
 @media only screen and (max-width: 920px) {
   .setting_page1 {
@@ -505,9 +536,7 @@ text-align: left;
   .setting_factor_item {
     width: 100%;
   }
-  .settings_auth_left_right img {
-    width: 100%;
-  }
+
   .session_item_desc_title {
     flex-direction: column;
   }

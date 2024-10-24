@@ -735,6 +735,39 @@
             Open Deposit
           </button></a
         >
+
+        <div class="operation_status_snack operation_status_snack_s">
+          <p>The transfer of funds was completed successfully!</p>
+          <img
+            onclick="removeSnack(`operation_status_snack_s`)"
+            src="./assets/icons/plus.svg"
+            alt=""
+          />
+        </div>
+        <div class="operation_status_snack operation_status_snack_p">
+          <p>Lorem</p>
+          <img
+            onclick="removeSnack(`operation_status_snack_p`)"
+            src="./assets/icons/plus.svg"
+            alt=""
+          />
+        </div>
+        <div class="operation_status_snack operation_status_snack_r">
+          <p>Lorem</p>
+          <img
+            onclick="removeSnack(`operation_status_snack_r`)"
+            src="./assets/icons/plus.svg"
+            alt=""
+          />
+        </div>
+        <div class="operation_status_snack operation_status_snack_a">
+          <p>All Fields are required.</p>
+          <img
+            onclick="removeSnack(`operation_status_snack_a`)"
+            src="./assets/icons/plus.svg"
+            alt=""
+          />
+        </div>
       </div>
 
       <div class="main_block transactions_table">
@@ -742,115 +775,6 @@
           <h4>Transactions</h4>
         </div>
         <div class="main_block_content transaction_table">
-          <!-- <table>
-            <thead>
-              <tr>
-                <td>Date</td>
-                <td>Type</td>
-
-                <td>Amount</td>
-                <td>Status</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Deposit</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_suc">
-                      <img src="./assets/icons/completed.svg" alt="" />
-                      <p>Completed</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Profit</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_rej">
-                      <img src="./assets/icons/rejected.svg" alt="" />
-                      <p>Rejected</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Withdrawal</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_appr">
-                      <img src="./assets/icons/approved.svg" alt="" />
-                      <p>Approved</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Referral commission</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_inp">
-                      <img src="./assets/icons/inprogress.svg" alt="" />
-                      <p>In progress</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>Sep 27, 2024 <span>10:22:49</span></td>
-                <td><h4>Deposit</h4></td>
-                <td>
-                  <div class="amount_val">
-                    <img src="../assets/icons/usdt.svg" alt="" />
-                    <p>100 USDT</p>
-                  </div>
-                </td>
-                <td>
-                  <div class="trans_stat_wrapper">
-                    <div class="trans_stat trans_stat_pend">
-                      <img src="./assets/icons/pending.png" alt="" />
-                      <p>Pending</p>
-                    </div>
-                    <img class="menu" src="./assets/icons/menu.svg" alt="" />
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table> -->
           <div class="transaction_table_wrapper">
             <div
               class="transaction_table_item_wrapper transaction_table_item_titles"
@@ -891,7 +815,10 @@
                   </div>
                   <div class="transaction_table_item_part">
                     <div class="trans_stat_wrapper">
-                      <div class="trans_stat trans_stat_suc">
+                      <div
+                        class="trans_stat trans_stat_suc"
+                        onclick="setSnack(`operation_status_snack_s`)"
+                      >
                         <img src="./assets/icons/completed.svg" alt="" />
                         <p>Completed</p>
                       </div>
@@ -948,7 +875,10 @@
                   </div>
                   <div class="transaction_table_item_part">
                     <div class="trans_stat_wrapper">
-                      <div class="trans_stat trans_stat_rej">
+                      <div
+                        class="trans_stat trans_stat_rej"
+                        onclick="setSnack(`operation_status_snack_r`)"
+                      >
                         <img src="./assets/icons/rejected.svg" alt="" />
                         <p>Rejected</p>
                       </div>
@@ -1005,7 +935,7 @@
                   </div>
                   <div class="transaction_table_item_part">
                     <div class="trans_stat_wrapper">
-                      <div class="trans_stat trans_stat_appr">
+                      <div class="trans_stat trans_stat_appr" onclick="setSnack(`operation_status_snack_a`)">
                         <img src="./assets/icons/approved.svg" alt="" />
                         <p>Approved</p>
                       </div>
@@ -1062,7 +992,7 @@
                   </div>
                   <div class="transaction_table_item_part">
                     <div class="trans_stat_wrapper">
-                      <div class="trans_stat trans_stat_inp">
+                      <div class="trans_stat trans_stat_inp" onclick="setSnack(`operation_status_snack_p`)">
                         <img src="./assets/icons/inprogress.svg" alt="" />
                         <p>In progress</p>
                       </div>
@@ -1119,7 +1049,7 @@
                   </div>
                   <div class="transaction_table_item_part">
                     <div class="trans_stat_wrapper">
-                      <div class="trans_stat trans_stat_pend">
+                      <div class="trans_stat trans_stat_pend" onclick="setSnack(`operation_status_snack_p`)">
                         <img src="./assets/icons/pending.png" alt="" />
                         <p>Pending</p>
                       </div>
@@ -1278,6 +1208,18 @@
               });
           });
         });
+
+      function setSnack(classname) {
+        const menu = document.querySelector(`.${classname}`);
+        menu.classList.toggle("active_operation_status_snack");
+        setTimeout(() => {
+          removeSnack(classname);
+        }, 2000);
+      }
+      function removeSnack(classname) {
+        const menu = document.querySelector(`.${classname}`);
+        menu.classList.remove("active_operation_status_snack");
+      }
     </script>
   </body>
 </html>
