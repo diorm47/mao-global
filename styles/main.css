@@ -137,8 +137,19 @@ nav {
 .lang_toggler {
   display: flex;
   align-items: center;
-  gap: 7px;
+  justify-content: center;
+  padding: 0 8px 0 12px;
   cursor: pointer;
+  position: relative;
+  border-radius: 9px;
+
+  height: 44px;
+}
+.lang_toggler_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
 }
 .lang_toggler p {
   color: rgb(36, 36, 36);
@@ -681,6 +692,55 @@ input[type="radio"]:checked + .custom-radio {
 /* Появление внутреннего кружка при активации */
 input[type="radio"]:checked + .custom-radio::before {
   opacity: 1;
+}
+
+.lang_toggler_modal {
+  border-radius: 12px;
+  width: 255px;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 57px;
+  box-shadow: 0px 5px 15px 0px rgb(241, 241, 244);
+  background: rgb(255, 255, 255);
+  padding: 8px;
+}
+.lang_toggler_modal_item {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  gap: 8px;
+  padding: 12px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.lang_toggler_modal_item img {
+  width: 24px;
+  height: 24px;
+}
+.lang_toggler_modal_item p {
+  color: rgb(36, 36, 36);
+  font-family: Cygre Medium;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.lang_toggler_modal_item:hover {
+  background: rgb(250, 250, 252);
+  transition: all 0.4s ease;
+}
+
+.lang_toggler.active_lang .lang_toggler_modal {
+  display: block;
+}
+.active_lang {
+  background: rgb(250, 250, 252);
+}
+
+.lang_toggler_modal_item_active {
+  background: rgb(250, 250, 252);
 }
 
 @media only screen and (max-width: 1420px) {
