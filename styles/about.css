@@ -74,7 +74,8 @@ body {
   border-radius: 15px;
   width: 100%;
   height: 100%;
-  background: rgb(227, 227, 227);
+  background: url(../assets/images/car1.png);
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
