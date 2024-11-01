@@ -681,6 +681,47 @@ body {
   border-bottom: none;
 }
 
+.deposit_calc_stats_list_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+.deposit_calc_stats_list_item_left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.deposit_calc_stats_list_item p {
+  color: rgb(130, 130, 130);
+  font-family: Cygre;
+  font-size: 13px;
+  font-weight: 400;
+
+  letter-spacing: 0%;
+  text-align: left;
+}
+.deposit_calc_stats_list_item_right {
+  border-radius: 19px;
+  height: 22px;
+  background: rgba(130, 130, 130, 0.08);
+  display: flex;
+  align-items: center;
+  padding: 0 7px;
+}
+.deposit_calc_stats_list_item_l {
+  margin: 0;
+}
+.deposit_calc_stats_list_item_l h4 {
+  color: rgb(34, 197, 94);
+  font-family: Cygre;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+
 @media only screen and (max-width: 1920px) {
   .global_block {
     border-radius: 0;
