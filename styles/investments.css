@@ -452,7 +452,7 @@ body {
   position: static;
   z-index: 11;
 }
-.empl_arrow::after{
+.empl_arrow::after {
   content: none !important;
 }
 .employer_car {
@@ -721,7 +721,37 @@ body {
   letter-spacing: 0%;
   text-align: right;
 }
+.info_label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: -6px;
+  margin-bottom: 23px;
 
+}
+.info_label_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;  width: 50%;
+}
+.info_label_item p {
+  font-family: Cygre;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 0px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(133, 133, 133);
+}
+.info_label_item span {
+  color: rgb(36, 36, 36);
+}
+.info_label_line {
+  width: 47%;
+  height: 1px;
+  background: rgb(228, 226, 225);
+}
 @media only screen and (max-width: 1920px) {
   .global_block {
     border-radius: 0;
@@ -804,5 +834,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 40px;
+  }
+  .info_label_item {
+    width: 85%;
   }
 }
