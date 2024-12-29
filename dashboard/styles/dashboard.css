@@ -367,6 +367,37 @@
 }
 
 @media only screen and (max-width: 500px) {
+.fillout_modal  {
+ width: 100%;
+ right: 0;
+ padding: 20px;
+ top: 80px;
+}
+.fillout_steps_modal_btm, .fillout_steps_modal_top {
+  padding: 20px;
+}
+.fillout_btns_sec {
+  gap: 15px;
+  flex-direction: column
+}
+.fillout_btns_sec .contract_btn, .fillout_btns_sec .redtbn {
+  width: 100% !important;
+}
+.fill_up_steps {
+  margin-bottom: 20px;
+}
+.fillup_step_desc h4 {
+  font-size: 16px;
+}
+.fillup_step_desc p {
+  font-size: 12px;
+}
+.fillup_step {
+  margin-bottom: 15px;
+}
+.fillout_steps_modal_top {
+  padding-bottom: 0;
+}
   .main_block {
     margin-bottom: 20px;
   }

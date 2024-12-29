@@ -99,6 +99,9 @@ nav {
   align-items: center;
   gap: 6px;
 }
+.company_select_not img {
+  width: 32px;
+}
 .company_select_not p {
   font-family: "Cygre";
   font-style: normal;
@@ -673,4 +676,152 @@ footer {
 .company_search img {
   position: absolute;
   right: 9px;
+}
+
+@media only screen and (max-width: 500px) {
+  .landing_track {
+    width: 100%;
+  }
+  .choose_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .choose_cards_btm {
+    flex-direction: column;
+  }
+  .choose_partners {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  .why_chooseus {
+    padding: 20px;
+  }
+  .map_block {
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    height: 300px;
+  }
+  .map_block p {
+    font-size: 20px;
+    line-height: 130%;
+  }
+  .contact_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact_card {
+    padding: 20px;
+  }
+  .footer_menu {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding-top: 0px;
+  }
+  .footer_right {
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .footer_wrapper {
+    padding-bottom: 30px;
+  }
+  .white_blocks,
+  .faqs_wrapper {
+    padding-bottom: 40px;
+  }
+  .map_block,
+  .why_chooseus {
+    margin-bottom: 40px;
+  }
+  .why_chooseus_title h2 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .why_chooseus_title {
+    margin-bottom: 20px;
+  }
+  .choose_card p {
+    font-size: 16px;
+  }
+  .landing_track {
+    flex-direction: column;
+    height: auto;
+  }
+  .landing_track_input,
+  .company_select,
+  .track_btn {
+    width: 100%;
+    height: 45px;
+  }
+  .track_btn {
+    border-radius: 6px;
+  }
+  .landing_header_bg {
+    width: 100%;
+  }
+  .landing_header {
+    padding-bottom: 100px;
+  }
+  .landinf_content_title h1 {
+    font-size: 30px;
+    line-height: 130%;
+  }
+  .landinf_content_title p {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .top_nav .nav_bottom_left_links {
+    display: none;
+  }
+  .results_card {
+    padding: 20px;
+  }
+  .results_descs {
+    gap: 20px;
+    display: flex;flex-direction: column;
+  }
+  .results_card_title p {
+    font-size: 20px;
+  }
+  .results_card_title {
+    margin-bottom: 18px;
+  }
+  .movement_history_title h2 {
+    font-size: 20px;
+  }
+  .movement_history_item_date p {
+    font-size: 16px;
+  }
+  .movement_history_item_date {
+    width: auto;
+    align-items: start;
+  }
+  .movement_history_item_row {
+    display: none;
+  }
+  .movement_history_item {
+    margin: 0;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  .movement_history_item_desc {
+    flex-direction: column;
+    align-items: start;
+  }
+  .movement_history_item_desc p {
+    font-size: 16px;
+  }
+  .fedex_results {
+    padding-bottom: 40px;
+  }
+  .company_select_list {
+    width: 100%;
+    left: 0;
+  }
 }

@@ -773,8 +773,18 @@ input[type="radio"]:checked + .custom-radio::before {
   .top_nav {
     margin: 0;
   }
-  .top_nav .top_nav_right {
+  /* .top_nav .top_nav_right {
     display: none;
+  } */
+  .nav_line,
+  .lang_toggler,
+  .nav_notif,
+  .user_nav_prof_data,
+  .nav_logout {
+    display: none !important;
+  }
+  .user_nav_prof {
+    position: static !important;
   }
   footer {
     padding-top: 50px;

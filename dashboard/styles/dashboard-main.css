@@ -776,7 +776,14 @@ footer {
   color: #000;
   line-height: 29px;
 }
+.mob_right_mob {
+  display: none;
+}
 @media only screen and (max-width: 500px) {
+  .mob_right_mob {
+    display: flex;
+    gap: 15px;
+  }
   .dashboard_nav {
     padding-top: 0;
   }
