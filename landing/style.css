@@ -824,4 +824,7 @@ footer {
     width: 100%;
     left: 0;
   }
+  .nav_bottom_socials {
+    display: none !important; 
+  }
 }
