@@ -117,14 +117,14 @@
 
 /*  */
 
-.progress-bar  svg text{
+.progress-bar svg text {
   display: none;
 }
 
 .progress-bar {
-   position: absolute;
-   transform: scale(1.6);
-   top: 80px;
+  position: absolute;
+  transform: scale(1.6);
+  top: 80px;
 }
 
 .limit_block {
@@ -132,7 +132,201 @@
   overflow: hidden;
 }
 
+.user_nav_prof {
+  position: relative;
+}
+.fillout_modal {
+  box-sizing: border-box;
+  border: 1px solid rgb(191, 191, 191);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0px 5px 15px 0px rgb(241, 241, 244);
+  background: rgb(255, 255, 255);
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+.fillout_progress_block {
+  position: relative;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.progress_fillout svg {
+  width: 95px;
+  height: 95px;
+}
+.fillout_progress_block p {
+  position: absolute;
+  color: rgb(137, 137, 137);
+  font-family: Cygre;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: -7px;
+  margin-right: -4px;
+}
+.fillout_modal {
+  width: 432px;
+}
+.fillout_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.fillout_top_desc h3 {
+  color: rgb(36, 36, 36);
+  font-family: "Cygre 700";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.fillout_top_desc p {
+  color: rgb(133, 133, 133);
+  font-family: "Cygre";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: right;
+}
+.fillout_btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+.fillout_btns button {
+  min-width: 110px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fillout_btns .contract_btn {
+  height: 44px;
+  padding: 0;
+}
+.fillout_steps_modal {
+  width: 868px;
+  border-radius: 20px;
+
+  background: rgb(255, 255, 255);
+}
+.fillout_steps_modal_top {
+  padding: 33px 33px 24px 50px;
+  border-bottom: 1px solid rgb(234, 234, 234);
+}
+.overlay {
+
+  position: fixed;
+  display: flex;
+  align-items: center;
+  background: rgba(30, 30, 30, 0.405);
+  justify-content: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+.fillout_steps_modal_top .fillout_top {
+  justify-content: flex-start;
+}
+.fillout_steps_modal_top .fillout_top_desc p,
+.fillout_steps_modal_top .fillout_top_desc h3 {
+  text-align: left;
+}
+.fillout_steps_modal_top .fillout_top_desc {
+  width: 70%;
+}
+.modal_ex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.modal_ex img {
+  cursor: pointer;
+}
+.fillout_steps_modal_btm {
+  padding: 37px 30px 46px 53px;
+}
+.fillout_btns_sec {
+  justify-content: flex-start;
+  gap: 26px;
+}
+.fillout_btns_sec .contract_btn {
+  box-sizing: border-box;
+  border: 1px solid rgb(234, 234, 234);
+  border-radius: 9px;
+
+  background: rgb(255, 255, 255);
+  padding: 0 39px;
+}
+.fillout_btns_sec .redtbn {
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 164, 150);
+  border-radius: 9px;
+
+  background: rgb(222, 36, 8);
+  padding: 0 50px;
+}
+.fillup_step {
+  display: flex;
+  align-items: start;
+  gap: 13px;
+}
+.not_checked {
+  border: 1px solid rgb(222, 36, 8);
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.fill_up_steps {
+  margin-bottom: 40px;
+}
+.fillup_step_desc h4 {
+  color: rgb(36, 36, 36);
+  font-family: "Cygre 700";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.fillup_step_desc p {
+  color: rgb(133, 133, 133);
+  font-family: Cygre;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.hidden_icon {
+  display: none;
+}
+.fillup_step {
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.fillout_steps_modal_w, .fillout_modal {
+  display: none;
+}
+.visible_modal {
+  display: flex;
+}
+.fillout_modal  {
+  flex-direction: column;
+}
 @media only screen and (max-width: 1100px) {
   .right_dashb_top {
     flex-direction: column;
@@ -173,7 +367,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-
   .main_block {
     margin-bottom: 20px;
   }
@@ -221,6 +414,6 @@
     width: 100%;
   }
   .cr_dp_bl {
-    background-position: center
+    background-position: center;
   }
 }

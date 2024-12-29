@@ -1,0 +1,676 @@
+body {
+  background: #fafafc;
+}
+
+.top_nav {
+  margin: 0;
+}
+nav {
+  margin-top: 20px;
+  border: 0.5px solid #e4e2e1;
+}
+
+.landing_header {
+  padding-top: 20px;
+  position: relative;
+
+  padding-bottom: 280px;
+}
+
+.landing_header_bg {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.landinf_content {
+  position: relative;
+  padding-top: 30px;
+  z-index: 22;
+}
+.landinf_content_title h1 {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  /* or 120% */
+  text-align: center;
+  margin-bottom: 16px;
+  color: #242424;
+}
+
+.landinf_content_title h1 span {
+  color: #df361e;
+}
+.landinf_content_title p {
+  margin-bottom: 44px;
+
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  /* or 144% */
+  text-align: center;
+
+  color: #757373;
+}
+
+.landing_track {
+  width: 100%;
+  max-width: 775px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Frame 47804 */
+  height: 61px;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  border-radius: 9px;
+  background: #fff;
+}
+
+.landing_track_input {
+  display: flex;
+  align-items: center;
+  max-width: 390px;
+  width: 100%;
+  height: 100%;
+  padding-left: 21px;
+}
+.landing_track_input input {
+  padding-left: 9px;
+  height: 100%;
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+
+  color: #000;
+}
+.landing_track_input input::placeholder {
+  color: #a3a3a3;
+}
+
+.company_select_not {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.company_select_not p {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+
+  color: #636363;
+}
+
+.company_select {
+  border-left: 0.5px solid #eaeaea;
+  border-right: 0.5px solid #eaeaea;
+  padding: 0 37px;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.track_btn {
+  height: 100%;
+  padding: 0 40px;
+  /* Frame 77 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background: #df361e;
+
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.why_chooseus {
+  background: #f1f1f1;
+  border-radius: 30px;
+  width: 100%;
+
+  padding: 20px 56px 44px 94px;
+}
+
+.why_chooseus_title h2 {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  /* or 120% */
+
+  color: #242424;
+}
+
+.why_chooseus_title h2 span {
+  color: #df361e;
+}
+.why_chooseus_title {
+  margin-bottom: 40px;
+}
+.choose_card_title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.choose_card_title div {
+  width: 32px;
+  height: 33.52px;
+  background: #df361e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.choose_card_title div span {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  /* or 156% */
+
+  color: #ffffff;
+}
+
+.choose_card_title h3 {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+
+  color: #242424;
+}
+
+.choose_card p {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  color: #858585;
+  margin-top: 5px;
+}
+
+.choose_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 70px;
+}
+
+.choose_cards_btm {
+  margin-top: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.choose_partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.why_chooseus {
+  margin-bottom: 105px;
+}
+
+.map_block {
+  height: 490px;
+  width: 100%;
+  background: url(./assets/map.svg);
+
+  padding: 60px;
+  margin-bottom: 110px;
+  background-repeat: no-repeat;
+}
+
+.map_block p {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 47px;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+.white_blocks {
+  background: #fff;
+  padding: 30px 0 150px;
+}
+
+.block_title h2 span {
+  color: #df361e;
+}
+
+.contact_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-top: 44px;
+}
+
+.contact_card {
+  /* Rectangle 3802 */
+  padding: 30px;
+  box-sizing: border-box;
+
+  height: 236px;
+  left: calc(50% - 432px / 2 - 480px);
+  top: 2896px;
+
+  border: 0.5px solid #e4e2e1;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.contact_card h2 {
+  /* General communication */
+
+  font-family: "Cygre SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 8px;
+
+  color: #242424;
+}
+
+.contact_card h4 {
+  font-family: "Cygre Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #858585;
+}
+
+.contact_card button {
+  margin: 0;
+}
+
+.contact_btn {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: auto;
+  height: 44px;
+  padding: 0 12px;
+}
+
+.readmore_btn {
+  width: auto !important;
+  padding: 0 12px;
+}
+.footer_menu {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  padding-top: 55px;
+}
+.footer_right {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px;
+}
+.footer_wrapper {
+  padding-bottom: 70px;
+}
+.tg_gr {
+  width: auto !important;
+  gap: 6px;
+  padding: 0 12px;
+}
+.nav_bottom_socials a {
+  background: transparent;
+}
+
+footer {
+  background: #fafafa;
+}
+
+.results_card_title {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: start;
+  gap: 16px;
+}
+
+.fedex_results {
+  position: relative;
+}
+
+.results_card {
+  background: #fafafc;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin-bottom: 40px;
+  padding: 40px 80px 30px;
+}
+
+.results_card_title p {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+
+  color: #242424;
+}
+
+.results_card_title p span {
+  color: #df361e;
+}
+
+.results_descs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+}
+.results_desc_title {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.results_desc_title p {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  /* identical to box height */
+
+  color: #242424;
+}
+
+.status {
+  /* Frame 1000002601 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 10px;
+  gap: 10px;
+
+  background: #34db29;
+  border-radius: 100px;
+}
+
+.status p {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: flex-end;
+
+  color: #ffffff;
+}
+
+.results_desc_text p {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+
+  color: #858585;
+}
+
+.movement_history_title h2 {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height, or 118% */
+  text-align: center;
+  color: #242424;
+  margin-bottom: 60px;
+}
+
+.movement_history_title h2 span {
+  color: #df361e;
+}
+
+.movement_history_item {
+  display: flex;
+  align-items: start;
+  gap: 13px;
+}
+.movement_history_item_date {
+  width: 400px;
+}
+.movement_history_item_date p {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140.42%;
+  /* or 25px */
+  text-align: right;
+
+  color: #000000;
+}
+
+.movement_history_item_date span {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140.42%;
+  /* or 22px */
+  text-align: right;
+
+  color: #8a8a8a;
+}
+
+.movement_history_item_date {
+  display: flex;
+  flex-direction: column;
+}
+
+.movement_history_item_desc {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.movement_history_item_desc p {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140.42%;
+  /* or 28px */
+
+  color: #000000;
+}
+
+.movement_history_item_desc span {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140.42%;
+  /* or 20px */
+
+  color: #8a8a8a;
+}
+
+.movement_history_item_row {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.movement_history_item_row div {
+  height: 100px;
+
+  border: 2px dashed #df361e;
+}
+
+.movement_history_item {
+  margin-top: -10px;
+}
+
+.movement_history_item_active .movement_history_item_desc p {
+  color: #34db29;
+}
+
+.fedex_results {
+  padding-bottom: 100px;
+}
+
+.movement_history_list
+  .movement_history_item:last-child
+  .movement_history_item_row
+  div {
+  display: none;
+}
+
+.fedex_results {
+  display: none;
+}
+
+.visible_fedex_results {
+  display: block;
+}
+
+.visible_landing_header {
+  padding-bottom: 40px;
+}
+
+.company_select {
+  position: relative;
+}
+
+.company_select_list {
+  position: absolute;
+  top: 48px;
+  width: 235px;
+  right: 40px;
+  /* Frame 84 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px;
+
+  background: #ffffff;
+  box-shadow: 0px 5px 15px #f1f1f4;
+  border-radius: 12px;
+  z-index: 22;
+}
+
+.track_btn {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.company_item {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.company_item p {
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #242424;
+}
+
+.company_select_list {
+  display: none;
+}
+
+.visible_company_select_list {
+  display: block;
+}
+.company_select {
+  width: 214px;
+}
+.company_item img {
+  width: 32px;
+}
+
+.company_search {
+  margin: 12px 0 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company_search input {
+  width: 100%;
+  height: 33px;
+  padding: 0px 10px;
+
+  background: #f7f7f7;
+  border-radius: 5px;
+
+  font-family: "Cygre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #636363;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.company_search img {
+  position: absolute;
+  right: 9px;
+}

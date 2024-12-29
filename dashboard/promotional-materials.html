@@ -24,6 +24,7 @@
     <title>Promotional Materials</title>
     <link rel="stylesheet" href="./styles/settings.css" />
     <link rel="stylesheet" href="./styles/promotional.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
   </head>
   <body>
     <div class="dashboard_nav">
@@ -69,12 +70,39 @@
               <img src="./assets/icons/bell.svg" alt="" />
             </div>
             <div class="user_nav_prof">
-              <div class="user_nav_prof_data">
+              <div class="user_nav_prof_data" onclick="openModal1()">
                 <p>Charles</p>
                 <span>patricia@gmail.com</span>
               </div>
-              <div class="user_prof_name">
+              <div class="user_prof_name" onclick="openModal1()">
                 <p>C</p>
+              </div>
+              <div class="fillout_modal">
+                <div class="fillout_top">
+                  <div class="fillout_progress_block">
+                    <div class="fillout_progress">
+                      <div class="progress_fillout" id="fillout"></div>
+                    </div>
+                    <p>75%</p>
+                  </div>
+                  <div class="fillout_top_desc">
+                    <h3>You need to fill out a profile</h3>
+                    <p>
+                      Your profile is <b>75%</b> complete. According to our
+                      regulations, full completion of data is necessary to
+                      comply with safety regulations and provide quality
+                      services.
+                    </p>
+                  </div>
+                </div>
+                <div class="fillout_btns">
+                  <button class="btn_grey contract_btn" onclick="openModal1()">
+                    Later
+                  </button>
+                  <button class="btn_grey redtbn" onclick="openModal2()">
+                    Read More
+                  </button>
+                </div>
               </div>
             </div>
             <div class="nav_line"></div>
@@ -949,6 +977,96 @@
         </div>
       </div>
     </footer>
+    <div class="overlay fillout_steps_modal_w">
+      <div class="fillout_steps_modal">
+        <div class="fillout_steps_modal_top">
+          <div class="modal_ex">
+            <img
+              src="./assets/icons/exit-modal.png"
+              alt=""
+              onclick="openModal2()"
+            />
+          </div>
+          <div class="fillout_top">
+            <div class="fillout_progress_block">
+              <div class="fillout_progress">
+                <div class="progress_fillout" id="fillout2"></div>
+              </div>
+              <p>75%</p>
+            </div>
+            <div class="fillout_top_desc">
+              <h3>You need to fill out a profile</h3>
+              <p>
+                Your profile is <b>75%</b> complete. According to our
+                regulations, full completion of data is necessary to comply with
+                safety regulations and provide quality services.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="fillout_steps_modal_btm">
+          <div class="fill_up_steps">
+            <div class="fillup_step fillup_step_checked">
+              <div class="fillup_step_check">
+                <div class="not_checked hidden_icon"></div>
+                <img
+                  class="checked_icon"
+                  src="./assets/icons/check.svg"
+                  alt=""
+                />
+              </div>
+              <div class="fillup_step_desc">
+                <h4>Enter your first and last name</h4>
+                <p>
+                  This is so that we can be sure that the data matches the
+                  documents and that you are a real person.
+                </p>
+              </div>
+            </div>
+            <div class="fillup_step fillup_step_checked">
+              <div class="fillup_step_check">
+                <div class="not_checked hidden_icon"></div>
+                <img
+                  class="checked_icon"
+                  src="./assets/icons/check.svg"
+                  alt=""
+                />
+              </div>
+              <div class="fillup_step_desc">
+                <h4>Сreate a unique and readable username</h4>
+                <p>
+                  This is to make it easier to address you without using your
+                  real first and last name.
+                </p>
+              </div>
+            </div>
+            <div class="fillup_step">
+              <div class="fillup_step_check">
+                <div class="not_checked"></div>
+                <img
+                  class="checked_icon hidden_icon"
+                  src="./assets/icons/check.svg"
+                  alt=""
+                />
+              </div>
+              <div class="fillup_step_desc">
+                <h4>Include a link to your social media accounts</h4>
+                <p>
+                  This is to make it easier to address you without using your
+                  real first and last name.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="fillout_btns fillout_btns_sec">
+             <button class="btn_grey contract_btn"   onclick="openModal2()">Continue later</button>
+            <button class="btn_grey redtbn">Go to settings</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/fillout-circle.js"></script>
+    <script src="./scripts/fillout-circle-2.js"></script>
     <script src="../scripts/main.js"></script>
   </body>
 </html>

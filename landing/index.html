@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accurate tracking of the status of your shipments</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href=".././styles/main-page.css" />
+    <link rel="stylesheet" href=".././styles/faqs.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="top_nav">
+          <div class="top_nav_left">
+            <a href="./index.html">
+              <img src="../assets/logo.svg" alt="" />
+            </a>
+            <div class="nav_line"></div>
+          </div>
+          <div class="nav_bottom_left_links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About the Company</a>
+            <a href="../investments.html">Investments</a>
+            <a href="../services.html">Services</a>
+          </div>
+          <div class="top_nav_right">
+            <div class="nav_bottom_socials">
+              <a href="#"
+                ><img src="../assets/icons/socials/tg.svg" alt=""
+              /></a>
+              <a href="#"
+                ><img src="../assets/icons/socials/tw.svg" alt=""
+              /></a>
+              <a href="#"
+                ><img src="../assets/icons/socials/fb.svg" alt=""
+              /></a>
+              <a href="#"
+                ><img src="../assets/icons/socials/ins.svg" alt=""
+              /></a>
+            </div>
+            <div class="lang_toggler">
+              <div class="lang_toggler_wrapper">
+                <img src="../assets/icons/usa-flag.svg" alt="" />
+                <p>English</p>
+                <img src="../assets/icons/arrow-down.svg" alt="" />
+              </div>
+              <div class="lang_toggler_modal">
+                <div class="lang_toggler_modal_item">
+                  <img src="../assets/icons/usa-flag.svg" alt="" />
+                  <p>English</p>
+                </div>
+                <div class="lang_toggler_modal_item">
+                  <img src="../assets/icons/china-flag.svg" alt="" />
+                  <p>China</p>
+                </div>
+                <div class="lang_toggler_modal_item">
+                  <img src="../assets/icons/russia-flag.svg" alt="" />
+                  <p>Russia</p>
+                </div>
+                <div class="lang_toggler_modal_item">
+                  <img src="../assets/icons/korea-flag.svg" alt="" />
+                  <p>South Korea</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mob_menu_icon" onclick="menuToggler()">
+            <img src="./assets/icons/menu.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="nav_mobile">
+        <div class="nav_mobile_exit" onclick="menuToggler()">
+          <a href="./index.html">
+            <img src="./assets/logo.svg" alt="" />
+          </a>
+          <img src="./assets/icons/exit.svg" alt="" />
+        </div>
+        <div class="nav_mobile_content">
+          <div class="nav_bottom_left_links">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About the Company</a>
+            <a href="./investments.html">Investments</a>
+            <a href="./services.html">Services</a>
+            <a href="./partners.html">Partners</a>
+            <a href="./delivery-logistics.html">Delivery &amp; Logistics</a>
+            <a href="./testimonials.html">Testimonials</a>
+            <a href="./faqs.html">FAQ</a>
+            <a href="./news.html">News</a>
+          </div>
+
+          <a href="./contacts.html"
+            ><div class="contactUs_btn">Contact Us</div></a
+          >
+          <div class="nav_log_dash">
+            <a href="./auth.html">Login</a>
+            <a href="./dashboard/dashboard.html" class="nav_log_dash_active"
+              >Personal Account <img src="./assets/icons/nav-arrow.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="landing_header container">
+      <img src="./assets/header-bg.png" class="landing_header_bg" alt="" />
+
+      <div class="landinf_content">
+        <div class="landinf_content_title">
+          <h1>
+            Accurate <span>tracking</span> of the <br />
+            status of your shipments
+          </h1>
+          <p>
+            Enter your tracking number and select a delivery service to <br />
+            find out where your parcel is located
+          </p>
+        </div>
+        <div class="landing_track">
+          <div class="landing_track_input">
+            <img src="./assets/truck.svg" alt="" />
+            <input
+              type="text"
+              placeholder="Enter the track number of your shipment"
+            />
+          </div>
+          <div class="company_select">
+            <div class="company_select_not">
+              <p>Select company</p>
+              <img src="./assets/arrow-top.svg" alt="" />
+            </div>
+
+            <div class="company_select_list">
+              <div class="company_search">
+                <input type="text" placeholder="Find another" />
+                <img src="./assets/search.svg" alt="" />
+              </div>
+              <div class="company_item">
+                <img src="./assets/fedex.png" alt="" />
+                <p>FedEx</p>
+              </div>
+              <div class="company_item">
+                <img src="./assets/china.png" alt="" />
+                <p>China Post</p>
+              </div>
+              <div class="company_item">
+                <img src="./assets/yun.png" alt="" />
+                <p>YunExpress</p>
+              </div>
+              <div class="company_item">
+                <img src="./assets/dhl.png" alt="" />
+                <p>DHL</p>
+              </div>
+            </div>
+          </div>
+          <button class="track_btn">Track package</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="fedex_results container">
+      <div class="results_card">
+        <div class="results_card_title">
+          <img src="./assets/result-title.svg" alt="" />
+          <p>Results for track number <span>DQ057062237KZ</span></p>
+        </div>
+        <div class="results_descs">
+          <div class="results_desc">
+            <div class="results_desc_title">
+              <img src="./assets/status/1.svg" alt="" />
+              <p>Status</p>
+            </div>
+            <div class="status">
+              <p>Delivered</p>
+            </div>
+          </div>
+          <div class="results_desc">
+            <div class="results_desc_title">
+              <img src="./assets/status/2.svg" alt="" />
+              <p>Origin country</p>
+            </div>
+            <div class="results_desc_text">
+              <p>Beijing, China</p>
+            </div>
+          </div>
+          <div class="results_desc">
+            <div class="results_desc_title">
+              <img src="./assets/status/3.svg" alt="" />
+              <p>Destination country</p>
+            </div>
+            <div class="results_desc_text">
+              <p>Moscow, Russia</p>
+            </div>
+          </div>
+          <div class="results_desc">
+            <div class="results_desc_title">
+              <img src="./assets/status/4.svg" alt="" />
+              <p>Current location</p>
+            </div>
+            <div class="results_desc_text">
+              <p>In a warehouse in Khabarovsk</p>
+            </div>
+          </div>
+          <div class="results_desc">
+            <div class="results_desc_title">
+              <img src="./assets/status/5.svg" alt="" />
+              <p>Last update</p>
+            </div>
+            <div class="results_desc_text">
+              <p>
+                Successfully delivered to the addressee CMC SMP of Zerendinskiy
+                RUPS, 021200, 2024-11-07 11:49 AM
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="movement_history_title">
+        <h2>Movement history for track number <span>DQ057062237KZ</span></h2>
+      </div>
+
+      <div class="movement_history_list">
+        <div class="movement_history_item movement_history_item_active">
+          <div class="movement_history_item_date">
+            <p>7 November 2024</p>
+            <span>11:06</span>
+          </div>
+          <div class="movement_history_item_row">
+            <img src="./assets/circle.svg" alt="" />
+            <div></div>
+          </div>
+          <div class="movement_history_item_desc">
+            <img src="./assets/fedex.png" alt="" />
+            <div>
+              <p>Waiting for the recipient at the delivery point</p>
+              <span>Zerendinskiy RUPS SMP Central Control Centre</span>
+            </div>
+          </div>
+        </div>
+        <div class="movement_history_item">
+          <div class="movement_history_item_date">
+            <p>7 November 2024</p>
+            <span>11:06</span>
+          </div>
+          <div class="movement_history_item_row">
+            <img src="./assets/circle.svg" alt="" />
+            <div></div>
+          </div>
+          <div class="movement_history_item_desc">
+            <img src="./assets/fedex.png" alt="" />
+            <div>
+              <p>Waiting for the recipient at the delivery point</p>
+              <span>Zerendinskiy RUPS SMP Central Control Centre</span>
+            </div>
+          </div>
+        </div>
+        <div class="movement_history_item">
+          <div class="movement_history_item_date">
+            <p>7 November 2024</p>
+            <span>11:06</span>
+          </div>
+          <div class="movement_history_item_row">
+            <img src="./assets/circle.svg" alt="" />
+            <div></div>
+          </div>
+          <div class="movement_history_item_desc">
+            <img src="./assets/fedex.png" alt="" />
+            <div>
+              <p>Waiting for the recipient at the delivery point</p>
+              <span>Zerendinskiy RUPS SMP Central Control Centre</span>
+            </div>
+          </div>
+        </div>
+        <div class="movement_history_item">
+          <div class="movement_history_item_date">
+            <p>7 November 2024</p>
+            <span>11:06</span>
+          </div>
+          <div class="movement_history_item_row">
+            <img src="./assets/circle.svg" alt="" />
+            <div></div>
+          </div>
+          <div class="movement_history_item_desc">
+            <img src="./assets/fedex.png" alt="" />
+            <div>
+              <p>Waiting for the recipient at the delivery point</p>
+              <span>Zerendinskiy RUPS SMP Central Control Centre</span>
+            </div>
+          </div>
+        </div>
+        <div class="movement_history_item">
+          <div class="movement_history_item_date">
+            <p>7 November 2024</p>
+            <span>11:06</span>
+          </div>
+          <div class="movement_history_item_row">
+            <img src="./assets/circle.svg" alt="" />
+            <div></div>
+          </div>
+          <div class="movement_history_item_desc">
+            <img src="./assets/fedex.png" alt="" />
+            <div>
+              <p>Waiting for the recipient at the delivery point</p>
+              <span>Zerendinskiy RUPS SMP Central Control Centre</span>
+            </div>
+          </div>
+        </div>
+        <div class="movement_history_item">
+          <div class="movement_history_item_date">
+            <p>7 November 2024</p>
+            <span>11:06</span>
+          </div>
+          <div class="movement_history_item_row">
+            <img src="./assets/circle.svg" alt="" />
+            <div></div>
+          </div>
+          <div class="movement_history_item_desc">
+            <img src="./assets/fedex.png" alt="" />
+            <div>
+              <p>Waiting for the recipient at the delivery point</p>
+              <span>Zerendinskiy RUPS SMP Central Control Centre</span>
+            </div>
+          </div>
+        </div>
+        <div class="movement_history_item">
+          <div class="movement_history_item_date">
+            <p>7 November 2024</p>
+            <span>11:06</span>
+          </div>
+          <div class="movement_history_item_row">
+            <img src="./assets/circle.svg" alt="" />
+            <div></div>
+          </div>
+          <div class="movement_history_item_desc">
+            <img src="./assets/fedex.png" alt="" />
+            <div>
+              <p>Waiting for the recipient at the delivery point</p>
+              <span>Zerendinskiy RUPS SMP Central Control Centre</span>
+            </div>
+          </div>
+        </div>
+        <div class="movement_history_item">
+          <div class="movement_history_item_date">
+            <p>7 November 2024</p>
+            <span>11:06</span>
+          </div>
+          <div class="movement_history_item_row">
+            <img src="./assets/circle.svg" alt="" />
+            <div></div>
+          </div>
+          <div class="movement_history_item_desc">
+            <img src="./assets/fedex.png" alt="" />
+            <div>
+              <p>Waiting for the recipient at the delivery point</p>
+              <span>Zerendinskiy RUPS SMP Central Control Centre</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="container">
+      <div class="why_chooseus">
+        <div class="why_chooseus_title">
+          <h2>Why <span>choose</span> us?</h2>
+        </div>
+        <div class="choose_cards">
+          <div class="choose_card">
+            <div class="choose_card_title">
+              <div>
+                <span>1</span>
+              </div>
+              <h3>Transparency and Accuracy of Data</h3>
+            </div>
+            <p>
+              Track every stage of delivery with Mao Global and other popular
+              services.
+            </p>
+          </div>
+          <div class="choose_card">
+            <div class="choose_card_title">
+              <div>
+                <span>2</span>
+              </div>
+              <h3>Ease of Use</h3>
+            </div>
+            <p>
+              Simply enter the tracking number, select the delivery service, and
+              we'll provide you with the current status of your package.
+            </p>
+          </div>
+          <div class="choose_card">
+            <div class="choose_card_title">
+              <div>
+                <span>3</span>
+              </div>
+              <h3>Express Delivery</h3>
+            </div>
+            <p>For urgent and small orders, we minimize your waiting time.</p>
+          </div>
+        </div>
+        <div class="choose_cards_btm">
+          <div class="choose_card">
+            <div class="choose_card_title">
+              <div>
+                <span>4</span>
+              </div>
+              <h3>Services support</h3>
+            </div>
+            <p>
+              Trusted by industry leaders <br />
+              & innovators
+            </p>
+          </div>
+          <div class="choose_partners">
+            <img src="./assets/parners/1.svg" alt="" />
+            <img src="./assets/parners/2.svg" alt="" />
+            <img src="./assets/parners/3.svg" alt="" />
+            <img src="./assets/parners/4.svg" alt="" />
+            <img src="./assets/parners/5.svg" alt="" />
+            <img src="./assets/parners/6.svg" alt="" />
+            <img src="./assets/parners/7.svg" alt="" />
+            <img src="./assets/parners/8.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map container">
+      <div class="map_block">
+        <p>
+          View the route of your parcel on the map and find <br />
+          out where it is right now
+        </p>
+
+        <button class="btn_send">Check now</button>
+      </div>
+    </section>
+
+    <div class="white_blocks">
+      <div class="block_title container">
+        <h2>Questions & <span>answers.</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+      </div>
+
+      <div class="faqs_wrapper container">
+        <div class="faqs_left tabs_list">
+          <p class="menu_item active_menu" data-id="menu1">General</p>
+          <p class="menu_item" data-id="menu2">Deposit / Withdrawal</p>
+          <p class="menu_item" data-id="menu3">Risk</p>
+          <p class="menu_item" data-id="menu4">Security</p>
+          <p class="menu_item" data-id="menu5">Staking</p>
+        </div>
+        <div class="faq_right">
+          <div class="faq_content menu_item_content active_menu" id="menu1">
+            <div class="faq_content_title">
+              <img src=".././assets/icons/hashtag.png" alt="" />
+              <h4>General</h4>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>What currencies do you accept?</p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+                <p>
+                  Tellus maecenas feugiat eu eu felis tempus. Et tortor proin in
+                  malesuada nam egestas consectetur hac tortor. Commodo eget
+                  vitae purus in. Placerat aliquet massa rhoncus
+                  <a href="#">suscipit</a> mi dolor pharetra nibh. Blandit nibh
+                  arcu amet sit ullamcorper duis sed eget mattis. A pharetra.
+                </p>
+              </div>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>What is Mao Global?</p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+              </div>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. In donec vitae dolor
+                  magna?
+                </p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+                <p>
+                  Tellus maecenas feugiat eu eu felis tempus. Et tortor proin in
+                  malesuada nam egestas consectetur hac tortor. Commodo eget
+                  vitae purus in. Placerat aliquet massa rhoncus
+                  <a href="#">suscipit</a> mi dolor pharetra nibh. Blandit nibh
+                  arcu amet sit ullamcorper duis sed eget mattis. A pharetra.
+                </p>
+              </div>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>Lorem ipsum dolor sit amet consectetur?</p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+                <p>
+                  Tellus maecenas feugiat eu eu felis tempus. Et tortor proin in
+                  malesuada nam egestas consectetur hac tortor. Commodo eget
+                  vitae purus in. Placerat aliquet massa rhoncus
+                  <a href="#">suscipit</a> mi dolor pharetra nibh. Blandit nibh
+                  arcu amet sit ullamcorper duis sed eget mattis. A pharetra.
+                </p>
+              </div>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>Lorem ipsum dolor sit amet?</p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+                <p>
+                  Tellus maecenas feugiat eu eu felis tempus. Et tortor proin in
+                  malesuada nam egestas consectetur hac tortor. Commodo eget
+                  vitae purus in. Placerat aliquet massa rhoncus
+                  <a href="#">suscipit</a> mi dolor pharetra nibh. Blandit nibh
+                  arcu amet sit ullamcorper duis sed eget mattis. A pharetra.
+                </p>
+              </div>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>Lorem ipsum dolor sit amet consectetur. Pharetra integer?</p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+                <p>
+                  Tellus maecenas feugiat eu eu felis tempus. Et tortor proin in
+                  malesuada nam egestas consectetur hac tortor. Commodo eget
+                  vitae purus in. Placerat aliquet massa rhoncus
+                  <a href="#">suscipit</a> mi dolor pharetra nibh. Blandit nibh
+                  arcu amet sit ullamcorper duis sed eget mattis. A pharetra.
+                </p>
+              </div>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Donec sit molestie
+                  laoreet pharetra in. Volutpat et augue?
+                </p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+                <p>
+                  Tellus maecenas feugiat eu eu felis tempus. Et tortor proin in
+                  malesuada nam egestas consectetur hac tortor. Commodo eget
+                  vitae purus in. Placerat aliquet massa rhoncus
+                  <a href="#">suscipit</a> mi dolor pharetra nibh. Blandit nibh
+                  arcu amet sit ullamcorper duis sed eget mattis. A pharetra.
+                </p>
+              </div>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>Lorem ipsum dolor sit amet consectetur?</p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+                <p>
+                  Tellus maecenas feugiat eu eu felis tempus. Et tortor proin in
+                  malesuada nam egestas consectetur hac tortor. Commodo eget
+                  vitae purus in. Placerat aliquet massa rhoncus
+                  <a href="#">suscipit</a> mi dolor pharetra nibh. Blandit nibh
+                  arcu amet sit ullamcorper duis sed eget mattis. A pharetra.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq_content menu_item_content" id="menu2">
+            <div class="faq_content_title">
+              <img src=".././assets/icons/hashtag.png" alt="" />
+              <h4>Deposit / Withdrawal</h4>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>What currencies do you accept?</p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+                <p>
+                  Tellus maecenas feugiat eu eu felis tempus. Et tortor proin in
+                  malesuada nam egestas consectetur hac tortor. Commodo eget
+                  vitae purus in. Placerat aliquet massa rhoncus
+                  <a href="#">suscipit</a> mi dolor pharetra nibh. Blandit nibh
+                  arcu amet sit ullamcorper duis sed eget mattis. A pharetra.
+                </p>
+              </div>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>What is Mao Global?</p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq_content menu_item_content" id="menu3">
+            <div class="faq_content_title">
+              <img src=".././assets/icons/hashtag.png" alt="" />
+              <h4>Risk</h4>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>What currencies do you accept?</p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+                <p>
+                  Tellus maecenas feugiat eu eu felis tempus. Et tortor proin in
+                  malesuada nam egestas consectetur hac tortor. Commodo eget
+                  vitae purus in. Placerat aliquet massa rhoncus
+                  <a href="#">suscipit</a> mi dolor pharetra nibh. Blandit nibh
+                  arcu amet sit ullamcorper duis sed eget mattis. A pharetra.
+                </p>
+              </div>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>What is Mao Global?</p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq_content menu_item_content" id="menu4">
+            <div class="faq_content_title">
+              <img src=".././assets/icons/hashtag.png" alt="" />
+              <h4>Security</h4>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>What currencies do you accept?</p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+                <p>
+                  Tellus maecenas feugiat eu eu felis tempus. Et tortor proin in
+                  malesuada nam egestas consectetur hac tortor. Commodo eget
+                  vitae purus in. Placerat aliquet massa rhoncus
+                  <a href="#">suscipit</a> mi dolor pharetra nibh. Blandit nibh
+                  arcu amet sit ullamcorper duis sed eget mattis. A pharetra.
+                </p>
+              </div>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>What is Mao Global?</p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq_content menu_item_content" id="menu5">
+            <div class="faq_content_title">
+              <img src=".././assets/icons/hashtag.png" alt="" />
+              <h4>Staking</h4>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>What currencies do you accept?</p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+                <p>
+                  Tellus maecenas feugiat eu eu felis tempus. Et tortor proin in
+                  malesuada nam egestas consectetur hac tortor. Commodo eget
+                  vitae purus in. Placerat aliquet massa rhoncus
+                  <a href="#">suscipit</a> mi dolor pharetra nibh. Blandit nibh
+                  arcu amet sit ullamcorper duis sed eget mattis. A pharetra.
+                </p>
+              </div>
+            </div>
+            <div class="faq_item">
+              <div class="faq_item_title">
+                <p>What is Mao Global?</p>
+                <img src=".././assets/icons/faq-icon.svg" alt="" />
+              </div>
+              <div class="faq_item_content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Elementum turpis
+                  vestibulum metus in pharetra et rutrum ut vel. Tempor integer
+                  elementum ultrices tincidunt elementum nunc eu magna
+                  hendrerit. Fames enim sit elit sit vulputate fringilla. Quis
+                  nunc enim sagittis eget at sed netus eu. Imperdiet egestas
+                  justo vitae volutpat amet arcu. Rutrum in tincidunt lectus
+                  morbi nisl. Id nec velit felis ullamcorper tincidunt. Sit
+                  sollicitudin commodo sed morbi volutpat nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block_title container">
+        <h2>Contact <span>Us</span></h2>
+        <p>
+          If you have any questions, our support team is always ready to help
+        </p>
+      </div>
+
+      <div class="contact_cards container">
+        <div class="contact_card">
+          <div>
+            <h2>General communication</h2>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur. Quis erat nunc eget diam.
+            </h4>
+          </div>
+          <button class="readmore_btn contact_btn">
+            <img src="./assets/email.svg" alt="" /> support@maoglobal.com
+          </button>
+        </div>
+        <div class="contact_card">
+          <div>
+            <h2>Phone</h2>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur. Quis erat nunc eget diam.
+            </h4>
+          </div>
+          <button class="readmore_btn contact_btn">
+            <img src="./assets/phone.svg" alt="" /> +1 844 435 9419
+          </button>
+        </div>
+        <div class="contact_card">
+          <div>
+            <h2>Operating time</h2>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur. Quis erat nunc eget diam.
+            </h4>
+          </div>
+          <button class="readmore_btn contact_btn">
+            <img src="./assets/time.svg" alt="" /> Mon-Fri, 09:00-18:00 (local
+            time)
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer_wrapper container">
+        <div class="footer_left">
+          <a href="./index.html">
+            <img class="footer_logo" src=".././assets/logo.svg" alt="" />
+          </a>
+          <div class="footer_desc">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Facilisi massa nibh leo
+              sed condimentum ac risus risus. Netus lectus lacus nibh augue
+              morbi hendrerit mauris.
+            </p>
+          </div>
+          <a href="tel:+841 548 54 58" class="phone_num">
+            <img src=".././assets/icons/phone.svg" alt="" />
+            <p>+841 548 54 58</p>
+          </a>
+        </div>
+        <div class="footer_right">
+          <div class="footer_menu">
+            <a href="./index.html"><p>Home</p></a>
+            <a href="./about.html"><p>About</p></a>
+            <a href="./investments.html"><p>Investments</p></a>
+            <a href="./partners.html"><p>Partners</p></a>
+            <a href="./services.html"><p>Services</p></a>
+            <a href="./faqs.html"><p>FAQ</p></a>
+            <a href="./news.html"><p>News</p></a>
+          </div>
+          <button class="readmore_btn" style="margin: 0">
+            <img src=".././assets/icons/mail.svg" alt="" />
+            support@maoglobal.com
+          </button>
+          <div class="nav_bottom_socials">
+            <a href="#"
+              ><img src=".././assets/icons/socials/tw.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src=".././assets/icons/socials/fb.svg" alt=""
+            /></a>
+            <a href="#"
+              ><img src=".././assets/icons/socials/ins.svg" alt=""
+            /></a>
+
+            <a href="#" class="tg_gr"
+              ><img src=".././assets/icons/socials/tg.svg" alt="" />
+              <p>Group</p></a
+            >
+            <a href="#" class="tg_gr"
+              ><img src=".././assets/icons/socials/tg.svg" alt="" />
+              <p>Channel</p></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <div class="footer_bottom_wrapper container">
+          <div class="footer_bottom_list">
+            <a href="#">
+              <p>Privacy policy</p>
+              <img src=".././assets/icons/link-arrow.svg" alt="" />
+            </a>
+            <a href="#">
+              <p>Terms of use</p>
+              <img src=".././assets/icons/link-arrow.svg" alt="" />
+            </a>
+            <a href="#">
+              <p>Documents on investor rights protection</p>
+              <img src=".././assets/icons/link-arrow.svg" alt="" />
+            </a>
+          </div>
+          <p>© Mao Global. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src=".././scripts/faq.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./styles/topup.css" />
     <link rel="stylesheet" href="../styles/investments.css" />
     <link rel="stylesheet" href="./styles/deposit.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
   </head>
   <body>
     <div class="dashboard_nav">
@@ -70,12 +71,39 @@
               <img src="./assets/icons/bell.svg" alt="" />
             </div>
             <div class="user_nav_prof">
-              <div class="user_nav_prof_data">
+              <div class="user_nav_prof_data" onclick="openModal1()">
                 <p>Charles</p>
                 <span>patricia@gmail.com</span>
               </div>
-              <div class="user_prof_name">
+              <div class="user_prof_name" onclick="openModal1()">
                 <p>C</p>
+              </div>
+              <div class="fillout_modal">
+                <div class="fillout_top">
+                  <div class="fillout_progress_block">
+                    <div class="fillout_progress">
+                      <div class="progress_fillout" id="fillout"></div>
+                    </div>
+                    <p>75%</p>
+                  </div>
+                  <div class="fillout_top_desc">
+                    <h3>You need to fill out a profile</h3>
+                    <p>
+                      Your profile is <b>75%</b> complete. According to our
+                      regulations, full completion of data is necessary to
+                      comply with safety regulations and provide quality
+                      services.
+                    </p>
+                  </div>
+                </div>
+                <div class="fillout_btns">
+                  <button class="btn_grey contract_btn" onclick="openModal1()">
+                    Later
+                  </button>
+                  <button class="btn_grey redtbn" onclick="openModal2()">
+                    Read More
+                  </button>
+                </div>
               </div>
             </div>
             <div class="nav_line"></div>
@@ -1205,28 +1233,54 @@
                 </div>
                 <div class="deposit_inc">
                   <div class="deposit_inc_item dec">
-                    <svg width="10.000000" height="2.000000" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <desc>
-                          Created with Pixso.
-                      </desc>
-                      <defs/>
-                      <path id="Vector" d="M1 0C0.44 0 0 0.44 0 1C0 1.55 0.44 2 1 2L9 2C9.55 2 10 1.55 10 1C10 0.44 9.55 0 9 0L1 0Z" fill="#242424" fill-opacity="1.000000" fill-rule="nonzero"/>
+                    <svg
+                      width="10.000000"
+                      height="2.000000"
+                      viewBox="0 0 10 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <desc>Created with Pixso.</desc>
+                      <defs />
+                      <path
+                        id="Vector"
+                        d="M1 0C0.44 0 0 0.44 0 1C0 1.55 0.44 2 1 2L9 2C9.55 2 10 1.55 10 1C10 0.44 9.55 0 9 0L1 0Z"
+                        fill="#242424"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
                     </svg>
-                    
                   </div>
                   <div class="deposit_inc_wrapper">
                     <div class="deposit_inc_value" style="width: 45%"></div>
                   </div>
                   <div class="deposit_inc_item inc">
-                    <svg width="11.099609" height="11.099609" viewBox="0 0 11.0996 11.0996" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <desc>
-                          Created with Pixso.
-                      </desc>
-                      <defs/>
-                      <path id="Vector" d="M5.54 0.29C5.22 0.29 4.96 0.56 4.96 0.88L4.96 4.96L0.88 4.96C0.56 4.96 0.29 5.22 0.29 5.54C0.29 5.87 0.56 6.13 0.88 6.13L4.96 6.13L4.96 10.21C4.96 10.53 5.22 10.79 5.54 10.79C5.87 10.79 6.13 10.53 6.13 10.21L6.13 6.13L10.21 6.13C10.53 6.13 10.79 5.87 10.79 5.54C10.79 5.22 10.53 4.96 10.21 4.96L6.13 4.96L6.13 0.88C6.13 0.56 5.87 0.29 5.54 0.29Z" fill="#242424" fill-opacity="1.000000" fill-rule="nonzero"/>
-                      <path id="Vector" d="M4.68 0.69Q4.66 0.78 4.66 0.88L4.66 4.66L0.88 4.66Q0.78 4.66 0.69 4.68Q0.61 4.7 0.53 4.73Q0.46 4.76 0.39 4.81Q0.32 4.86 0.25 4.92Q0.19 4.98 0.14 5.06Q0.1 5.12 0.06 5.2Q0.03 5.28 0.01 5.36Q0 5.45 0 5.54Q0 5.64 0.01 5.73Q0.03 5.81 0.06 5.89Q0.1 5.96 0.14 6.03Q0.19 6.11 0.25 6.17Q0.32 6.23 0.39 6.28Q0.46 6.33 0.53 6.36Q0.61 6.39 0.69 6.41Q0.78 6.43 0.88 6.43L4.66 6.43L4.66 10.21Q4.66 10.31 4.68 10.4Q4.7 10.48 4.73 10.56Q4.76 10.63 4.81 10.7Q4.86 10.77 4.92 10.84Q4.98 10.9 5.06 10.95Q5.12 10.99 5.2 11.03Q5.28 11.06 5.36 11.08Q5.45 11.09 5.54 11.09Q5.64 11.09 5.73 11.08Q5.81 11.06 5.89 11.03Q5.96 10.99 6.03 10.95Q6.11 10.9 6.17 10.84Q6.23 10.77 6.28 10.7Q6.33 10.63 6.36 10.56Q6.39 10.48 6.41 10.4Q6.43 10.31 6.43 10.21L6.43 6.43L10.21 6.43Q10.31 6.43 10.4 6.41Q10.48 6.39 10.56 6.36Q10.63 6.33 10.7 6.28Q10.77 6.23 10.84 6.17Q10.9 6.11 10.95 6.03Q10.99 5.96 11.03 5.89Q11.06 5.81 11.08 5.73Q11.09 5.64 11.09 5.54Q11.09 5.45 11.08 5.36Q11.06 5.28 11.03 5.2Q10.99 5.12 10.95 5.06Q10.9 4.98 10.84 4.92Q10.77 4.86 10.7 4.81Q10.63 4.76 10.56 4.73Q10.48 4.7 10.4 4.68Q10.31 4.66 10.21 4.66L6.43 4.66L6.43 0.88Q6.43 0.78 6.41 0.69Q6.39 0.61 6.36 0.53Q6.33 0.46 6.28 0.39Q6.23 0.32 6.17 0.25Q6.11 0.19 6.03 0.14Q5.96 0.1 5.89 0.06Q5.81 0.03 5.73 0.01Q5.64 0 5.54 0Q5.45 0 5.36 0.01Q5.28 0.03 5.2 0.06Q5.12 0.1 5.06 0.14Q4.98 0.19 4.92 0.25Q4.86 0.32 4.81 0.39Q4.76 0.46 4.73 0.53Q4.7 0.61 4.68 0.69ZM6.13 4.66L6.13 0.88C6.13 0.56 5.87 0.29 5.54 0.29C5.22 0.29 4.96 0.56 4.96 0.88L4.96 4.96L0.88 4.96C0.56 4.96 0.29 5.22 0.29 5.54C0.29 5.87 0.56 6.13 0.88 6.13L4.96 6.13L4.96 10.21C4.96 10.53 5.22 10.79 5.54 10.79C5.87 10.79 6.13 10.53 6.13 10.21L6.13 6.13L10.21 6.13C10.53 6.13 10.79 5.87 10.79 5.54C10.79 5.22 10.53 4.96 10.21 4.96L6.13 4.96L6.13 4.66Z" fill="#242424" fill-opacity="1.000000" fill-rule="evenodd"/>
+                    <svg
+                      width="11.099609"
+                      height="11.099609"
+                      viewBox="0 0 11.0996 11.0996"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <desc>Created with Pixso.</desc>
+                      <defs />
+                      <path
+                        id="Vector"
+                        d="M5.54 0.29C5.22 0.29 4.96 0.56 4.96 0.88L4.96 4.96L0.88 4.96C0.56 4.96 0.29 5.22 0.29 5.54C0.29 5.87 0.56 6.13 0.88 6.13L4.96 6.13L4.96 10.21C4.96 10.53 5.22 10.79 5.54 10.79C5.87 10.79 6.13 10.53 6.13 10.21L6.13 6.13L10.21 6.13C10.53 6.13 10.79 5.87 10.79 5.54C10.79 5.22 10.53 4.96 10.21 4.96L6.13 4.96L6.13 0.88C6.13 0.56 5.87 0.29 5.54 0.29Z"
+                        fill="#242424"
+                        fill-opacity="1.000000"
+                        fill-rule="nonzero"
+                      />
+                      <path
+                        id="Vector"
+                        d="M4.68 0.69Q4.66 0.78 4.66 0.88L4.66 4.66L0.88 4.66Q0.78 4.66 0.69 4.68Q0.61 4.7 0.53 4.73Q0.46 4.76 0.39 4.81Q0.32 4.86 0.25 4.92Q0.19 4.98 0.14 5.06Q0.1 5.12 0.06 5.2Q0.03 5.28 0.01 5.36Q0 5.45 0 5.54Q0 5.64 0.01 5.73Q0.03 5.81 0.06 5.89Q0.1 5.96 0.14 6.03Q0.19 6.11 0.25 6.17Q0.32 6.23 0.39 6.28Q0.46 6.33 0.53 6.36Q0.61 6.39 0.69 6.41Q0.78 6.43 0.88 6.43L4.66 6.43L4.66 10.21Q4.66 10.31 4.68 10.4Q4.7 10.48 4.73 10.56Q4.76 10.63 4.81 10.7Q4.86 10.77 4.92 10.84Q4.98 10.9 5.06 10.95Q5.12 10.99 5.2 11.03Q5.28 11.06 5.36 11.08Q5.45 11.09 5.54 11.09Q5.64 11.09 5.73 11.08Q5.81 11.06 5.89 11.03Q5.96 10.99 6.03 10.95Q6.11 10.9 6.17 10.84Q6.23 10.77 6.28 10.7Q6.33 10.63 6.36 10.56Q6.39 10.48 6.41 10.4Q6.43 10.31 6.43 10.21L6.43 6.43L10.21 6.43Q10.31 6.43 10.4 6.41Q10.48 6.39 10.56 6.36Q10.63 6.33 10.7 6.28Q10.77 6.23 10.84 6.17Q10.9 6.11 10.95 6.03Q10.99 5.96 11.03 5.89Q11.06 5.81 11.08 5.73Q11.09 5.64 11.09 5.54Q11.09 5.45 11.08 5.36Q11.06 5.28 11.03 5.2Q10.99 5.12 10.95 5.06Q10.9 4.98 10.84 4.92Q10.77 4.86 10.7 4.81Q10.63 4.76 10.56 4.73Q10.48 4.7 10.4 4.68Q10.31 4.66 10.21 4.66L6.43 4.66L6.43 0.88Q6.43 0.78 6.41 0.69Q6.39 0.61 6.36 0.53Q6.33 0.46 6.28 0.39Q6.23 0.32 6.17 0.25Q6.11 0.19 6.03 0.14Q5.96 0.1 5.89 0.06Q5.81 0.03 5.73 0.01Q5.64 0 5.54 0Q5.45 0 5.36 0.01Q5.28 0.03 5.2 0.06Q5.12 0.1 5.06 0.14Q4.98 0.19 4.92 0.25Q4.86 0.32 4.81 0.39Q4.76 0.46 4.73 0.53Q4.7 0.61 4.68 0.69ZM6.13 4.66L6.13 0.88C6.13 0.56 5.87 0.29 5.54 0.29C5.22 0.29 4.96 0.56 4.96 0.88L4.96 4.96L0.88 4.96C0.56 4.96 0.29 5.22 0.29 5.54C0.29 5.87 0.56 6.13 0.88 6.13L4.96 6.13L4.96 10.21C4.96 10.53 5.22 10.79 5.54 10.79C5.87 10.79 6.13 10.53 6.13 10.21L6.13 6.13L10.21 6.13C10.53 6.13 10.79 5.87 10.79 5.54C10.79 5.22 10.53 4.96 10.21 4.96L6.13 4.96L6.13 4.66Z"
+                        fill="#242424"
+                        fill-opacity="1.000000"
+                        fill-rule="evenodd"
+                      />
                     </svg>
-                    
                   </div>
                 </div>
                 <div class="investment_card_content_title">
@@ -1270,12 +1324,14 @@
                   <p>150000.00 (0.50%)</p>
                 </div>
               </div>
-              <div class="deposit_calc_stats_list_item deposit_calc_stats_list_item_l">
+              <div
+                class="deposit_calc_stats_list_item deposit_calc_stats_list_item_l"
+              >
                 <div class="deposit_calc_stats_list_item_left">
                   <img src="./assets/icons/star.svg" alt="" />
-                  <p style="color: rgb(34, 197, 94);">Monthly rate</p>
+                  <p style="color: rgb(34, 197, 94)">Monthly rate</p>
                 </div>
-       <h4>1800000.00</h4>
+                <h4>1800000.00</h4>
               </div>
             </div>
           </div>
@@ -1381,6 +1437,96 @@
         </div>
       </div>
     </footer>
+    <div class="overlay fillout_steps_modal_w">
+      <div class="fillout_steps_modal">
+        <div class="fillout_steps_modal_top">
+          <div class="modal_ex">
+            <img
+              src="./assets/icons/exit-modal.png"
+              alt=""
+              onclick="openModal2()"
+            />
+          </div>
+          <div class="fillout_top">
+            <div class="fillout_progress_block">
+              <div class="fillout_progress">
+                <div class="progress_fillout" id="fillout2"></div>
+              </div>
+              <p>75%</p>
+            </div>
+            <div class="fillout_top_desc">
+              <h3>You need to fill out a profile</h3>
+              <p>
+                Your profile is <b>75%</b> complete. According to our
+                regulations, full completion of data is necessary to comply with
+                safety regulations and provide quality services.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="fillout_steps_modal_btm">
+          <div class="fill_up_steps">
+            <div class="fillup_step fillup_step_checked">
+              <div class="fillup_step_check">
+                <div class="not_checked hidden_icon"></div>
+                <img
+                  class="checked_icon"
+                  src="./assets/icons/check.svg"
+                  alt=""
+                />
+              </div>
+              <div class="fillup_step_desc">
+                <h4>Enter your first and last name</h4>
+                <p>
+                  This is so that we can be sure that the data matches the
+                  documents and that you are a real person.
+                </p>
+              </div>
+            </div>
+            <div class="fillup_step fillup_step_checked">
+              <div class="fillup_step_check">
+                <div class="not_checked hidden_icon"></div>
+                <img
+                  class="checked_icon"
+                  src="./assets/icons/check.svg"
+                  alt=""
+                />
+              </div>
+              <div class="fillup_step_desc">
+                <h4>Сreate a unique and readable username</h4>
+                <p>
+                  This is to make it easier to address you without using your
+                  real first and last name.
+                </p>
+              </div>
+            </div>
+            <div class="fillup_step">
+              <div class="fillup_step_check">
+                <div class="not_checked"></div>
+                <img
+                  class="checked_icon hidden_icon"
+                  src="./assets/icons/check.svg"
+                  alt=""
+                />
+              </div>
+              <div class="fillup_step_desc">
+                <h4>Include a link to your social media accounts</h4>
+                <p>
+                  This is to make it easier to address you without using your
+                  real first and last name.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="fillout_btns fillout_btns_sec">
+             <button class="btn_grey contract_btn"   onclick="openModal2()">Continue later</button>
+            <button class="btn_grey redtbn">Go to settings</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/fillout-circle.js"></script>
+    <script src="./scripts/fillout-circle-2.js"></script>
     <script src="../scripts/main.js"></script>
     <script src="./scripts/deposit.js"></script>
   </body>
