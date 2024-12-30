@@ -99,7 +99,7 @@ nav {
   align-items: center;
   gap: 6px;
 }
-.company_select_not img {
+.company_item_img {
   width: 32px;
 }
 .company_select_not p {
@@ -464,7 +464,8 @@ footer {
   font-size: 34px;
   line-height: 40px;
   /* identical to box height, or 118% */
-  text-align: center;
+  text-align: left;
+  padding-left: 200px;
   color: #242424;
   margin-bottom: 60px;
 }
@@ -477,6 +478,7 @@ footer {
   display: flex;
   align-items: start;
   gap: 13px;
+  padding-bottom: 20px;
 }
 .movement_history_item_date {
   width: 400px;
@@ -514,6 +516,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 13px;
+  width: 65%;
 }
 
 .movement_history_item_desc p {
@@ -545,13 +548,13 @@ footer {
   align-items: center;
 }
 .movement_history_item_row div {
-  height: 100px;
+  height: 130px;
 
   border: 2px dashed #df361e;
 }
 
 .movement_history_item {
-  margin-top: -10px;
+  margin-top: -30px;
 }
 
 .movement_history_item_active .movement_history_item_desc p {
@@ -678,6 +681,12 @@ footer {
   right: 9px;
 }
 
+.movement_history_item_active .movement_history_item_date p {
+
+  font-weight: 700;
+
+}
+
 @media only screen and (max-width: 500px) {
   .landing_track {
     width: 100%;
@@ -784,7 +793,8 @@ footer {
   }
   .results_descs {
     gap: 20px;
-    display: flex;flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
   .results_card_title p {
     font-size: 20px;
@@ -825,6 +835,10 @@ footer {
     left: 0;
   }
   .nav_bottom_socials {
-    display: none !important; 
+    display: none !important;
+  }
+  .movement_history_title h2 {
+    padding-left: 0;
+    margin-bottom: 30px;
   }
 }
