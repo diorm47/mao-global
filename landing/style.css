@@ -127,7 +127,7 @@ nav {
 
 .track_btn {
   height: 100%;
-  padding: 0 40px;
+  padding: 0 39px;
   /* Frame 77 */
 
   /* Auto layout */
@@ -375,15 +375,53 @@ footer {
 .fedex_results {
   position: relative;
 }
+.fedex_results_wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: start;
+  gap: 20px;
+}
 
 .results_card {
   background: #fafafc;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   margin-bottom: 40px;
-  padding: 40px 80px 30px;
+  width: 30%;
+}
+.results_card_top {
+  padding: 30px 20px;
+}
+.results_card_btm {
+  padding: 20px;
+  background: rgb(237, 232, 232);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.movement_history_block {
+  width: 70%;
+}
+.results_card_btm input {
+  width: 90%;
+  height: 35px;
+  border-radius: 6px;
+  text-indent: 10px;
+  font-family: "Cygre", serif;
+  font-weight: 600;
 }
 
+.results_card_btm img {
+  cursor: pointer;
+  width: 20px;
+  transition: all 0.4s ease;
+}
+.results_card_btm img:hover {
+  transition: all 0.4s ease;
+  opacity: 0.7;
+}
 .results_card_title p {
   font-family: "Cygre";
   font-style: normal;
@@ -399,9 +437,9 @@ footer {
 }
 
 .results_descs {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .results_desc_title {
   margin-bottom: 6px;
@@ -464,8 +502,8 @@ footer {
   font-size: 34px;
   line-height: 40px;
   /* identical to box height, or 118% */
-  text-align: left;
-  padding-left: 200px;
+  text-align: center;
+  /* padding-left: 200px; */
   color: #242424;
   margin-bottom: 60px;
 }
@@ -580,10 +618,6 @@ footer {
   display: block;
 }
 
-.visible_landing_header {
-  padding-bottom: 40px;
-}
-
 .company_select {
   position: relative;
 }
@@ -682,9 +716,7 @@ footer {
 }
 
 .movement_history_item_active .movement_history_item_date p {
-
   font-weight: 700;
-
 }
 
 @media only screen and (max-width: 500px) {
@@ -701,8 +733,10 @@ footer {
   }
   .choose_partners {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     gap: 15px;
+    margin-top: 15px;
     justify-content: center;
   }
   .why_chooseus {
@@ -788,9 +822,7 @@ footer {
   .top_nav .nav_bottom_left_links {
     display: none;
   }
-  .results_card {
-    padding: 20px;
-  }
+
   .results_descs {
     gap: 20px;
     display: flex;
@@ -840,5 +872,13 @@ footer {
   .movement_history_title h2 {
     padding-left: 0;
     margin-bottom: 30px;
+  }
+  .fedex_results_wrapper {
+    flex-direction: column;
+  }
+  .results_card,
+  .movement_history_block,
+  .movement_history_item_desc {
+    width: 100%;
   }
 }
